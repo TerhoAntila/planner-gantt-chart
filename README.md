@@ -1,5 +1,7 @@
 # Planner Gantt Chart introduction
 
+![image](https://user-images.githubusercontent.com/10154416/118365499-af499b00-b5a5-11eb-8875-6733519cb943.png)
+
 I created a Power Apps canvas app that you can use to view your Microsoft Planner tasks on a Gantt Chart. You can use it freely and make modifications to your version.
 
 All major features of the app are presented in my blog post at: https://terhoantila.com/2021/05/17/microsoft-planner-gantt-chart-with-power-apps-download-your-own
