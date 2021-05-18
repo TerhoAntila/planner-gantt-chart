@@ -1,6 +1,10 @@
 # Planner Gantt Chart introduction
 
-All major features of the app are presented on my blog post at: https://terhoantila.com/2021/05/17/microsoft-planner-gantt-chart-with-power-apps-download-your-own
+![image](https://user-images.githubusercontent.com/10154416/118365499-af499b00-b5a5-11eb-8875-6733519cb943.png)
+
+I created a Power Apps canvas app that you can use to view your Microsoft Planner tasks on a Gantt Chart. You can use it freely and make modifications to your version.
+
+All major features of the app are presented in my blog post at: https://terhoantila.com/2021/05/17/microsoft-planner-gantt-chart-with-power-apps-download-your-own
 
 # Download
 
@@ -11,7 +15,7 @@ Or you can use this direct link: https://github.com/TerhoAntila/planner-gantt-ch
 
 # Installation
 
-1. Browse to you company Power Apps portal at https://make.powerapps.com/
+1. Browse to your company Power Apps portal at https://make.powerapps.com/
 1. Make sure you have correct environment selected. Often you only have one, so no worries :)
 1. Click on the *Apps* on the left navigation
 1. Click *Import canvas app*
