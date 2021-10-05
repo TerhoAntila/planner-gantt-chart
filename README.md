@@ -1,3 +1,11 @@
+<details>
+  <summary>Click here to view recent updates</summary>
+  
+### 3.10.2021
+- You can now easily apply your own themes to comply with company brand. See more here: https://terhoantila.com/2021/10/03/new-version-of-planner-gantt-chart-released-apply-your-own-themes/
+- Bug fixes regarding task start and end date visibility
+</details>
+
 # Planner Gantt Chart introduction
 
 ![image](https://user-images.githubusercontent.com/10154416/118365499-af499b00-b5a5-11eb-8875-6733519cb943.png)
