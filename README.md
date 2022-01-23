@@ -1,5 +1,15 @@
 <details>
   <summary>Click here to view recent updates</summary>
+
+### 23.1.2022
+- You can now drag tasks back and forth on the timeline
+- You can easily adjust task's due date right within the app
+- A set of predefined themes introduced which you can choose with URL parameter *ganttTheme*. Available values:
+  - blue
+  - green
+  - red
+  - gray
+  - white
   
 ### 3.10.2021
 - You can now easily apply your own themes to comply with company brand. See more here: https://terhoantila.com/2021/10/03/new-version-of-planner-gantt-chart-released-apply-your-own-themes/
