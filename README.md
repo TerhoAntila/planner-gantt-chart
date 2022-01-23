@@ -17,9 +17,9 @@
 </details>
 
 <details>
-  <summary>Click here to donate!</summary>
+  <summary>Click here to support!</summary>
   
-  If you like this app, you might want to consider donating to boost my development efforts even further 😃. Donate [5€](https://buy.stripe.com/4gw6qH4KUeNx3dK9AA), [10€](https://buy.stripe.com/28o5mDb9igVFdSo4gh), [20€](https://buy.stripe.com/28o02jgtCgVF15CeUW) or [50€](https://buy.stripe.com/bIY8yP0uEeNx4hO003). Thank you!
+  If you like this app, you might want to consider supporting to boost my development efforts even further 😃. [5€](https://buy.stripe.com/4gw6qH4KUeNx3dK9AA), [10€](https://buy.stripe.com/28o5mDb9igVFdSo4gh), [20€](https://buy.stripe.com/28o02jgtCgVF15CeUW) or [50€](https://buy.stripe.com/bIY8yP0uEeNx4hO003). Thank you!
   
 </details>
 
@@ -54,4 +54,4 @@ Or you can use this direct link: https://github.com/TerhoAntila/planner-gantt-ch
 9. You can use *share* link to share the app with your colleagues
 10. **Start using it and enjoy!**
 
-*If you like this app, you might want to consider donating to boost my development efforts even further 😃. Donate [5€](https://buy.stripe.com/4gw6qH4KUeNx3dK9AA), [10€](https://buy.stripe.com/28o5mDb9igVFdSo4gh), [20€](https://buy.stripe.com/28o02jgtCgVF15CeUW) or [50€](https://buy.stripe.com/bIY8yP0uEeNx4hO003). Thank you!*
+*If you like this app, you might want to consider supporting to boost my development efforts even further 😃. [5€](https://buy.stripe.com/4gw6qH4KUeNx3dK9AA), [10€](https://buy.stripe.com/28o5mDb9igVFdSo4gh), [20€](https://buy.stripe.com/28o02jgtCgVF15CeUW) or [50€](https://buy.stripe.com/bIY8yP0uEeNx4hO003). Thank you!*
