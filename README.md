@@ -16,13 +16,6 @@
 - Bug fixes regarding task start and end date visibility
 </details>
 
-<details>
-  <summary>Click here to support!</summary>
-  
-  If you like this app, you might want to consider supporting to boost my development efforts even further 😃. [5€](https://buy.stripe.com/4gw6qH4KUeNx3dK9AA), [10€](https://buy.stripe.com/28o5mDb9igVFdSo4gh), [20€](https://buy.stripe.com/28o02jgtCgVF15CeUW) or [50€](https://buy.stripe.com/bIY8yP0uEeNx4hO003). Thank you!
-  
-</details>
-
 # Planner Gantt Chart introduction
 
 ![image](https://user-images.githubusercontent.com/10154416/118365499-af499b00-b5a5-11eb-8875-6733519cb943.png)
