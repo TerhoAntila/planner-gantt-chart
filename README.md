@@ -4,6 +4,9 @@
 ### 23.1.2022
 - You can now drag tasks back and forth on the timeline
 - You can easily adjust task's due date right within the app
+
+https://youtu.be/MojHcE-K1kQ
+
 - A set of predefined themes introduced which you can choose with URL parameter *ganttTheme*. Available values:
   - blue
   - green
