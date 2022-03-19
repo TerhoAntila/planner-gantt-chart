@@ -206,7 +206,7 @@ scrPlans As screen:
         FontWeight: =FontWeight.Semibold
         Height: =75
         Size: =28
-        Text: ="Select the plan you want to view"
+        Text: ="Select the plan you want to view - EDIT"
         Width: =1208
         X: =108
         ZIndex: =7
