@@ -211,14 +211,3 @@ scrPlans As screen:
         X: =108
         ZIndex: =7
 
-    Label1 As label:
-        Align: =Align.Right
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: ="Test edit 2"
-        X: =1166
-        Y: =17
-        ZIndex: =8
-
