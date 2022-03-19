@@ -1,6 +1,6 @@
 {
   "Emoji Picker": {
-    "AllowAccessToGlobals": true,
+    "AllowAccessToGlobals": false,
     "ControlPropertyState": [
       "Fill",
       {

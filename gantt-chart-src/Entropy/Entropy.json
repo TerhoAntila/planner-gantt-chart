@@ -88,7 +88,6 @@
     "imgAssignee": 95,
     "inputAddTaskTitle": 59,
     "Label2": 11,
-    "Label6": 15,
     "lblAddNewTaskHeading": 49,
     "lblAddTaskBucket": 56,
     "lblAddTaskDueDate": 54,
@@ -120,6 +119,7 @@
     "lblTaskBucketName": 103,
     "lblTaskCategories": 102,
     "lblTaskName": 104,
+    "lblTitleStartScreen": 15,
     "lblTotalTasks": 37,
     "lblTotalTasksTitle": 40,
     "lblViewMultiple": 23,
@@ -139,14 +139,14 @@
     "viewMultipleButton": 22
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/19/2022 16:51:57",
+  "HeaderLastSavedDateTimeUTC": "03/19/2022 21:44:22",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "user-placeholder-image": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "user-placeholder-image": "https://docserverpwaprodneu.blob.core.windows.net/0deb9b73-33a9-4672-ac81-24f818c24c2a-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=XZY2%2FUSnqe7v8nre8ebSvzMiG1DAy2iSBCysnZc9lLo%3D&spr=https&se=2022-03-20T17%3A02%3A05Z&sp=r"
+    "user-placeholder-image": "https://docserverpwaprodeus.blob.core.windows.net/88bf23d3-442d-4ddf-80ba-bddba35467f3-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=df%2FCrfqmL3WTnvVy3WjXa%2BPH2hZ%2FvUHh5gIcn%2BwaEb8%3D&spr=https&se=2022-03-20T20%3A53%3A52Z&sp=r"
   },
   "OldLogoFileName": "grtrz15r.jpg",
   "OrderComponentMetadata": {
@@ -277,7 +277,6 @@
     "imgAssignee": 79,
     "inputAddTaskTitle": 43,
     "Label2": 124,
-    "Label6": 0,
     "lblAddNewTaskHeading": 33,
     "lblAddTaskBucket": 40,
     "lblAddTaskDueDate": 38,
@@ -309,6 +308,7 @@
     "lblTaskBucketName": 87,
     "lblTaskCategories": 86,
     "lblTaskName": 88,
+    "lblTitleStartScreen": 0,
     "lblTotalTasks": 21,
     "lblTotalTasksTitle": 24,
     "lblViewMultiple": 8,
@@ -333,7 +333,7 @@
   },
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.1371402,
+    "AnalysisLoadTime": 1.2270117,
     "ControlCount": {
       "8d8311d0ff634049bd67be38dff31524": 2,
       "button": 6,
@@ -354,7 +354,7 @@
       "slider": 1,
       "text": 1
     },
-    "DeserializationLoadTime": 2.6725066,
+    "DeserializationLoadTime": 1.9051369,
     "ErrorCount": 0
   }
 }

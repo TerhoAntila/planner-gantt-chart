@@ -199,7 +199,7 @@ scrPlans As screen:
             Y: =5
             ZIndex: =2
 
-    Label6 As label:
+    lblTitleStartScreen As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =Theme.Color.Dark
         DisabledColor: =RGBA(166, 166, 166, 1)
