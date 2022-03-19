@@ -1,0 +1,63 @@
+"'Emoji Picker' As CanvasComponent":
+    Emojis: =["", "🙂", "😀", "😉", "😂", "🤪", "🤓", "😎", "🙁", "👍", "👎", "👌", "👇", "☝️", "👏", "🤝", "🙏", "💪", "👈", "👉", "🖕"]
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =200
+    OnReset: |+
+        =Set(displayEmojis, false);
+        
+    Value: =galEmojis.Selected.Value
+    Width: =200
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    galEmojis As gallery.galleryHorizontal:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: ='Emoji Picker'.Height
+        Items: ='Emoji Picker'.Emojis
+        OnSelect: =Set(displayEmojis, false)
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =50
+        Visible: =displayEmojis
+        Width: ='Emoji Picker'.Width
+        WrapCount: =RoundDown(galEmojis.Width / galEmojis.TemplateWidth, 0)
+        ZIndex: =1
+
+        lblEmoji As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(219, 219, 219, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Value
+            Width: =50
+            ZIndex: =1
+
+    iconShowGrid As circle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(219, 219, 219, 1)
+        Height: =25
+        OnSelect: =Set(displayEmojis, true)
+        Visible: =!displayEmojis && Len(galEmojis.Selected.Value) = 0
+        Width: =25
+        X: =2
+        Y: =2
+        ZIndex: =2
+
+    lblSelectedEmoji As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =30
+        OnSelect: =Set(displayEmojis, true)
+        Size: =13
+        Text: =galEmojis.Selected.Value //selectedEmoji
+        Visible: =!displayEmojis
+        Width: =30
+        X: =2
+        ZIndex: =3
+

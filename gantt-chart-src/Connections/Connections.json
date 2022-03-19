@@ -1,0 +1,44 @@
+{
+  "4f02fe19-4760-4606-a156-5f8472ab2a54": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/3ce32b386173418eba9391d769fa9e1a",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1542/1.0.1542.2635/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4f02fe19-4760-4606-a156-5f8472ab2a54"
+  },
+  "d576e79a-2da7-4266-8ac9-fe527604960e": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_planner/connections/shared-planner-0db9ee08-03e8-4736-802b-c79e-83ee68ea",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Planner",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1513/1.0.1513.2549/planner/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_planner",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Planner"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d576e79a-2da7-4266-8ac9-fe527604960e"
+  }
+}
