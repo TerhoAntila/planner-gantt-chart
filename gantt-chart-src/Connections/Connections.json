@@ -1,6 +1,6 @@
 {
   "4f02fe19-4760-4606-a156-5f8472ab2a54": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/3ce32b386173418eba9391d769fa9e1a",
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/dceaa0bdeb024d1488640778ee7fc15c",
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -21,7 +21,7 @@
     "id": "4f02fe19-4760-4606-a156-5f8472ab2a54"
   },
   "d576e79a-2da7-4266-8ac9-fe527604960e": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_planner/connections/shared-planner-0db9ee08-03e8-4736-802b-c79e-83ee68ea",
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_planner/connections/1856b9a12ee148debc72f82926b56b26",
     "connectionParameters": {
       "sku": "Enterprise"
     },

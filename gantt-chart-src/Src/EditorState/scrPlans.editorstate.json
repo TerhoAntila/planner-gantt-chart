@@ -2595,7 +2595,14 @@
       "HoverBorderColor",
       "BorderStyle",
       "FocusedBorderColor",
-      "Fill",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
+        "InvariantPropertyName": "Fill",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "DisabledFill",
       "PressedFill",
       "HoverFill",
@@ -2608,7 +2615,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "Align",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Align",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "VerticalAlign",
       "X",
       "Y",

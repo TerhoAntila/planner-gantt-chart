@@ -200,14 +200,15 @@ scrPlans As screen:
             ZIndex: =2
 
     lblTitleStartScreen As label:
+        Align: =Align.Center
         BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =Theme.Color.Dark
+        Color: =White
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =Theme.Color.Dark
         FontWeight: =FontWeight.Semibold
-        Height: =75
+        Height: =60
         Size: =28
         Text: ="Select the plan you want to view"
-        Width: =1208
-        X: =108
+        Width: =1366
         ZIndex: =7
 
