@@ -1544,156 +1544,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scrGantt",
-                "type": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "scrGantt",
-                "type": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scrGantt",
-                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.ShowValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.ShowValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ShowValue",
-                "module": "scrGantt",
-                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-StateIndicationTextNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "scrGantt",
-                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.iconOpenTask.AccessibleLabel"
                 }
               ],
@@ -1988,6 +1838,156 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contAddTask.galAddButtons"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.ShowValue"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.ShowValue",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ShowValue",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-StateIndicationTextNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
