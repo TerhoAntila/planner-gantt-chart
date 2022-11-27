@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.galEmojis.AccessibleLabel"
+                  "fullyQualifiedName": "'Emoji Picker'.galEmojis.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.galEmojis.AccessibleLabel",
+                  "fullyQualifiedName": "'Emoji Picker'.galEmojis.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.galEmojis"
+                "type": "'Emoji Picker'.galEmojis"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.galEmojis.TabIndex"
+                  "fullyQualifiedName": "'Emoji Picker'.galEmojis.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.galEmojis.TabIndex",
+                  "fullyQualifiedName": "'Emoji Picker'.galEmojis.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.galEmojis"
+                "type": "'Emoji Picker'.galEmojis"
               }
             }
           ],
@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.lblSelectedEmoji.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Emoji Picker'.lblSelectedEmoji.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.lblSelectedEmoji.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Emoji Picker'.lblSelectedEmoji.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.lblSelectedEmoji"
+                "type": "'Emoji Picker'.lblSelectedEmoji"
               }
             }
           ],
@@ -104,19 +104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.lblSelectedEmoji.TabIndex"
+                  "fullyQualifiedName": "'Emoji Picker'.lblSelectedEmoji.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.lblSelectedEmoji.TabIndex",
+                  "fullyQualifiedName": "'Emoji Picker'.lblSelectedEmoji.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.lblSelectedEmoji"
+                "type": "'Emoji Picker'.lblSelectedEmoji"
               }
             }
           ],
@@ -134,19 +134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.iconShowGrid.AccessibleLabel"
+                  "fullyQualifiedName": "'Emoji Picker'.iconShowGrid.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.iconShowGrid.AccessibleLabel",
+                  "fullyQualifiedName": "'Emoji Picker'.iconShowGrid.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.iconShowGrid"
+                "type": "'Emoji Picker'.iconShowGrid"
               }
             }
           ],
@@ -164,19 +164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.iconShowGrid.TabIndex"
+                  "fullyQualifiedName": "'Emoji Picker'.iconShowGrid.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.iconShowGrid.TabIndex",
+                  "fullyQualifiedName": "'Emoji Picker'.iconShowGrid.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.iconShowGrid"
+                "type": "'Emoji Picker'.iconShowGrid"
               }
             }
           ],
@@ -2444,7 +2444,7 @@
               }
             }
           ],
-          "version": "1.321"
+          "version": "1.326"
         }
       }
     }

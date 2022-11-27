@@ -4,6 +4,7 @@
     "Emoji Picker": 2,
     "Hint": 3
   },
+  "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "addTaskDialog": 48,
     "addTaskEmojiPicker": 61,
@@ -139,14 +140,19 @@
     "viewMultipleButton": 22
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "03/31/2022 17:26:32",
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "11/27/2022 08:35:33",
   "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {
+    "4f02fe19-4760-4606-a156-5f8472ab2a54": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/a5ac24710aaa4747880be109354a48b2\"",
+    "d576e79a-2da7-4266-8ac9-fe527604960e": "\"/providers/microsoft.powerapps/apis/shared_planner/connections/d236a9821725443ca475c264af4f4daf\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "user-placeholder-image": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "user-placeholder-image": "https://docserverpwaprodneu.blob.core.windows.net/d030bd0a-bc9c-42d5-bbd9-6619e9b338d0-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=eC8N4M9ToTaPOBKgsV%2FwsmN9pi%2BlYfnB1yCLCho0YGQ%3D&spr=https&se=2022-04-01T17%3A30%3A19Z&sp=r"
+    "user-placeholder-image": "https://docserverpwaprodneu.blob.core.windows.net/565b72ef-5465-4f61-adb9-26752bff75f9-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=wUfzabHN0yFEH1qG%2BgiKDo6LDjUqJIXsrz8V7GxdeDA%3D&spr=https&se=2022-11-28T08%3A47%3A42Z&sp=r"
   },
   "OldLogoFileName": "grtrz15r.jpg",
   "OrderComponentMetadata": {
@@ -176,6 +182,7 @@
     "selectedSinglePlanColl": 6
   },
   "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 2,
@@ -331,9 +338,10 @@
     "Image-SampleImage": 0,
     "Image-user-placeholder-image": 1
   },
+  "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.1893418,
+    "AnalysisLoadTime": 1.050708,
     "ControlCount": {
       "8d8311d0ff634049bd67be38dff31524": 2,
       "button": 6,
@@ -354,7 +362,8 @@
       "slider": 1,
       "text": 1
     },
-    "DeserializationLoadTime": 2.6722689,
+    "DeserializationLoadTime": 1.7872645,
     "ErrorCount": 0
-  }
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }

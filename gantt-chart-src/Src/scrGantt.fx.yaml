@@ -784,7 +784,7 @@ scrGantt As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =32
             Size: =8
-            Text: ="Categories"
+            Text: ="Labels"
             Width: =79
             X: =canvas.X + canvas.Width
             ZIndex: =9
@@ -1432,7 +1432,7 @@ scrGantt As screen:
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Size: =12
-                    Text: ="Filter by category"
+                    Text: ="Filter by label"
                     Width: =187
                     ZIndex: =7
 
