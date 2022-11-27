@@ -1,4 +1,21 @@
 {
+  "3d92e059-7852-4ed6-9b13-1e089584eb85": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Planner",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1608/1.0.1608.3079/planner/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_planner"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Planner"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3d92e059-7852-4ed6-9b13-1e089584eb85"
+  },
   "4f02fe19-4760-4606-a156-5f8472ab2a54": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -18,25 +35,5 @@
     "dependencies": {},
     "dependents": [],
     "id": "4f02fe19-4760-4606-a156-5f8472ab2a54"
-  },
-  "d576e79a-2da7-4266-8ac9-fe527604960e": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Planner",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1513/1.0.1513.2549/planner/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_planner",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {},
-    "dataSources": [
-      "Planner"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "d576e79a-2da7-4266-8ac9-fe527604960e"
   }
 }

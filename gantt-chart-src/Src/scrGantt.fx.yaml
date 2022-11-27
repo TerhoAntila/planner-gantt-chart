@@ -1436,6 +1436,37 @@ scrGantt As screen:
                     Width: =187
                     ZIndex: =7
 
+                selectLabelsFilter As combobox:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    BorderThickness: =1
+                    ChevronBackground: =Theme.Color.Dark
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    Color: =Theme.Color.Dark
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["id"]
+                    FocusedBorderThickness: =0
+                    Height: =25
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    IsSearchable: =false
+                    Items: =CountRows( planDetails)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(32, 54, 71, 1)
+                    SearchFields: =["id"]
+                    SearchItems: =[]
+                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    SelectMultiple: =false
+                    Size: =10
+                    Width: =325
+                    X: =40
+                    Y: =40
+                    ZIndex: =8
+
             bucketFilter As groupContainer:
                 Height: =102
                 Width: =349
@@ -1633,4 +1664,19 @@ scrGantt As screen:
             X: =1296
             Y: =19
             ZIndex: =4
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Navigate(Screen1)
+        Size: =15
+        Text: ="Button"
+        X: =251
+        Y: =6
+        ZIndex: =16
 
