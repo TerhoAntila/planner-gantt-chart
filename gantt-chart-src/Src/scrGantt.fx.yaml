@@ -1355,7 +1355,7 @@ scrGantt As screen:
                     HoverFill: =RGBA(205, 209, 213, 1)
                     IsSearchable: =false
                     Items: |-
-                        =[
+                        =Table(
                             { Index: 1, Text: Coalesce(First(planDetails).categoryDescriptions.category1, "Category 1") },
                             { Index: 2, Text: Coalesce(First(planDetails).categoryDescriptions.category2, "Category 2") },
                             { Index: 3, Text: Coalesce(First(planDetails).categoryDescriptions.category3, "Category 3") },
@@ -1380,7 +1380,7 @@ scrGantt As screen:
                             { Index: 22, Text: Coalesce(First(planDetails).categoryDescriptions.category22, "Category 22") },
                             { Index: 23, Text: Coalesce(First(planDetails).categoryDescriptions.category23, "Category 23") },
                             { Index: 24, Text: Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24") }
-                        ]
+                        )
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
                     SearchFields: =["Text"]
@@ -1589,19 +1589,4 @@ scrGantt As screen:
             X: =1296
             Y: =19
             ZIndex: =4
-
-    Button2 As button:
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(100, 118, 132, 1)
-        FontWeight: =FontWeight.Semibold
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Navigate(Screen1)
-        Size: =15
-        Text: ="Button"
-        X: =251
-        Y: =6
-        ZIndex: =16
 
