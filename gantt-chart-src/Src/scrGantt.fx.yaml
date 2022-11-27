@@ -429,7 +429,9 @@ scrGantt As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =8
-                    Text: =Text(DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value - btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days), "d.m")
+                    Text: |-
+                        =Text(ThisItem.startDate, "d.m")
+                        /*Text(DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value - btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days), "d.m")*/
                     VerticalAlign: =VerticalAlign.Top
                     Visible: =!IsBlank(ThisItem.startDateTime)
                     Width: =33
@@ -467,9 +469,11 @@ scrGantt As screen:
                     PaddingTop: =0
                     Size: =8
                     Text: |-
-                        =Text(
+                        =If (Year(ThisItem.dueDateTime) > varSelectedYear, Text(ThisItem.dueDateTime, "d.m.yy"), Text(ThisItem.dueDateTime, "d.m"))
+                        /*
+                        Text(
                             DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value  + btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days),
-                            "[$-en-GB]d.m")
+                            "[$-en-GB]d.m")*/
                     Tooltip: =If(IsBlank(ThisItem.originalDueDate), "Due date for the task is missing, using current time!")
                     VerticalAlign: =VerticalAlign.Bottom
                     Width: =50
