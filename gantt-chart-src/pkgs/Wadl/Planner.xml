@@ -271,6 +271,25 @@
       <boolean name="AppliedCategories_category4_def" />
       <boolean name="AppliedCategories_category5_def" />
       <boolean name="AppliedCategories_category6_def" />
+      <boolean name="AppliedCategories_category7_def" />
+      <boolean name="AppliedCategories_category8_def" />
+      <boolean name="AppliedCategories_category9_def" />
+      <boolean name="AppliedCategories_category10_def" />
+      <boolean name="AppliedCategories_category11_def" />
+      <boolean name="AppliedCategories_category12_def" />
+      <boolean name="AppliedCategories_category13_def" />
+      <boolean name="AppliedCategories_category14_def" />
+      <boolean name="AppliedCategories_category15_def" />
+      <boolean name="AppliedCategories_category16_def" />
+      <boolean name="AppliedCategories_category17_def" />
+      <boolean name="AppliedCategories_category18_def" />
+      <boolean name="AppliedCategories_category19_def" />
+      <boolean name="AppliedCategories_category20_def" />
+      <boolean name="AppliedCategories_category21_def" />
+      <boolean name="AppliedCategories_category22_def" />
+      <boolean name="AppliedCategories_category23_def" />
+      <boolean name="AppliedCategories_category24_def" />
+      <boolean name="AppliedCategories_category25_def" />
       <object name="AppliedCategories">
         <property name="category1" type="boolean" />
         <property name="category2" type="boolean" />
@@ -278,6 +297,25 @@
         <property name="category4" type="boolean" />
         <property name="category5" type="boolean" />
         <property name="category6" type="boolean" />
+        <property name="category7" type="boolean" />
+        <property name="category8" type="boolean" />
+        <property name="category9" type="boolean" />
+        <property name="category10" type="boolean" />
+        <property name="category11" type="boolean" />
+        <property name="category12" type="boolean" />
+        <property name="category13" type="boolean" />
+        <property name="category14" type="boolean" />
+        <property name="category15" type="boolean" />
+        <property name="category16" type="boolean" />
+        <property name="category17" type="boolean" />
+        <property name="category18" type="boolean" />
+        <property name="category19" type="boolean" />
+        <property name="category20" type="boolean" />
+        <property name="category21" type="boolean" />
+        <property name="category22" type="boolean" />
+        <property name="category23" type="boolean" />
+        <property name="category24" type="boolean" />
+        <property name="category25" type="boolean" />
       </object>
       <string name="GetTask_Response_createdBy_def_user_def_displayName_def" />
       <string name="GetTask_Response_createdBy_def_user_def_id_def" />
@@ -421,6 +459,25 @@
       <string name="GetPlanDetails_Response_categoryDescriptions_def_category4_def" />
       <string name="GetPlanDetails_Response_categoryDescriptions_def_category5_def" />
       <string name="GetPlanDetails_Response_categoryDescriptions_def_category6_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category7_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category8_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category9_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category10_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category11_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category12_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category13_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category14_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category15_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category16_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category17_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category18_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category19_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category20_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category21_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category22_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category23_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category24_def" />
+      <string name="GetPlanDetails_Response_categoryDescriptions_def_category25_def" />
       <object name="GetPlanDetails_Response_categoryDescriptions_def">
         <property name="category1" type="string" />
         <property name="category2" type="string" />
@@ -428,6 +485,25 @@
         <property name="category4" type="string" />
         <property name="category5" type="string" />
         <property name="category6" type="string" />
+        <property name="category7" type="string" />
+        <property name="category8" type="string" />
+        <property name="category9" type="string" />
+        <property name="category10" type="string" />
+        <property name="category11" type="string" />
+        <property name="category12" type="string" />
+        <property name="category13" type="string" />
+        <property name="category14" type="string" />
+        <property name="category15" type="string" />
+        <property name="category16" type="string" />
+        <property name="category17" type="string" />
+        <property name="category18" type="string" />
+        <property name="category19" type="string" />
+        <property name="category20" type="string" />
+        <property name="category21" type="string" />
+        <property name="category22" type="string" />
+        <property name="category23" type="string" />
+        <property name="category24" type="string" />
+        <property name="category25" type="string" />
       </object>
       <string name="GetPlanDetails_Response_id_def" />
       <object name="GetPlanDetails_Response">
@@ -470,7 +546,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the task to update." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="GetTaskV2" siena:isDeprecated="false" siena:family="GetTask" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="GetTaskV2" actionName="GetTask_V2" siena:isDeprecated="false" siena:family="GetTask" siena:revision="2" siena:status="Production">
         <doc title="Get a task&#xA;Get an existing Planner task." />
         <request />
         <response>
@@ -483,7 +559,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the task to delete." />
       </param>
-      <method siena:requiresAuthentication="true" name="DELETE" id="DeleteTask" siena:isDeprecated="false" siena:family="DeleteTask" siena:revision="1" siena:status="Preview">
+      <method siena:requiresAuthentication="true" name="DELETE" id="DeleteTask" actionName="DeleteTask" siena:isDeprecated="false" siena:family="DeleteTask" siena:revision="1" siena:status="Preview">
         <doc title="Delete a task&#xA;Deletes an existing Planner task." />
         <request />
       </method>
@@ -493,7 +569,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the task to update." />
       </param>
-      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTaskV2" siena:isDeprecated="false" siena:family="UpdateTask" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTaskV2" actionName="UpdateTask_V2" siena:isDeprecated="false" siena:family="UpdateTask" siena:revision="2" siena:status="Production">
         <doc title="Update a task&#xA;Update an existing Planner task." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -522,7 +598,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the task to update." />
       </param>
-      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTaskV3" siena:isDeprecated="false" siena:family="UpdateTask" siena:revision="3" siena:status="Preview">
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTaskV3" actionName="UpdateTask_V3" siena:isDeprecated="false" siena:family="UpdateTask" siena:revision="3" siena:status="Preview">
         <doc title="Update a task (V2)&#xA;Update an existing Planner task." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -544,7 +620,7 @@
     </resource>
     <resource path="/{connectionId}/v2/v1.0/planner/tasks">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="POST" id="CreateTaskV3" visibility="important" siena:isDeprecated="false" siena:family="CreateTask" siena:revision="3" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="POST" id="CreateTaskV3" actionName="CreateTask_V3" visibility="important" siena:isDeprecated="false" siena:family="CreateTask" siena:revision="3" siena:status="Production">
         <doc title="Create a task&#xA;Create a new task in Planner." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -568,7 +644,7 @@
     </resource>
     <resource path="/{connectionId}/v2/beta/planner/tasks">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="POST" id="CreateTaskV4" visibility="important" siena:isDeprecated="false" siena:family="CreateTask" siena:revision="4" siena:status="Preview">
+      <method siena:requiresAuthentication="true" name="POST" id="CreateTaskV4" actionName="CreateTask_V4" visibility="important" siena:isDeprecated="false" siena:family="CreateTask" siena:revision="4" siena:status="Preview">
         <doc title="Create a task&#xA;Create a new task in Planner." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -596,7 +672,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the plan." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="ListTasksV3" siena:isDeprecated="false" siena:family="ListTasks" siena:revision="3" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListTasksV3" actionName="ListTasks_V3" siena:isDeprecated="false" siena:family="ListTasks" siena:revision="3" siena:status="Production">
         <doc title="List tasks&#xA;List the tasks in a plan." />
         <request>
           <param style="query" name="groupId" type="xs:string" required="true">
@@ -610,7 +686,7 @@
     </resource>
     <resource path="/{connectionId}/v1.0/me/planner/tasks">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="ListMyTasksV2" siena:isDeprecated="false" siena:family="ListMyTasks" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListMyTasksV2" actionName="ListMyTasks_V2" siena:isDeprecated="false" siena:family="ListMyTasks" siena:revision="2" siena:status="Production">
         <doc title="List my tasks&#xA;List the tasks assigned to me." />
         <request />
         <response>
@@ -623,7 +699,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the task to update." />
       </param>
-      <method siena:requiresAuthentication="true" name="PATCH" id="UnassignUsers" siena:isDeprecated="false">
+      <method siena:requiresAuthentication="true" name="PATCH" id="UnassignUsers" actionName="UnassignUsers" siena:isDeprecated="false">
         <doc title="Remove assignees from a task&#xA;Remove assignees from an existing Planner task." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -643,7 +719,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the task to update." />
       </param>
-      <method siena:requiresAuthentication="true" name="PATCH" id="AssignUsers" siena:isDeprecated="false">
+      <method siena:requiresAuthentication="true" name="PATCH" id="AssignUsers" actionName="AssignUsers" siena:isDeprecated="false">
         <doc title="Add assignees to a task&#xA;Add assignees to an existing Planner task." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -663,7 +739,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the plan." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="ListBucketsV3" siena:isDeprecated="false" siena:family="ListBuckets" siena:revision="3" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListBucketsV3" actionName="ListBuckets_V3" siena:isDeprecated="false" siena:family="ListBuckets" siena:revision="3" siena:status="Production">
         <doc title="List buckets&#xA;List the buckets in a plan." />
         <request>
           <param style="query" name="groupId" type="xs:string" required="true">
@@ -677,7 +753,7 @@
     </resource>
     <resource path="/{connectionId}/v2/v1.0/planner/buckets">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="POST" id="CreateBucketV2" siena:isDeprecated="false" siena:family="CreateBucket" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="POST" id="CreateBucketV2" actionName="CreateBucket_V2" siena:isDeprecated="false" siena:family="CreateBucket" siena:revision="2" siena:status="Production">
         <doc title="Create a bucket&#xA;Create a bucket in Planner for the specified plan and group." />
         <request>
           <representation mediaType="application/json">
@@ -696,7 +772,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the task to update." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="GetTaskDetailsV2" visibility="advanced" siena:isDeprecated="false" siena:family="GetTaskDetails" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="GetTaskDetailsV2" actionName="GetTaskDetails_V2" visibility="advanced" siena:isDeprecated="false" siena:family="GetTaskDetails" siena:revision="2" siena:status="Production">
         <doc title="Get task details&#xA;Get the task details for an existing task." />
         <request />
         <response>
@@ -709,7 +785,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the task to update." />
       </param>
-      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTaskDetailsV2" visibility="advanced" siena:isDeprecated="false" siena:family="UpdateTaskDetails" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTaskDetailsV2" actionName="UpdateTaskDetails_V2" visibility="advanced" siena:isDeprecated="false" siena:family="UpdateTaskDetails" siena:revision="2" siena:status="Production">
         <doc title="Update task details&#xA;Update the task details for an existing task." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -731,7 +807,7 @@
       <param style="template" name="groupId" type="xs:string" required="true">
         <doc title="Id of the group." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="ListGroupPlans" siena:isDeprecated="false" siena:family="ListGroupPlans" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListGroupPlans" actionName="ListGroupPlans" siena:isDeprecated="false" siena:family="ListGroupPlans" siena:revision="1" siena:status="Production">
         <doc title="List plans for a group&#xA;List plans owned by the group specified." />
         <request />
         <response>
@@ -744,7 +820,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifer of the task." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="GetTask" siena:isDeprecated="true" siena:family="GetTask" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="GetTask" actionName="GetTask" siena:isDeprecated="true" siena:family="GetTask" siena:revision="1" siena:status="Production">
         <doc title="Get a task&#xA;Get an existing Planner task." />
         <request />
         <response>
@@ -757,7 +833,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the tast to update." />
       </param>
-      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTask" siena:isDeprecated="true" siena:family="UpdateTask" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTask" actionName="UpdateTask" siena:isDeprecated="true" siena:family="UpdateTask" siena:revision="1" siena:status="Production">
         <doc title="Update a task&#xA;Update an existing Planner task." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -785,7 +861,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the plan." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="ListBuckets" siena:isDeprecated="true" siena:family="ListBuckets" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListBuckets" actionName="ListBuckets" siena:isDeprecated="true" siena:family="ListBuckets" siena:revision="1" siena:status="Production">
         <doc title="List buckets&#xA;List the buckets in a plan." />
         <request />
         <response>
@@ -795,7 +871,7 @@
     </resource>
     <resource path="/{connectionId}/beta/planner/tasks">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="POST" id="CreateTask" visibility="important" siena:isDeprecated="true" siena:family="CreateTask" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="POST" id="CreateTask" actionName="CreateTask" visibility="important" siena:isDeprecated="true" siena:family="CreateTask" siena:revision="1" siena:status="Production">
         <doc title="Create a task&#xA;Create a new task in Planner." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -820,7 +896,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the plan." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="ListTasks" siena:isDeprecated="true" siena:family="ListTasks" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListTasks" actionName="ListTasks" siena:isDeprecated="true" siena:family="ListTasks" siena:revision="1" siena:status="Production">
         <doc title="List tasks&#xA;List the tasks in a plan." />
         <request />
         <response>
@@ -830,7 +906,7 @@
     </resource>
     <resource path="/{connectionId}/beta/me/planner/tasks">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="ListMyTasks" siena:isDeprecated="true" siena:family="ListMyTasks" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListMyTasks" actionName="ListMyTasks" siena:isDeprecated="true" siena:family="ListMyTasks" siena:revision="1" siena:status="Production">
         <doc title="List my tasks&#xA;List the tasks assigned to me." />
         <request />
         <response>
@@ -840,7 +916,7 @@
     </resource>
     <resource path="/{connectionId}/beta/me/planner/plans">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="ListMyPlans" siena:isDeprecated="true" siena:family="ListMyPlans" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListMyPlans" actionName="ListMyPlans" siena:isDeprecated="true" siena:family="ListMyPlans" siena:revision="1" siena:status="Production">
         <doc title="List my plans&#xA;List the plans the user has subscribed to." />
         <request />
         <response>
@@ -853,7 +929,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifer of the task." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="GetTaskDetails" visibility="advanced" siena:isDeprecated="true" siena:family="GetTaskDetails" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="GetTaskDetails" actionName="GetTaskDetails" visibility="advanced" siena:isDeprecated="true" siena:family="GetTaskDetails" siena:revision="1" siena:status="Production">
         <doc title="Get task details&#xA;Get the task details for an existing task." />
         <request />
         <response>
@@ -866,7 +942,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifer of the task." />
       </param>
-      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTaskDetails" visibility="advanced" siena:isDeprecated="true" siena:family="UpdateTaskDetails" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateTaskDetails" actionName="UpdateTaskDetails" visibility="advanced" siena:isDeprecated="true" siena:family="UpdateTaskDetails" siena:revision="1" siena:status="Production">
         <doc title="Update task details&#xA;Update the task details for an existing task." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -888,7 +964,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the plan." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="ListBucketsV2" siena:isDeprecated="true" siena:family="ListBuckets" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListBucketsV2" actionName="ListBuckets_V2" siena:isDeprecated="true" siena:family="ListBuckets" siena:revision="2" siena:status="Production">
         <doc title="List buckets&#xA;List the buckets in a plan." />
         <request />
         <response>
@@ -898,7 +974,7 @@
     </resource>
     <resource path="/{connectionId}/v1.0/planner/buckets">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="POST" id="CreateBucket" siena:isDeprecated="true" siena:family="CreateBucket" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="POST" id="CreateBucket" actionName="CreateBucket" siena:isDeprecated="true" siena:family="CreateBucket" siena:revision="1" siena:status="Production">
         <doc title="Create a bucket&#xA;Create a bucket in Planner." />
         <request>
           <representation mediaType="application/json">
@@ -913,7 +989,7 @@
     </resource>
     <resource path="/{connectionId}/v1.0/planner/tasks">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="POST" id="CreateTaskV2" visibility="important" siena:isDeprecated="true" siena:family="CreateTask" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="POST" id="CreateTaskV2" actionName="CreateTask_V2" visibility="important" siena:isDeprecated="true" siena:family="CreateTask" siena:revision="2" siena:status="Production">
         <doc title="Create a task&#xA;Create a new task in Planner." />
         <request>
           <param style="header" name="prefer" type="xs:string" required="true" fixed=" return=representation">
@@ -938,7 +1014,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique identifier of the plan." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="ListTasksV2" siena:isDeprecated="true" siena:family="ListTasks" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListTasksV2" actionName="ListTasks_V2" siena:isDeprecated="true" siena:family="ListTasks" siena:revision="2" siena:status="Production">
         <doc title="List tasks&#xA;List the tasks in a plan." />
         <request />
         <response>
@@ -948,7 +1024,7 @@
     </resource>
     <resource path="/{connectionId}/v1.0/me/planner/plans">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="ListMyPlansV2" siena:isDeprecated="true" siena:family="ListMyPlans" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ListMyPlansV2" actionName="ListMyPlans_V2" siena:isDeprecated="true" siena:family="ListMyPlans" siena:revision="2" siena:status="Production">
         <doc title="List my plans&#xA;List the plans the user has subscribed to." />
         <request />
         <response>
@@ -961,7 +1037,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="The unique plan id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="GetPlanDetails" siena:isDeprecated="false" siena:revision="1" siena:status="Preview">
+      <method siena:requiresAuthentication="true" name="GET" id="GetPlanDetails" actionName="GetPlanDetails" siena:isDeprecated="false" siena:revision="1" siena:status="Preview">
         <doc title="Get plan details&#xA;Get plan details where the task belongs to" />
         <request />
         <response>

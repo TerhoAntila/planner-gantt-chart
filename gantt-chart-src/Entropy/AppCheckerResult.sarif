@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.galEmojis.AccessibleLabel"
+                  "fullyQualifiedName": "'Emoji Picker'.galEmojis.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.galEmojis.AccessibleLabel",
+                  "fullyQualifiedName": "'Emoji Picker'.galEmojis.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.galEmojis"
+                "type": "'Emoji Picker'.galEmojis"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.galEmojis.TabIndex"
+                  "fullyQualifiedName": "'Emoji Picker'.galEmojis.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.galEmojis.TabIndex",
+                  "fullyQualifiedName": "'Emoji Picker'.galEmojis.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.galEmojis"
+                "type": "'Emoji Picker'.galEmojis"
               }
             }
           ],
@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.lblSelectedEmoji.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Emoji Picker'.lblSelectedEmoji.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.lblSelectedEmoji.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Emoji Picker'.lblSelectedEmoji.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.lblSelectedEmoji"
+                "type": "'Emoji Picker'.lblSelectedEmoji"
               }
             }
           ],
@@ -104,19 +104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.lblSelectedEmoji.TabIndex"
+                  "fullyQualifiedName": "'Emoji Picker'.lblSelectedEmoji.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.lblSelectedEmoji.TabIndex",
+                  "fullyQualifiedName": "'Emoji Picker'.lblSelectedEmoji.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.lblSelectedEmoji"
+                "type": "'Emoji Picker'.lblSelectedEmoji"
               }
             }
           ],
@@ -134,19 +134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.iconShowGrid.AccessibleLabel"
+                  "fullyQualifiedName": "'Emoji Picker'.iconShowGrid.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.iconShowGrid.AccessibleLabel",
+                  "fullyQualifiedName": "'Emoji Picker'.iconShowGrid.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.iconShowGrid"
+                "type": "'Emoji Picker'.iconShowGrid"
               }
             }
           ],
@@ -164,19 +164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Emoji Picker.iconShowGrid.TabIndex"
+                  "fullyQualifiedName": "'Emoji Picker'.iconShowGrid.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Emoji Picker.iconShowGrid.TabIndex",
+                  "fullyQualifiedName": "'Emoji Picker'.iconShowGrid.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Emoji Picker",
-                "type": "Emoji Picker.iconShowGrid"
+                "type": "'Emoji Picker'.iconShowGrid"
               }
             }
           ],
@@ -597,6 +597,66 @@
                 "member": "TabIndex",
                 "module": "scrPlans",
                 "type": "scrPlans.refresh.iconRefresh"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrPlans.myTasks.iconUser.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrPlans.myTasks.iconUser.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scrPlans",
+                "type": "scrPlans.myTasks.iconUser"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrPlans.myTasks.iconUser.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrPlans.myTasks.iconUser.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scrPlans",
+                "type": "scrPlans.myTasks.iconUser"
               }
             }
           ],
@@ -2114,19 +2174,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scrGantt.footer.bottomFilters.categoryFilters.cbCatFilter1.FocusedBorderThickness"
+                  "fullyQualifiedName": "scrGantt.footer.bottomFilters.categoryFilters.selectLabelsFilter.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scrGantt.footer.bottomFilters.categoryFilters.cbCatFilter1.FocusedBorderThickness",
+                  "fullyQualifiedName": "scrGantt.footer.bottomFilters.categoryFilters.selectLabelsFilter.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.bottomFilters.categoryFilters.selectLabelsFilter"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.bottomFilters.categoryFilters.selectLabelsFilter.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.bottomFilters.categoryFilters.selectLabelsFilter.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "scrGantt",
-                "type": "scrGantt.footer.bottomFilters.categoryFilters.cbCatFilter1"
+                "type": "scrGantt.footer.bottomFilters.categoryFilters.selectLabelsFilter"
               }
             }
           ],
@@ -2324,6 +2414,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "scrGantt.monthSelector.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.monthSelector.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scrGantt",
+                "type": "scrGantt.monthSelector.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.monthSelector.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.monthSelector.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scrGantt",
+                "type": "scrGantt.monthSelector.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "scrGantt"
                 }
               ],
@@ -2440,11 +2590,11 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"scrGantt\" is 379, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"scrGantt\" is 375, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
-          "version": "1.321"
+          "version": "1.326"
         }
       }
     }

@@ -25,7 +25,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "button",
     "OverridableProperties": {},
-    "Version": "2.1.0"
+    "Version": "2.2.0"
   },
   "checkbox": {
     "CustomGroupControlTemplateName": "",
@@ -53,7 +53,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "circle",
     "OverridableProperties": {},
-    "Version": "2.2.0"
+    "Version": "2.3.0"
   },
   "combobox": {
     "CustomGroupControlTemplateName": "",
@@ -81,7 +81,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "datepicker",
     "OverridableProperties": {},
-    "Version": "2.5.0"
+    "Version": "2.6.0"
   },
   "dropdown": {
     "CustomGroupControlTemplateName": "",
@@ -109,7 +109,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "gallery",
     "OverridableProperties": {},
-    "Version": "2.12.0"
+    "Version": "2.13.2"
   },
   "galleryTemplate": {
     "CustomGroupControlTemplateName": "",
@@ -151,7 +151,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "icon",
     "OverridableProperties": {},
-    "Version": "2.4.0"
+    "Version": "2.5.0"
   },
   "image": {
     "CustomGroupControlTemplateName": "",
@@ -165,7 +165,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "image",
     "OverridableProperties": {},
-    "Version": "2.2.0"
+    "Version": "2.2.2"
   },
   "label": {
     "CustomGroupControlTemplateName": "",
@@ -179,7 +179,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "label",
     "OverridableProperties": {},
-    "Version": "2.4.0"
+    "Version": "2.5.1"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
@@ -193,7 +193,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "rectangle",
     "OverridableProperties": {},
-    "Version": "2.2.0"
+    "Version": "2.3.0"
   },
   "screen": {
     "CustomGroupControlTemplateName": "",
@@ -235,6 +235,6 @@
     "LastModifiedTimestamp": "0",
     "Name": "text",
     "OverridableProperties": {},
-    "Version": "2.3.1"
+    "Version": "2.3.2"
   }
 }

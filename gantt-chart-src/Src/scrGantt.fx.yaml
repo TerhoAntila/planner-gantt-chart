@@ -16,7 +16,10 @@ scrGantt As screen:
         Clear(openAssigneePanesTaskIds);
         Clear(colTaskChanges); Set(varOpenTask, Blank());
         
-        // Initialize selecte year and month range
+        // Clear labels filter
+        Reset(selectLabelsFilter);
+        
+        // Initialize selected year and month range
         Set(varSelectedYear, Year(Now()));
         Set(varSelectedStartMonth, Month(Now()) - 1);
         If(varSelectedStartMonth > 8, Set(varSelectedStartMonth, 8));
@@ -25,14 +28,24 @@ scrGantt As screen:
         Set(varStartDate, Date(varSelectedYear, varSelectedStartMonth, 1));
         Set(varEndDate, DateAdd(Date(varSelectedYear, varSelectedEndMonth + 1, 1), -1, Days));
         
-        // Get all tasks of selected plans, plan details and buckets
-        ForAll(idsOfSelectedPlans,
-            Concurrent(
-                Collect(planTasks, Planner.ListTasksV3(id, "").value),
-                Collect(planDetails, Planner.GetPlanDetails(id)),
-                Collect(selectedPlanIds, id),
-                Collect(bucketsOfPlans, 
-                    Planner.ListBucketsV3(id, "").value
+        If (myTasks, 
+            // If my tasks only, use different method for fetching tasks
+            Collect(planTasks, Planner.ListMyTasksV2().value);
+            ForAll(
+                Distinct(planTasks, planId),
+                Collect(planDetails, Planner.GetPlanDetails(Result));
+                Collect(selectedPlanIds, Result)
+            ),
+        
+            // Otherwise get all tasks of selected plans, plan details and buckets
+            ForAll(idsOfSelectedPlans,
+                Concurrent(
+                    Collect(planTasks, Planner.ListTasksV3(id, "").value),
+                    Collect(planDetails, Planner.GetPlanDetails(id)),
+                    Collect(selectedPlanIds, id),
+                    Collect(bucketsOfPlans, 
+                        Planner.ListBucketsV3(id, "").value
+                    )
                 )
             )
         );
@@ -302,7 +315,25 @@ scrGantt As screen:
                                         If(appliedCategories.category3, First(Filter(planDetails, id = planId)).categoryDescriptions.category3, ""),
                                         If(appliedCategories.category4, First(Filter(planDetails, id = planId)).categoryDescriptions.category4, ""),
                                         If(appliedCategories.category5, First(Filter(planDetails, id = planId)).categoryDescriptions.category5, ""),
-                                        If(appliedCategories.category6, First(Filter(planDetails, id = planId)).categoryDescriptions.category6, "")
+                                        If(appliedCategories.category6, First(Filter(planDetails, id = planId)).categoryDescriptions.category6, ""),
+                                        If(appliedCategories.category7, First(Filter(planDetails, id = planId)).categoryDescriptions.category7, ""),
+                                        If(appliedCategories.category8, First(Filter(planDetails, id = planId)).categoryDescriptions.category8, ""),
+                                        If(appliedCategories.category9, First(Filter(planDetails, id = planId)).categoryDescriptions.category9, ""),
+                                        If(appliedCategories.category10, First(Filter(planDetails, id = planId)).categoryDescriptions.category10, ""),
+                                        If(appliedCategories.category11, First(Filter(planDetails, id = planId)).categoryDescriptions.category11, ""),
+                                        If(appliedCategories.category12, First(Filter(planDetails, id = planId)).categoryDescriptions.category12, ""),
+                                        If(appliedCategories.category13, First(Filter(planDetails, id = planId)).categoryDescriptions.category13, ""),
+                                        If(appliedCategories.category14, First(Filter(planDetails, id = planId)).categoryDescriptions.category14, ""),
+                                        If(appliedCategories.category15, First(Filter(planDetails, id = planId)).categoryDescriptions.category15, ""),
+                                        If(appliedCategories.category16, First(Filter(planDetails, id = planId)).categoryDescriptions.category16, ""),
+                                        If(appliedCategories.category17, First(Filter(planDetails, id = planId)).categoryDescriptions.category17, ""),
+                                        If(appliedCategories.category18, First(Filter(planDetails, id = planId)).categoryDescriptions.category18, ""),
+                                        If(appliedCategories.category19, First(Filter(planDetails, id = planId)).categoryDescriptions.category19, ""),
+                                        If(appliedCategories.category20, First(Filter(planDetails, id = planId)).categoryDescriptions.category20, ""),
+                                        If(appliedCategories.category21, First(Filter(planDetails, id = planId)).categoryDescriptions.category21, ""),
+                                        If(appliedCategories.category22, First(Filter(planDetails, id = planId)).categoryDescriptions.category22, ""),
+                                        If(appliedCategories.category23, First(Filter(planDetails, id = planId)).categoryDescriptions.category23, ""),
+                                        If(appliedCategories.category24, First(Filter(planDetails, id = planId)).categoryDescriptions.category24, "")
                                     ],
                                     Len(Value) > 0
                                 ),
@@ -315,18 +346,38 @@ scrGantt As screen:
                                 // Include items based on top plan selection
                                 CountRows(Filter(selectedPlanIds, Value = planId)) > 0 &&
                                 // Only include tasks for the selected range -> either start or end date 
-                                (dueDateTime <= varEndDate && dueDateTime >= varStartDate || startDate <= varEndDate && startDate >= varStartDate) &&
+                                (dueDateTime >= varStartDate && startDate <= varEndDate) &&
                                 (!cbExcludeCompleted.Value || IsBlank(completedDateTime)) &&
                                 // Check for category filters
                                 (
                                     CountRows(selectedPlanIds) <> 1 ||
                                     // Category filters apply
-                                    (!cbCatFilter1.Value || appliedCategories.category1) &&
-                                    (!cbCatFilter2.Value || appliedCategories.category2) &&
-                                    (!cbCatFilter3.Value || appliedCategories.category3) &&
-                                    (!cbCatFilter4.Value || appliedCategories.category4) &&
-                                    (!cbCatFilter5.Value || appliedCategories.category5) &&
-                                    (!cbCatFilter6.Value || appliedCategories.category6) 
+                                    If (IsBlank(selectLabelsFilter.Selected) || CountRows(selectLabelsFilter.SelectedItems) = 0, true, 
+                                        appliedCategories.category1 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 1)) = 1 ||
+                                        appliedCategories.category2 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 2)) = 1 ||
+                                        appliedCategories.category3 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 3)) = 1 ||
+                                        appliedCategories.category4 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 4)) = 1 ||
+                                        appliedCategories.category5 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 5)) = 1 ||
+                                        appliedCategories.category6 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 6)) = 1 ||
+                                        appliedCategories.category7 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 7)) = 1 ||
+                                        appliedCategories.category8 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 8)) = 1 ||
+                                        appliedCategories.category9 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 9)) = 1 ||
+                                        appliedCategories.category10 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 10)) = 1 ||
+                                        appliedCategories.category11 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 11)) = 1 ||
+                                        appliedCategories.category12 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 12)) = 1 ||
+                                        appliedCategories.category13 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 13)) = 1 ||
+                                        appliedCategories.category14 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 14)) = 1 ||
+                                        appliedCategories.category15 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 15)) = 1 ||
+                                        appliedCategories.category16 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 16)) = 1 ||
+                                        appliedCategories.category17 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 17)) = 1 ||
+                                        appliedCategories.category18 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 18)) = 1 ||
+                                        appliedCategories.category19 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 19)) = 1 ||
+                                        appliedCategories.category20 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 20)) = 1 ||
+                                        appliedCategories.category21 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 21)) = 1 ||
+                                        appliedCategories.category22 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 22)) = 1 ||
+                                        appliedCategories.category23 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 23)) = 1 ||
+                                        appliedCategories.category24 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 24)) = 1 
+                                    )
                                 ) &&
                                 // Check for bucket filter
                                 (
@@ -360,7 +411,7 @@ scrGantt As screen:
                     Text: =ThisItem.title
                     Tooltip: =ThisItem.title
                     Visible: =!IsBlank(ThisItem.id)
-                    Width: =btnTask.X + btnTask.Width
+                    Width: =Min(btnTask.X + btnTask.Width, canvas.Width + lblBucketHeading.Width)
                     Wrap: =false
                     X: =2
                     Y: =3
@@ -378,10 +429,14 @@ scrGantt As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =8
-                    Text: =Text(DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value - btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days), "d.m")
+                    Text: |-
+                        =If (Year(ThisItem.startDate) < varSelectedYear, Text(ThisItem.startDate, "d.m.yy"), Text(ThisItem.startDate, "d.m"))
+                        /*
+                        Text(DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value - btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days), "d.m")
+                        */
                     VerticalAlign: =VerticalAlign.Top
                     Visible: =!IsBlank(ThisItem.startDateTime)
-                    Width: =33
+                    Width: =44
                     X: |-
                         = Max(
                              If(
@@ -416,9 +471,11 @@ scrGantt As screen:
                     PaddingTop: =0
                     Size: =8
                     Text: |-
-                        =Text(
+                        =If (Year(ThisItem.dueDateTime) > varSelectedYear, Text(ThisItem.dueDateTime, "d.m.yy"), Text(ThisItem.dueDateTime, "d.m"))
+                        /*
+                        Text(
                             DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value  + btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days),
-                            "[$-en-GB]d.m")
+                            "[$-en-GB]d.m")*/
                     Tooltip: =If(IsBlank(ThisItem.originalDueDate), "Due date for the task is missing, using current time!")
                     VerticalAlign: =VerticalAlign.Bottom
                     Width: =50
@@ -478,7 +535,11 @@ scrGantt As screen:
                     Height: =43
                     OnSelect: =Select(Parent)
                     Size: =6
-                    Text: =First(Filter(bucketsOfPlans, id = ThisItem.bucketId)).name
+                    Text: |-
+                        =If (!myTasks,
+                            First(Filter(bucketsOfPlans, id = ThisItem.bucketId)).name,
+                            First(Filter(collAllUserPlans, ThisItem.planId = id)).title
+                        )
                     Width: =79
                     Y: =1
                     ZIndex: =6
@@ -565,32 +626,38 @@ scrGantt As screen:
                         Height: =20
                         Max: =Self.Width / Value(lblSingleDayWidth.Text)
                         OnChange: |-
-                            =RemoveIf(colTaskChanges, taskId = ThisItem.id && changeType = "POSITION_CHANGE");
-                            If (Self.Value <>
-                                With({
-                                        dayWidth: Value(lblSingleDayWidth.Text),
-                                        leftOffset: canvas.X
-                                    },
+                            =If (!sliderTaskPosition.Visible,
+                                // Slider not even visible, no change
+                                false,
+                                // Collect change
+                                RemoveIf(colTaskChanges, taskId = ThisItem.id && changeType = "POSITION_CHANGE");
+                                If (Self.Value <>
                                     With({
-                                            currentTaskX: (ThisItem.startDate - varStartDate - 1) * dayWidth 
-                                                + dayWidth
+                                            dayWidth: Value(lblSingleDayWidth.Text),
+                                            leftOffset: canvas.X
                                         },
-                                        currentTaskX / dayWidth + DateDiff(ThisItem.startDate, ThisItem.dueDateTime, Days) / 2
+                                        With({
+                                                currentTaskX: (ThisItem.startDate - varStartDate - 1) * dayWidth 
+                                                    + dayWidth
+                                            },
+                                            currentTaskX / dayWidth + DateDiff(ThisItem.startDate, ThisItem.dueDateTime, Days) / 2
+                                        )
+                                    ) && !IsBlank(ThisItem.id),
+                                    Collect(colTaskChanges,
+                                        {
+                                            taskId: ThisItem.id,
+                                            value: Self.Value,
+                                            changeType: "POSITION_CHANGE",
+                                            taskItem: ThisItem
+                                        }
                                     )
-                                ) && !IsBlank(ThisItem.id),
-                                Collect(colTaskChanges,
-                                    {
-                                        taskId: ThisItem.id,
-                                        value: Self.Value,
-                                        changeType: "POSITION_CHANGE",
-                                        taskItem: ThisItem
-                                    }
                                 )
                             )
                         RailFill: =RGBA(128, 130, 133, 1)
                         RailThickness: =0
                         ShowValue: =false
                         ValueFill: =Theme.Color.TaskBackground
+                        Visible: =ThisItem.startDate > varStartDate && ThisItem.dueDateTime < varEndDate
                         Width: =canvas.Width
                         Y: =15
                         ZIndex: =3
@@ -733,8 +800,8 @@ scrGantt As screen:
                     Height: =45
                     OnSelect: =Select(Parent)
                     Size: =6
-                    Text: =Concat(ThisItem.categories, Value, ", ")
-                    Width: =79
+                    Text: =If (myTasks, "", Concat(ThisItem.categories, Value, ", "))
+                    Width: =82
                     X: =lblLabelsTitle.X
                     ZIndex: =11
 
@@ -763,7 +830,7 @@ scrGantt As screen:
             FontWeight: =FontWeight.Semibold
             Height: =32
             Size: =8
-            Text: ="Bucket"
+            Text: =If (myTasks, "Plan", "Bucket")
             Width: =79
             X: =1
             ZIndex: =7
@@ -784,7 +851,8 @@ scrGantt As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =32
             Size: =8
-            Text: ="Categories"
+            Text: ="Labels"
+            Visible: =!myTasks
             Width: =79
             X: =canvas.X + canvas.Width
             ZIndex: =9
@@ -861,7 +929,7 @@ scrGantt As screen:
             ShowScrollbar: =false
             TemplatePadding: =0
             TemplateSize: =galMonthSelector.Width / 12
-            Width: =883
+            Width: =850
             X: =483
             ZIndex: =2
 
@@ -880,12 +948,58 @@ scrGantt As screen:
                 Width: =galMonthSelector.TemplateWidth + 2
                 ZIndex: =1
 
+        Icon1 As icon.ChevronRight:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Color: =Black
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =Theme.Color.LighterDark
+            Height: =36
+            Icon: =Icon.ChevronRight
+            OnSelect: |-
+                =Set(varSelectedYear, varSelectedYear + 1);
+                Set(varTempOldStartMonth, varSelectedStartMonth);
+                Set(varSelectedStartMonth, 1);
+                Set(varSelectedEndMonth, varSelectedStartMonth + (varSelectedEndMonth - varTempOldStartMonth));
+                Set(varStartDate, Date(varSelectedYear, varSelectedStartMonth, 1));
+                Set(varEndDate, DateAdd(Date(varSelectedYear, varSelectedEndMonth + 1, 1), -1, Days));
+                
+                /*
+                If (ThisItem.Value < varSelectedStartMonth,
+                    // Clicked on left area -> decrease the start month
+                    Set(varSelectedStartMonth, ThisItem.Value),
+                    If (ThisItem.Value > varSelectedEndMonth,
+                        // Clicked on the right area -> increase the end month
+                        Set(varSelectedEndMonth, ThisItem.Value),
+                        If (ThisItem.Value = varSelectedStartMonth || ThisItem.Value = varSelectedEndMonth,
+                            // Either clicked left or right border
+                            If (ThisItem.Value = varSelectedStartMonth, Set(varSelectedStartMonth, varSelectedStartMonth + 1), Set(varSelectedEndMonth, varSelectedEndMonth - 1)),
+                            // Clicked in between -> update closest
+                            If (ThisItem.Value - varSelectedStartMonth < varSelectedEndMonth - ThisItem.Value,
+                                Set(varSelectedStartMonth, ThisItem.Value),
+                                Set(varSelectedEndMonth, ThisItem.Value)
+                            )
+                        )
+                    )
+                );
+                Set(varStartDate, Date(varSelectedYear, varSelectedStartMonth, 1));
+                Set(varEndDate, DateAdd(Date(varSelectedYear, varSelectedEndMonth + 1, 1), -1, Days));
+                */
+            PaddingBottom: =6
+            PaddingLeft: =3
+            PaddingRight: =6
+            PaddingTop: =6
+            Width: =38
+            X: =galYearSelector.Width + galMonthSelector.Width + 8
+            ZIndex: =3
+
     galPlanFilter As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
         Height: =79
         Items: =idsOfSelectedPlans
         ShowScrollbar: =false
         TemplateSize: =196
+        Visible: =!myTasks
         Width: =1261
         ZIndex: =10
 
@@ -897,14 +1011,9 @@ scrGantt As screen:
             Fill: =If (CountRows(Filter(selectedPlanIds, Value = ThisItem.id)) > 0, Theme.Color.LighterDark, Theme.Color.Light)
             FontWeight: =FontWeight.Semibold
             Height: =69
-            OnSelect: |-
+            OnSelect: |
                 =If (CountRows(Filter(selectedPlanIds, Value = ThisItem.id)) > 0, RemoveIf(selectedPlanIds, Value = ThisItem.id), Collect(selectedPlanIds, ThisItem.id));
-                Reset(cbCatFilter1);
-                Reset(cbCatFilter2);
-                Reset(cbCatFilter3);
-                Reset(cbCatFilter4);
-                Reset(cbCatFilter5);
-                Reset(cbCatFilter6);
+                Reset(selectLabelsFilter);
             Size: =11
             Text: =ThisItem.title
             Width: =196
@@ -1316,6 +1425,7 @@ scrGantt As screen:
 
         bottomFilters As groupContainer:
             Height: =102
+            Visible: =!myTasks
             Width: =1206
             X: =40
             ZIndex: =1
@@ -1327,114 +1437,71 @@ scrGantt As screen:
                 X: =703
                 ZIndex: =2
 
-                cbCatFilter1 As checkbox:
-                    BorderColor: =White
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =RGBA(99, 139, 44, 1)
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category1), DisplayMode.Disabled, DisplayMode.Edit)
-                    FocusedBorderColor: =White
-                    FocusedBorderThickness: =0
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    PressedBorderColor: =White
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category1
-                    X: =15
-                    Y: =35
-                    ZIndex: =1
-
-                cbCatFilter2 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category2), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category2
-                    X: =15
-                    Y: =65
-                    ZIndex: =2
-
-                cbCatFilter3 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category3), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category3
-                    X: =165
-                    Y: =35
-                    ZIndex: =3
-
-                cbCatFilter4 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category4), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category4
-                    X: =165
-                    Y: =65
-                    ZIndex: =4
-
-                cbCatFilter5 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category5), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category5
-                    X: =315
-                    Y: =35
-                    ZIndex: =5
-
-                cbCatFilter6 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category6), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category6
-                    X: =315
-                    Y: =65
-                    ZIndex: =6
-
                 lblCatFilterTitle As label:
                     BorderColor: =RGBA(32, 54, 71, 1)
                     Color: =Theme.Color.Dark
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Semibold
                     Size: =12
-                    Text: ="Filter by category"
+                    Text: ="Filter by label"
                     Width: =187
                     ZIndex: =7
+
+                selectLabelsFilter As combobox:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    BorderThickness: =1
+                    ChevronBackground: =Theme.Color.Dark
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    Color: =Theme.Color.Dark
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Text"]
+                    FocusedBorderThickness: =0
+                    Height: =25
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    IsSearchable: =false
+                    Items: |-
+                        =Table(
+                            { Index: 1, Text: Coalesce(First(planDetails).categoryDescriptions.category1, "Category 1") },
+                            { Index: 2, Text: Coalesce(First(planDetails).categoryDescriptions.category2, "Category 2") },
+                            { Index: 3, Text: Coalesce(First(planDetails).categoryDescriptions.category3, "Category 3") },
+                            { Index: 4, Text: Coalesce(First(planDetails).categoryDescriptions.category4, "Category 4") },
+                            { Index: 5, Text: Coalesce(First(planDetails).categoryDescriptions.category5, "Category 5") },
+                            { Index: 6, Text: Coalesce(First(planDetails).categoryDescriptions.category6, "Category 6") },
+                            { Index: 7, Text: Coalesce(First(planDetails).categoryDescriptions.category7, "Category 7") },
+                            { Index: 8, Text: Coalesce(First(planDetails).categoryDescriptions.category8, "Category 8") },
+                            { Index: 9, Text: Coalesce(First(planDetails).categoryDescriptions.category9, "Category 9") },
+                            { Index: 10, Text: Coalesce(First(planDetails).categoryDescriptions.category10, "Category 10") },
+                            { Index: 11, Text: Coalesce(First(planDetails).categoryDescriptions.category11, "Category 11") },
+                            { Index: 12, Text: Coalesce(First(planDetails).categoryDescriptions.category12, "Category 12") },
+                            { Index: 13, Text: Coalesce(First(planDetails).categoryDescriptions.category13, "Category 13") },
+                            { Index: 14, Text: Coalesce(First(planDetails).categoryDescriptions.category14, "Category 14") },
+                            { Index: 15, Text: Coalesce(First(planDetails).categoryDescriptions.category15, "Category 15") },
+                            { Index: 16, Text: Coalesce(First(planDetails).categoryDescriptions.category16, "Category 16") },
+                            { Index: 17, Text: Coalesce(First(planDetails).categoryDescriptions.category17, "Category 17") },
+                            { Index: 18, Text: Coalesce(First(planDetails).categoryDescriptions.category18, "Category 18") },
+                            { Index: 19, Text: Coalesce(First(planDetails).categoryDescriptions.category19, "Category 19") },
+                            { Index: 20, Text: Coalesce(First(planDetails).categoryDescriptions.category20, "Category 20") },
+                            { Index: 21, Text: Coalesce(First(planDetails).categoryDescriptions.category21, "Category 21") },
+                            { Index: 22, Text: Coalesce(First(planDetails).categoryDescriptions.category22, "Category 22") },
+                            { Index: 23, Text: Coalesce(First(planDetails).categoryDescriptions.category23, "Category 23") },
+                            { Index: 24, Text: Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24") }
+                        )
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(32, 54, 71, 1)
+                    SearchFields: =["Text"]
+                    SearchItems: =[]
+                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    Size: =10
+                    Width: =325
+                    X: =16
+                    Y: =40
+                    ZIndex: =8
 
             bucketFilter As groupContainer:
                 Height: =102
