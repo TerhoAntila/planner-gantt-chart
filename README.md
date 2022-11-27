@@ -42,6 +42,8 @@ You can download the Power App package as a zip file by clicking on the PlannerG
 
 Or you can use this direct link: https://github.com/TerhoAntila/planner-gantt-chart/raw/main/PlannerGanttChart.zip.
 
+*If you like this app, you might want to consider supporting to boost my development efforts even further 😃. [5€](https://buy.stripe.com/4gw6qH4KUeNx3dK9AA), [10€](https://buy.stripe.com/28o5mDb9igVFdSo4gh), [20€](https://buy.stripe.com/28o02jgtCgVF15CeUW) or [50€](https://buy.stripe.com/bIY8yP0uEeNx4hO003). Thank you!*
+
 # Installation
 
 1. Browse to your company Power Apps portal at https://make.powerapps.com/
