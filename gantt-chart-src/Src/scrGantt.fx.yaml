@@ -35,7 +35,7 @@ scrGantt As screen:
                 Distinct(planTasks, planId),
                 Collect(planDetails, Planner.GetPlanDetails(Result));
                 Collect(selectedPlanIds, Result)
-            );
+            ),
         
             // Otherwise get all tasks of selected plans, plan details and buckets
             ForAll(idsOfSelectedPlans,
@@ -529,7 +529,11 @@ scrGantt As screen:
                     Height: =43
                     OnSelect: =Select(Parent)
                     Size: =6
-                    Text: =First(Filter(bucketsOfPlans, id = ThisItem.bucketId)).name
+                    Text: |-
+                        =If (!myTasks,
+                            First(Filter(bucketsOfPlans, id = ThisItem.bucketId)).name,
+                            First(Filter(collAllUserPlans, ThisItem.planId = id)).title
+                        )
                     Width: =79
                     Y: =1
                     ZIndex: =6
@@ -785,6 +789,7 @@ scrGantt As screen:
                     OnSelect: =Select(Parent)
                     Size: =6
                     Text: =Concat(ThisItem.categories, Value, ", ")
+                    Visible: =!myTasks
                     Width: =79
                     X: =lblLabelsTitle.X
                     ZIndex: =11
@@ -814,7 +819,7 @@ scrGantt As screen:
             FontWeight: =FontWeight.Semibold
             Height: =32
             Size: =8
-            Text: ="Bucket"
+            Text: =If (myTasks, "Plan", "Bucket")
             Width: =79
             X: =1
             ZIndex: =7
@@ -836,6 +841,7 @@ scrGantt As screen:
             Height: =32
             Size: =8
             Text: ="Labels"
+            Visible: =!myTasks
             Width: =79
             X: =canvas.X + canvas.Width
             ZIndex: =9
@@ -937,6 +943,7 @@ scrGantt As screen:
         Items: =idsOfSelectedPlans
         ShowScrollbar: =false
         TemplateSize: =196
+        Visible: =!myTasks
         Width: =1261
         ZIndex: =10
 
@@ -1362,6 +1369,7 @@ scrGantt As screen:
 
         bottomFilters As groupContainer:
             Height: =102
+            Visible: =!myTasks
             Width: =1206
             X: =40
             ZIndex: =1

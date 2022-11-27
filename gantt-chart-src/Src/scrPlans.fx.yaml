@@ -215,37 +215,39 @@ scrPlans As screen:
     myTasks As groupContainer:
         Height: =85
         Visible: =!viewMultipleButton.Visible
-        Width: =492
+        Width: =600
         X: =108
         Y: =672
         ZIndex: =8
 
+        btnMyTasks As button:
+            BorderColor: =Theme.Color.LighterDark
+            Color: =Theme.Color.LighterDark
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =Theme.Color.Light
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverColor: =RGBA(255, 255, 255, 1)
+            OnSelect: |-
+                =Navigate(scrGantt, ScreenTransition.Fade, { idsOfSelectedPlans: Blank(), myTasks: true })
+            PaddingRight: =60
+            Size: =22
+            Text: ="View ALL MY TASKS over all plans"
+            Width: =Parent.Width
+            ZIndex: =1
+
         iconUser As icon.Reload:
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =Theme.Color.Dark
+            Color: =Theme.Color.LighterDark
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =50
             Icon: =Icon.Person
             OnSelect: =ClearCollect(collAllUserPlans, Planner.ListMyPlansV2().value);
             Width: =50
-            X: =400
+            X: =Parent.Width - Self.Width - 30
             Y: =17
-            ZIndex: =1
-
-        lblViewAllTasks As label:
-            Align: =Align.Right
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =Theme.Color.Dark
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =77
-            OnSelect: |-
-                =Navigate(scrGantt, ScreenTransition.Fade, { idsOfSelectedPlans: Blank(), myTasks: true })
-            PaddingRight: =60
-            Size: =16
-            Text: ="...or view ALL MY TASKS over all plans"
-            Width: =456
-            Y: =5
             ZIndex: =2
 
