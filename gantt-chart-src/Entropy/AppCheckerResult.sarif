@@ -14,6 +14,4316 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "scrGantt.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 429,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "scrGantt",
+                "type": "scrGantt"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Table",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 429,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "scrGantt",
+                "type": "scrGantt"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Clear"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrNeedCollection-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 423,
+                  "snippet": {
+                    "text": "Clear(colTaskChanges)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "scrGantt",
+                "type": "scrGantt"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Clear"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 80,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "RemoveIf(colTaskChanges, taskId = ThisItem.id && changeType = \"POSITION_CHANGE\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "RemoveIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 25,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 32,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 49,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 60,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 194,
+                  "charOffset": 509,
+                  "snippet": {
+                    "text": "Collect(colTaskChanges,\r\n        {\r\n            taskId: ThisItem.id,\r\n            value: Self.Value,\r\n            changeType: \"POSITION_CHANGE\",\r\n            taskItem: ThisItem\r\n        }\r\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Collect"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 517,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 623,
+                  "charOffset": 83,
+                  "snippet": {
+                    "text": "If (Self.Value <>\r\n    With({\r\n            dayWidth: Value(lblSingleDayWidth.Text),\r\n            leftOffset: canvas.X\r\n        },\r\n        With({\r\n                currentTaskX: (ThisItem.startDate - varStartDate - 1) * dayWidth \r\n                    + dayWidth\r\n            },\r\n            currentTaskX / dayWidth + DateDiff(ThisItem.startDate, ThisItem.dueDateTime, Days) / 2\r\n        )\r\n    ) && !IsBlank(ThisItem.id),\r\n    Collect(colTaskChanges,\r\n        {\r\n            taskId: ThisItem.id,\r\n            value: Self.Value,\r\n            changeType: \"POSITION_CHANGE\",\r\n            taskItem: ThisItem\r\n        }\r\n    )\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contTaskRescheduling.sliderTaskPosition"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 66,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 77,
+                  "charOffset": 59,
+                  "snippet": {
+                    "text": "Filter(colTaskChanges, taskId = ThisItem.id && changeType = \"ENDDATE_CHANGE\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 82,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 89,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 106,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 117,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.rectToggleRescheduling"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 65,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 77,
+                  "charOffset": 58,
+                  "snippet": {
+                    "text": "Filter(colTaskChanges, taskId = ThisItem.id && changeType = \"ENDDATE_CHANGE\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 81,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 88,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 105,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 116,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 83,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "RemoveIf(colTaskChanges, taskId = ThisItem.taskId && changeType = \"ENDDATE_CHANGE\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "RemoveIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 25,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 32,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 64,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 301,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": "Collect(colTaskChanges,\r\n        {\r\n            taskId: ThisItem.taskId,\r\n            value: ThisItem.dayCount + 2,\r\n            dateValue: ThisItem.date,\r\n            changeType: \"ENDDATE_CHANGE\",\r\n            taskItem: First(Filter(galTasksFlexible.AllItems, id = ThisItem.taskId))\r\n        }\r\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Collect"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 98,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.galleryTemplate13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 42,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 81,
+                  "charOffset": 35,
+                  "snippet": {
+                    "text": "Filter(colTaskChanges, taskId = ThisItem.taskId && changeType = \"ENDDATE_CHANGE\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 58,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 65,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 86,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 97,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 188,
+                  "snippet": {
+                    "text": ".dateValue"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "dateValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 270,
+                  "snippet": {
+                    "text": ".dateValue"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "dateValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 253,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "scrGantt",
+                "type": "scrGantt.gantt.tasks.galTasksFlexible.contNewDueDate.galRescheduleDays.rectRescheduleDay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DateTime",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(colTaskChanges)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 10,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Table",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 25,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 50,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": "AddColumns(colTaskChanges, \"parentTaskId\", taskId)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "AddColumns"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 57,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 66,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 77,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 202,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 210,
+                  "snippet": {
+                    "text": ".startDateTime"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 226,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 234,
+                  "snippet": {
+                    "text": ".dueDateTime"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 573,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 581,
+                  "snippet": {
+                    "text": ".startDate"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 744,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 752,
+                  "snippet": {
+                    "text": ".startDate"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 764,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 772,
+                  "snippet": {
+                    "text": ".dueDateTime"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 923,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 83,
+                  "charOffset": 916,
+                  "snippet": {
+                    "text": "Filter(colTaskChanges, changeType = \"ENDDATE_CHANGE\" && taskItem.id = parentTaskId)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 939,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 950,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 972,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 980,
+                  "snippet": {
+                    "text": ".id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 986,
+                  "snippet": {
+                    "text": "parentTaskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "parentTaskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 984,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 1018,
+                  "snippet": {
+                    "text": ".value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 167,
+                  "charOffset": 861,
+                  "snippet": {
+                    "text": "Coalesce(\r\n                First(\r\n                    Filter(colTaskChanges, changeType = \"ENDDATE_CHANGE\" && taskItem.id = parentTaskId)\r\n                ).value, 0)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Coalesce"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 1090,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 84,
+                  "charOffset": 1083,
+                  "snippet": {
+                    "text": "Filter(colTaskChanges, changeType = \"POSITION_CHANGE\" && taskItem.id = parentTaskId)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 1106,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 1117,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 1140,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 1148,
+                  "snippet": {
+                    "text": ".id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 1154,
+                  "snippet": {
+                    "text": "parentTaskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "parentTaskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 1152,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 1168,
+                  "snippet": {
+                    "text": ".value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 1231,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 1294,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 1302,
+                  "snippet": {
+                    "text": ".startDateTime"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 1318,
+                  "snippet": {
+                    "text": "value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 64,
+                  "charOffset": 1286,
+                  "snippet": {
+                    "text": "DateAdd(taskItem.startDateTime, value - originalSliderDay, Days)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DateAdd"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 1412,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 1420,
+                  "snippet": {
+                    "text": ".dueDateTime"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 1469,
+                  "snippet": {
+                    "text": "positionChange"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrTypeError",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 43,
+                  "charOffset": 1460,
+                  "snippet": {
+                    "text": "Coalesce(positionChange, originalSliderDay)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Coalesce"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 144,
+                  "charOffset": 1404,
+                  "snippet": {
+                    "text": "DateAdd(taskItem.dueDateTime, \r\n                        Coalesce(positionChange, originalSliderDay) - originalSliderDay + endDateAddition, Days)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DateAdd"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 378,
+                  "charOffset": 1196,
+                  "snippet": {
+                    "text": "Planner.UpdateTaskV3(\r\n            taskId,\r\n            {\r\n                startDateTime: DateAdd(taskItem.startDateTime, value - originalSliderDay, Days),\r\n                dueDateTime: \r\n                    DateAdd(taskItem.dueDateTime, \r\n                        Coalesce(positionChange, originalSliderDay) - originalSliderDay + endDateAddition, Days)\r\n            }\r\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "UpdateTaskV3"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 1601,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 53,
+                  "charOffset": 1594,
+                  "snippet": {
+                    "text": "Filter(colTaskChanges, changeType = \"ENDDATE_CHANGE\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 1617,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 1628,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 1751,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 78,
+                  "charOffset": 1744,
+                  "snippet": {
+                    "text": "Filter(colTaskChanges, changeType = \"POSITION_CHANGE\" && taskId = taskItem.id)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 1767,
+                  "snippet": {
+                    "text": "changeType"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "changeType"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 1778,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 1801,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 1810,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 1818,
+                  "snippet": {
+                    "text": ".id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 1808,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 1873,
+                  "snippet": {
+                    "text": "taskId"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskId"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 1976,
+                  "snippet": {
+                    "text": "taskItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "taskItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 1984,
+                  "snippet": {
+                    "text": ".dueDateTime"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 1998,
+                  "snippet": {
+                    "text": "value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 42,
+                  "charOffset": 1968,
+                  "snippet": {
+                    "text": "DateAdd(taskItem.dueDateTime, value, Days)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DateAdd"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 198,
+                  "charOffset": 1838,
+                  "snippet": {
+                    "text": "Planner.UpdateTaskV3(\r\n            taskId,\r\n            {\r\n                // Value is correct date\r\n                dueDateTime: DateAdd(taskItem.dueDateTime, value, Days)\r\n            }\r\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "UpdateTaskV3"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 2055,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Table",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 2055,
+                  "snippet": {
+                    "text": "colTaskChanges"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Clear"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrNeedCollection-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 2049,
+                  "snippet": {
+                    "text": "Clear(colTaskChanges)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "scrGantt",
+                "type": "scrGantt.footer.iconSaveChanges"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Clear"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Emoji Picker'.galEmojis.AccessibleLabel"
                 }
               ],
@@ -37,7 +4347,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -67,7 +4377,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -97,7 +4407,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -127,7 +4437,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -157,7 +4467,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -187,7 +4497,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -217,7 +4527,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -247,7 +4557,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -277,7 +4587,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -307,7 +4617,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -337,7 +4647,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -367,7 +4677,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -397,7 +4707,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -427,7 +4737,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -457,7 +4767,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -487,7 +4797,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -517,7 +4827,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -547,7 +4857,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -577,7 +4887,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -607,7 +4917,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -637,7 +4947,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -667,7 +4977,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -697,7 +5007,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -727,7 +5037,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -757,7 +5067,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -787,7 +5097,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -817,7 +5127,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -847,7 +5157,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -877,7 +5187,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -907,7 +5217,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -937,7 +5247,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -967,7 +5277,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -997,7 +5307,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1027,7 +5337,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1057,7 +5367,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1087,7 +5397,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1117,7 +5427,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1147,7 +5457,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1177,7 +5487,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1207,7 +5517,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -1237,7 +5547,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1267,7 +5577,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1297,7 +5607,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1327,7 +5637,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1357,7 +5667,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1387,7 +5697,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1417,7 +5727,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1447,7 +5757,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1477,7 +5787,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1507,7 +5817,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1537,7 +5847,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1567,7 +5877,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1597,7 +5907,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1627,7 +5937,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1657,7 +5967,7 @@
             "level": "Low"
           },
           "ruleId": "acc-StateIndicationTextNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1687,7 +5997,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -1717,7 +6027,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1747,7 +6057,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1777,7 +6087,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1807,7 +6117,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1837,7 +6147,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1867,7 +6177,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1897,7 +6207,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1927,7 +6237,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1957,7 +6267,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1987,7 +6297,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2017,7 +6327,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -2047,7 +6357,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2077,7 +6387,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2107,7 +6417,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -2137,7 +6447,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2167,7 +6477,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -2197,7 +6507,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2227,7 +6537,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2257,7 +6567,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2287,7 +6597,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2317,7 +6627,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2347,7 +6657,216 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrPlans.myTasks.lblViewAllTasks.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrPlans.myTasks.lblViewAllTasks.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "scrPlans",
+                "type": "scrPlans.myTasks.lblViewAllTasks"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrPlans.myTasks.lblViewAllTasks.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrPlans.myTasks.lblViewAllTasks.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scrPlans",
+                "type": "scrPlans.myTasks.lblViewAllTasks"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrPlans.myTasks.iconUser.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrPlans.myTasks.iconUser.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "scrPlans",
+                "type": "scrPlans.myTasks.iconUser"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scrPlans.myTasks.iconUser.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scrPlans.myTasks.iconUser.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "scrPlans",
+                "type": "scrPlans.myTasks.iconUser"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Screen1",
+                "type": "Screen1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.Gallery1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Gallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen1",
+                "type": "Screen1.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.Gallery1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.Gallery1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen1",
+                "type": "Screen1.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2376,7 +6895,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 4
+          "ruleIndex": 13
         }
       ],
       "tool": {
@@ -2384,6 +6903,128 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "app-ErrBadType-ExpectedType-ProvidedType",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid argument type ({1}). Expecting a {0} value instead."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrNeedCollection-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "The first argument of '{0}' should be a collection."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidArgs-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "The function '{0}' has some invalid arguments."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadType",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid argument type."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrTypeError",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible type. We can't evaluate your formula because of a type error."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Check the types of the values involved in the formula and ensure the types match."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
             {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {
@@ -2450,6 +7091,23 @@
                 "level": "Low",
                 "primaryCategory": "accessibility",
                 "whyFix": "Users won't get confirmation of their actions if the state of the control isn't showing."
+              }
+            },
+            {
+              "id": "acc-ReadableScreenNameNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Revise screen name"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Give the screen  a title that describes what's on the screen or what it's used for."
+                ],
+                "level": "Low",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
               }
             },
             {

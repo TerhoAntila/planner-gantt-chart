@@ -111,6 +111,7 @@
   },
   "ScreenOrder": [
     "scrPlans",
-    "scrGantt"
+    "scrGantt",
+    "Screen1"
   ]
 }

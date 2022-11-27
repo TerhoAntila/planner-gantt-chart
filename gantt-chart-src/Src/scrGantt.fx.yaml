@@ -28,14 +28,19 @@ scrGantt As screen:
         Set(varStartDate, Date(varSelectedYear, varSelectedStartMonth, 1));
         Set(varEndDate, DateAdd(Date(varSelectedYear, varSelectedEndMonth + 1, 1), -1, Days));
         
-        // Get all tasks of selected plans, plan details and buckets
-        ForAll(idsOfSelectedPlans,
-            Concurrent(
-                Collect(planTasks, Planner.ListTasksV3(id, "").value),
-                Collect(planDetails, Planner.GetPlanDetails(id)),
-                Collect(selectedPlanIds, id),
-                Collect(bucketsOfPlans, 
-                    Planner.ListBucketsV3(id, "").value
+        If (myTasks, 
+            // If my tasks only, use different method for fetching tasks
+            Collect(planTasks, Planner.ListMyTasksV2().value),
+        
+            // Otherwise get all tasks of selected plans, plan details and buckets
+            ForAll(idsOfSelectedPlans,
+                Concurrent(
+                    Collect(planTasks, Planner.ListTasksV3(id, "").value),
+                    Collect(planDetails, Planner.GetPlanDetails(id)),
+                    Collect(selectedPlanIds, id),
+                    Collect(bucketsOfPlans, 
+                        Planner.ListBucketsV3(id, "").value
+                    )
                 )
             )
         );
