@@ -626,32 +626,38 @@ scrGantt As screen:
                         Height: =20
                         Max: =Self.Width / Value(lblSingleDayWidth.Text)
                         OnChange: |-
-                            =RemoveIf(colTaskChanges, taskId = ThisItem.id && changeType = "POSITION_CHANGE");
-                            If (Self.Value <>
-                                With({
-                                        dayWidth: Value(lblSingleDayWidth.Text),
-                                        leftOffset: canvas.X
-                                    },
+                            =If (!sliderTaskPosition.Visible,
+                                // Slider not even visible, no change
+                                false,
+                                // Collect change
+                                RemoveIf(colTaskChanges, taskId = ThisItem.id && changeType = "POSITION_CHANGE");
+                                If (Self.Value <>
                                     With({
-                                            currentTaskX: (ThisItem.startDate - varStartDate - 1) * dayWidth 
-                                                + dayWidth
+                                            dayWidth: Value(lblSingleDayWidth.Text),
+                                            leftOffset: canvas.X
                                         },
-                                        currentTaskX / dayWidth + DateDiff(ThisItem.startDate, ThisItem.dueDateTime, Days) / 2
+                                        With({
+                                                currentTaskX: (ThisItem.startDate - varStartDate - 1) * dayWidth 
+                                                    + dayWidth
+                                            },
+                                            currentTaskX / dayWidth + DateDiff(ThisItem.startDate, ThisItem.dueDateTime, Days) / 2
+                                        )
+                                    ) && !IsBlank(ThisItem.id),
+                                    Collect(colTaskChanges,
+                                        {
+                                            taskId: ThisItem.id,
+                                            value: Self.Value,
+                                            changeType: "POSITION_CHANGE",
+                                            taskItem: ThisItem
+                                        }
                                     )
-                                ) && !IsBlank(ThisItem.id),
-                                Collect(colTaskChanges,
-                                    {
-                                        taskId: ThisItem.id,
-                                        value: Self.Value,
-                                        changeType: "POSITION_CHANGE",
-                                        taskItem: ThisItem
-                                    }
                                 )
                             )
                         RailFill: =RGBA(128, 130, 133, 1)
                         RailThickness: =0
                         ShowValue: =false
                         ValueFill: =Theme.Color.TaskBackground
+                        Visible: =ThisItem.startDate > varStartDate && ThisItem.dueDateTime < varEndDate
                         Width: =canvas.Width
                         Y: =15
                         ZIndex: =3
@@ -794,9 +800,8 @@ scrGantt As screen:
                     Height: =45
                     OnSelect: =Select(Parent)
                     Size: =6
-                    Text: =Concat(ThisItem.categories, Value, ", ")
-                    Visible: =!myTasks
-                    Width: =79
+                    Text: =If (myTasks, "", Concat(ThisItem.categories, Value, ", "))
+                    Width: =82
                     X: =lblLabelsTitle.X
                     ZIndex: =11
 
