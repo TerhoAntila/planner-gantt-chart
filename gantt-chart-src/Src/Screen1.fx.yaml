@@ -88,7 +88,7 @@ Screen1 As screen:
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(0, 18, 107, 1)
-        Items: =Planner.GetPlanDetails(Gallery1.Selected.id).categoryDescriptions
+        Items: =First(planDetails).categoryDescriptions
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)

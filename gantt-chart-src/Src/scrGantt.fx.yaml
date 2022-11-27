@@ -1448,23 +1448,49 @@ scrGantt As screen:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
-                    DisplayFields: =["id"]
+                    DisplayFields: =["Value"]
                     FocusedBorderThickness: =0
                     Height: =25
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(205, 209, 213, 1)
                     IsSearchable: =false
-                    Items: =CountRows( planDetails)
+                    Items: |-
+                        =[
+                            Coalesce(First(planDetails).categoryDescriptions.category1, "Category 1"),
+                            Coalesce(First(planDetails).categoryDescriptions.category2, "Category 2"),
+                            Coalesce(First(planDetails).categoryDescriptions.category3, "Category 3"),
+                            Coalesce(First(planDetails).categoryDescriptions.category4, "Category 4"),
+                            Coalesce(First(planDetails).categoryDescriptions.category5, "Category 5"),
+                            Coalesce(First(planDetails).categoryDescriptions.category6, "Category 6"),
+                            Coalesce(First(planDetails).categoryDescriptions.category7, "Category 7"),
+                            Coalesce(First(planDetails).categoryDescriptions.category8, "Category 8"),
+                            Coalesce(First(planDetails).categoryDescriptions.category9, "Category 9"),
+                            Coalesce(First(planDetails).categoryDescriptions.category10, "Category 10"),
+                            Coalesce(First(planDetails).categoryDescriptions.category11, "Category 11"),
+                            Coalesce(First(planDetails).categoryDescriptions.category12, "Category 12"),
+                            Coalesce(First(planDetails).categoryDescriptions.category13, "Category 13"),
+                            Coalesce(First(planDetails).categoryDescriptions.category14, "Category 14"),
+                            Coalesce(First(planDetails).categoryDescriptions.category15, "Category 15"),
+                            Coalesce(First(planDetails).categoryDescriptions.category16, "Category 16"),
+                            Coalesce(First(planDetails).categoryDescriptions.category17, "Category 17"),
+                            Coalesce(First(planDetails).categoryDescriptions.category18, "Category 18"),
+                            Coalesce(First(planDetails).categoryDescriptions.category19, "Category 19"),
+                            Coalesce(First(planDetails).categoryDescriptions.category20, "Category 20"),
+                            Coalesce(First(planDetails).categoryDescriptions.category21, "Category 21"),
+                            Coalesce(First(planDetails).categoryDescriptions.category22, "Category 22"),
+                            Coalesce(First(planDetails).categoryDescriptions.category23, "Category 23"),
+                            Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24")
+                        ]
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
-                    SearchFields: =["id"]
+                    SearchFields: =["Value"]
                     SearchItems: =[]
                     SelectionFill: =RGBA(100, 118, 132, 1)
                     SelectMultiple: =false
                     Size: =10
                     Width: =325
                     X: =40
-                    Y: =40
+                    Y: =49
                     ZIndex: =8
 
             bucketFilter As groupContainer:
