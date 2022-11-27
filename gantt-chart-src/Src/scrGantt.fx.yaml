@@ -324,32 +324,28 @@ scrGantt As screen:
                                     If (CountRows(selectLabelsFilter.SelectedItems) = 0, true, 
                                         appliedCategories.category1 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 1)) = 1 ||
                                         appliedCategories.category2 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 2)) = 1 ||
-                                        appliedCategories.category3 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 3)) = 1 
-                                        /*
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 1)) = 0 || appliedCategories.category1) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 2)) = 0 || appliedCategories.category2) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 3)) = 0 || appliedCategories.category3) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 4)) = 0 || appliedCategories.category4) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 5)) = 0 || appliedCategories.category5) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 6)) = 0 || appliedCategories.category6) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 7)) = 0 || appliedCategories.category7) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 8)) = 0 || appliedCategories.category8) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 9)) = 0 || appliedCategories.category9) &&                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 10)) = 0 || appliedCategories.category10) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 11)) = 0 || appliedCategories.category11) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 12)) = 0 || appliedCategories.category12) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 13)) = 0 || appliedCategories.category13) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 14)) = 0 || appliedCategories.category14) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 15)) = 0 || appliedCategories.category15) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 16)) = 0 || appliedCategories.category16) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 17)) = 0 || appliedCategories.category17) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 18)) = 0 || appliedCategories.category18) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 19)) = 0 || appliedCategories.category19) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 20)) = 0 || appliedCategories.category20) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 21)) = 0 || appliedCategories.category21) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 22)) = 0 || appliedCategories.category22) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 23)) = 0 || appliedCategories.category23) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 24)) = 0 || appliedCategories.category24) 
-                                        */
+                                        appliedCategories.category3 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 3)) = 1 ||
+                                        appliedCategories.category4 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 4)) = 1 ||
+                                        appliedCategories.category5 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 5)) = 1 ||
+                                        appliedCategories.category6 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 6)) = 1 ||
+                                        appliedCategories.category7 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 7)) = 1 ||
+                                        appliedCategories.category8 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 8)) = 1 ||
+                                        appliedCategories.category9 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 9)) = 1 ||
+                                        appliedCategories.category10 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 10)) = 1 ||
+                                        appliedCategories.category11 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 11)) = 1 ||
+                                        appliedCategories.category12 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 12)) = 1 ||
+                                        appliedCategories.category13 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 13)) = 1 ||
+                                        appliedCategories.category14 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 14)) = 1 ||
+                                        appliedCategories.category15 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 15)) = 1 ||
+                                        appliedCategories.category16 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 16)) = 1 ||
+                                        appliedCategories.category17 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 17)) = 1 ||
+                                        appliedCategories.category18 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 18)) = 1 ||
+                                        appliedCategories.category19 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 19)) = 1 ||
+                                        appliedCategories.category20 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 20)) = 1 ||
+                                        appliedCategories.category21 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 21)) = 1 ||
+                                        appliedCategories.category22 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 22)) = 1 ||
+                                        appliedCategories.category23 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 23)) = 1 ||
+                                        appliedCategories.category24 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 24)) = 1 
                                     )
                                 ) &&
                                 // Check for bucket filter
