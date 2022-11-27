@@ -322,6 +322,10 @@ scrGantt As screen:
                                     CountRows(selectedPlanIds) <> 1 ||
                                     // Category filters apply
                                     If (CountRows(selectLabelsFilter.SelectedItems) = 0, true, 
+                                        appliedCategories.category1 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 1)) = 1 ||
+                                        appliedCategories.category2 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 2)) = 1 ||
+                                        appliedCategories.category3 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 3)) = 1 
+                                        /*
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 1)) = 0 || appliedCategories.category1) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 2)) = 0 || appliedCategories.category2) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 3)) = 0 || appliedCategories.category3) &&
@@ -330,8 +334,7 @@ scrGantt As screen:
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 6)) = 0 || appliedCategories.category6) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 7)) = 0 || appliedCategories.category7) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 8)) = 0 || appliedCategories.category8) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 9)) = 0 || appliedCategories.category9) &&
-                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 10)) = 0 || appliedCategories.category10) &&
+                                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 9)) = 0 || appliedCategories.category9) &&                        (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 10)) = 0 || appliedCategories.category10) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 11)) = 0 || appliedCategories.category11) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 12)) = 0 || appliedCategories.category12) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 13)) = 0 || appliedCategories.category13) &&
@@ -346,14 +349,8 @@ scrGantt As screen:
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 22)) = 0 || appliedCategories.category22) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 23)) = 0 || appliedCategories.category23) &&
                                         (CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 24)) = 0 || appliedCategories.category24) 
+                                        */
                                     )
-                    
-                                    //(!cbCatFilter1.Value || appliedCategories.category1) &&
-                                    //(!cbCatFilter2.Value || appliedCategories.category2) &&
-                                    //(!cbCatFilter3.Value || appliedCategories.category3) &&
-                                    //(!cbCatFilter4.Value || appliedCategories.category4) &&
-                                    //(!cbCatFilter5.Value || appliedCategories.category5) &&
-                                    //(!cbCatFilter6.Value || appliedCategories.category6) 
                                 ) &&
                                 // Check for bucket filter
                                 (
