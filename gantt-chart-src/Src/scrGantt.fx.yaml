@@ -321,12 +321,16 @@ scrGantt As screen:
                                 (
                                     CountRows(selectedPlanIds) <> 1 ||
                                     // Category filters apply
-                                    (!cbCatFilter1.Value || appliedCategories.category1) &&
-                                    (!cbCatFilter2.Value || appliedCategories.category2) &&
-                                    (!cbCatFilter3.Value || appliedCategories.category3) &&
-                                    (!cbCatFilter4.Value || appliedCategories.category4) &&
-                                    (!cbCatFilter5.Value || appliedCategories.category5) &&
-                                    (!cbCatFilter6.Value || appliedCategories.category6) 
+                                    If (CountRows(selectLabelsFilter.SelectedItems) = 0, true, 
+                                        true                
+                                    )
+                    
+                                    //(!cbCatFilter1.Value || appliedCategories.category1) &&
+                                    //(!cbCatFilter2.Value || appliedCategories.category2) &&
+                                    //(!cbCatFilter3.Value || appliedCategories.category3) &&
+                                    //(!cbCatFilter4.Value || appliedCategories.category4) &&
+                                    //(!cbCatFilter5.Value || appliedCategories.category5) &&
+                                    //(!cbCatFilter6.Value || appliedCategories.category6) 
                                 ) &&
                                 // Check for bucket filter
                                 (
@@ -897,14 +901,9 @@ scrGantt As screen:
             Fill: =If (CountRows(Filter(selectedPlanIds, Value = ThisItem.id)) > 0, Theme.Color.LighterDark, Theme.Color.Light)
             FontWeight: =FontWeight.Semibold
             Height: =69
-            OnSelect: |-
+            OnSelect: |
                 =If (CountRows(Filter(selectedPlanIds, Value = ThisItem.id)) > 0, RemoveIf(selectedPlanIds, Value = ThisItem.id), Collect(selectedPlanIds, ThisItem.id));
-                Reset(cbCatFilter1);
-                Reset(cbCatFilter2);
-                Reset(cbCatFilter3);
-                Reset(cbCatFilter4);
-                Reset(cbCatFilter5);
-                Reset(cbCatFilter6);
+                Reset(selectLabelsFilter);
             Size: =11
             Text: =ThisItem.title
             Width: =196
@@ -1327,105 +1326,6 @@ scrGantt As screen:
                 X: =703
                 ZIndex: =2
 
-                cbCatFilter1 As checkbox:
-                    BorderColor: =White
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =RGBA(99, 139, 44, 1)
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category1), DisplayMode.Disabled, DisplayMode.Edit)
-                    FocusedBorderColor: =White
-                    FocusedBorderThickness: =0
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    PressedBorderColor: =White
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category1
-                    X: =15
-                    Y: =35
-                    ZIndex: =1
-
-                cbCatFilter2 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category2), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category2
-                    X: =15
-                    Y: =65
-                    ZIndex: =2
-
-                cbCatFilter3 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category3), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category3
-                    X: =165
-                    Y: =35
-                    ZIndex: =3
-
-                cbCatFilter4 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category4), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category4
-                    X: =165
-                    Y: =65
-                    ZIndex: =4
-
-                cbCatFilter5 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category5), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category5
-                    X: =315
-                    Y: =35
-                    ZIndex: =5
-
-                cbCatFilter6 As checkbox:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    BorderStyle: =BorderStyle.None
-                    CheckboxBorderColor: =Theme.Color.Dark
-                    CheckboxSize: =30
-                    CheckmarkFill: =Theme.Color.Dark
-                    Color: =Theme.Color.Dark
-                    DisplayMode: =If(IsBlank(First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category6), DisplayMode.Disabled, DisplayMode.Edit)
-                    Height: =30
-                    HoverColor: =RGBA(32, 54, 71, 1)
-                    Size: =10
-                    Text: =First(Filter(planDetails, id = First(selectedPlanIds).Value)).categoryDescriptions.category6
-                    X: =315
-                    Y: =65
-                    ZIndex: =6
-
                 lblCatFilterTitle As label:
                     BorderColor: =RGBA(32, 54, 71, 1)
                     Color: =Theme.Color.Dark
@@ -1448,7 +1348,7 @@ scrGantt As screen:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
-                    DisplayFields: =["Value"]
+                    DisplayFields: =["Text"]
                     FocusedBorderThickness: =0
                     Height: =25
                     HoverColor: =RGBA(0, 0, 0, 1)
@@ -1456,41 +1356,40 @@ scrGantt As screen:
                     IsSearchable: =false
                     Items: |-
                         =[
-                            Coalesce(First(planDetails).categoryDescriptions.category1, "Category 1"),
-                            Coalesce(First(planDetails).categoryDescriptions.category2, "Category 2"),
-                            Coalesce(First(planDetails).categoryDescriptions.category3, "Category 3"),
-                            Coalesce(First(planDetails).categoryDescriptions.category4, "Category 4"),
-                            Coalesce(First(planDetails).categoryDescriptions.category5, "Category 5"),
-                            Coalesce(First(planDetails).categoryDescriptions.category6, "Category 6"),
-                            Coalesce(First(planDetails).categoryDescriptions.category7, "Category 7"),
-                            Coalesce(First(planDetails).categoryDescriptions.category8, "Category 8"),
-                            Coalesce(First(planDetails).categoryDescriptions.category9, "Category 9"),
-                            Coalesce(First(planDetails).categoryDescriptions.category10, "Category 10"),
-                            Coalesce(First(planDetails).categoryDescriptions.category11, "Category 11"),
-                            Coalesce(First(planDetails).categoryDescriptions.category12, "Category 12"),
-                            Coalesce(First(planDetails).categoryDescriptions.category13, "Category 13"),
-                            Coalesce(First(planDetails).categoryDescriptions.category14, "Category 14"),
-                            Coalesce(First(planDetails).categoryDescriptions.category15, "Category 15"),
-                            Coalesce(First(planDetails).categoryDescriptions.category16, "Category 16"),
-                            Coalesce(First(planDetails).categoryDescriptions.category17, "Category 17"),
-                            Coalesce(First(planDetails).categoryDescriptions.category18, "Category 18"),
-                            Coalesce(First(planDetails).categoryDescriptions.category19, "Category 19"),
-                            Coalesce(First(planDetails).categoryDescriptions.category20, "Category 20"),
-                            Coalesce(First(planDetails).categoryDescriptions.category21, "Category 21"),
-                            Coalesce(First(planDetails).categoryDescriptions.category22, "Category 22"),
-                            Coalesce(First(planDetails).categoryDescriptions.category23, "Category 23"),
-                            Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24")
+                            { Index: 1, Text: Coalesce(First(planDetails).categoryDescriptions.category1, "Category 1") },
+                            { Index: 2, Text: Coalesce(First(planDetails).categoryDescriptions.category2, "Category 2") },
+                            { Index: 3, Text: Coalesce(First(planDetails).categoryDescriptions.category3, "Category 3") },
+                            { Index: 4, Text: Coalesce(First(planDetails).categoryDescriptions.category4, "Category 4") },
+                            { Index: 5, Text: Coalesce(First(planDetails).categoryDescriptions.category5, "Category 5") },
+                            { Index: 6, Text: Coalesce(First(planDetails).categoryDescriptions.category6, "Category 6") },
+                            { Index: 7, Text: Coalesce(First(planDetails).categoryDescriptions.category7, "Category 7") },
+                            { Index: 8, Text: Coalesce(First(planDetails).categoryDescriptions.category8, "Category 8") },
+                            { Index: 9, Text: Coalesce(First(planDetails).categoryDescriptions.category9, "Category 9") },
+                            { Index: 10, Text: Coalesce(First(planDetails).categoryDescriptions.category10, "Category 10") },
+                            { Index: 11, Text: Coalesce(First(planDetails).categoryDescriptions.category11, "Category 11") },
+                            { Index: 12, Text: Coalesce(First(planDetails).categoryDescriptions.category12, "Category 12") },
+                            { Index: 13, Text: Coalesce(First(planDetails).categoryDescriptions.category13, "Category 13") },
+                            { Index: 14, Text: Coalesce(First(planDetails).categoryDescriptions.category14, "Category 14") },
+                            { Index: 15, Text: Coalesce(First(planDetails).categoryDescriptions.category15, "Category 15") },
+                            { Index: 16, Text: Coalesce(First(planDetails).categoryDescriptions.category16, "Category 16") },
+                            { Index: 17, Text: Coalesce(First(planDetails).categoryDescriptions.category17, "Category 17") },
+                            { Index: 18, Text: Coalesce(First(planDetails).categoryDescriptions.category18, "Category 18") },
+                            { Index: 19, Text: Coalesce(First(planDetails).categoryDescriptions.category19, "Category 19") },
+                            { Index: 20, Text: Coalesce(First(planDetails).categoryDescriptions.category20, "Category 20") },
+                            { Index: 21, Text: Coalesce(First(planDetails).categoryDescriptions.category21, "Category 21") },
+                            { Index: 22, Text: Coalesce(First(planDetails).categoryDescriptions.category22, "Category 22") },
+                            { Index: 23, Text: Coalesce(First(planDetails).categoryDescriptions.category23, "Category 23") },
+                            { Index: 24, Text: Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24") }
                         ]
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
-                    SearchFields: =["Value"]
+                    SearchFields: =["Text"]
                     SearchItems: =[]
                     SelectionFill: =RGBA(100, 118, 132, 1)
-                    SelectMultiple: =false
                     Size: =10
                     Width: =325
-                    X: =40
-                    Y: =49
+                    X: =16
+                    Y: =40
                     ZIndex: =8
 
             bucketFilter As groupContainer:

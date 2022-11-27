@@ -2114,36 +2114,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scrGantt.footer.bottomFilters.categoryFilters.cbCatFilter1.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrGantt.footer.bottomFilters.categoryFilters.cbCatFilter1.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "scrGantt",
-                "type": "scrGantt.footer.bottomFilters.categoryFilters.cbCatFilter1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "scrGantt.footer.iconSaveChanges.AccessibleLabel"
                 }
               ],
@@ -2666,7 +2636,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"scrGantt\" is 381, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"scrGantt\" is 375, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
