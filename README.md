@@ -1,6 +1,14 @@
 <details>
   <summary>Click here to view recent updates</summary>
 
+### 27.11.2022
+- Renamed Categories -> Labels
+- Support for 24 labels (categories)
+- Possibility to view user's all tasks over all available plans instead of selecting specific plan(s)
+- Bug fixing task start and end date handling
+- Bug fixing tasks spanning over the year change
+- Addition to month selector to easily jump over to the beginning of the next year
+
 ### 23.1.2022
 - You can now drag tasks back and forth on the timeline
 - You can easily adjust task's due date right within the app
