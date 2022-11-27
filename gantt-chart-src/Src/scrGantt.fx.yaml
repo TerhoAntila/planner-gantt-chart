@@ -16,6 +16,9 @@ scrGantt As screen:
         Clear(openAssigneePanesTaskIds);
         Clear(colTaskChanges); Set(varOpenTask, Blank());
         
+        // Clear labels filter
+        Reset(selectLabelsFilter);
+        
         // Initialize selecte year and month range
         Set(varSelectedYear, Year(Now()));
         Set(varSelectedStartMonth, Month(Now()) - 1);
@@ -339,7 +342,7 @@ scrGantt As screen:
                                 (
                                     CountRows(selectedPlanIds) <> 1 ||
                                     // Category filters apply
-                                    If (CountRows(selectLabelsFilter.SelectedItems) = 0, true, 
+                                    If (IsBlank(selectLabelsFilter.Selected) || CountRows(selectLabelsFilter.SelectedItems) = 0, true, 
                                         appliedCategories.category1 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 1)) = 1 ||
                                         appliedCategories.category2 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 2)) = 1 ||
                                         appliedCategories.category3 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 3)) = 1 ||
