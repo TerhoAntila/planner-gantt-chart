@@ -924,7 +924,7 @@ scrGantt As screen:
             ShowScrollbar: =false
             TemplatePadding: =0
             TemplateSize: =galMonthSelector.Width / 12
-            Width: =883
+            Width: =850
             X: =483
             ZIndex: =2
 
@@ -942,6 +942,51 @@ scrGantt As screen:
                 Text: =Text(Date(varSelectedYear, ThisItem.Value, 1), "[$-en-GB]mmm")
                 Width: =galMonthSelector.TemplateWidth + 2
                 ZIndex: =1
+
+        Icon1 As icon.ChevronRight:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Color: =Black
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =Theme.Color.LighterDark
+            Height: =36
+            Icon: =Icon.ChevronRight
+            OnSelect: |-
+                =Set(varSelectedYear, varSelectedYear + 1);
+                Set(varTempOldStartMonth, varSelectedStartMonth);
+                Set(varSelectedStartMonth, 1);
+                Set(varSelectedEndMonth, varSelectedStartMonth + (varSelectedEndMonth - varTempOldStartMonth));
+                Set(varStartDate, Date(varSelectedYear, varSelectedStartMonth, 1));
+                Set(varEndDate, DateAdd(Date(varSelectedYear, varSelectedEndMonth + 1, 1), -1, Days));
+                
+                /*
+                If (ThisItem.Value < varSelectedStartMonth,
+                    // Clicked on left area -> decrease the start month
+                    Set(varSelectedStartMonth, ThisItem.Value),
+                    If (ThisItem.Value > varSelectedEndMonth,
+                        // Clicked on the right area -> increase the end month
+                        Set(varSelectedEndMonth, ThisItem.Value),
+                        If (ThisItem.Value = varSelectedStartMonth || ThisItem.Value = varSelectedEndMonth,
+                            // Either clicked left or right border
+                            If (ThisItem.Value = varSelectedStartMonth, Set(varSelectedStartMonth, varSelectedStartMonth + 1), Set(varSelectedEndMonth, varSelectedEndMonth - 1)),
+                            // Clicked in between -> update closest
+                            If (ThisItem.Value - varSelectedStartMonth < varSelectedEndMonth - ThisItem.Value,
+                                Set(varSelectedStartMonth, ThisItem.Value),
+                                Set(varSelectedEndMonth, ThisItem.Value)
+                            )
+                        )
+                    )
+                );
+                Set(varStartDate, Date(varSelectedYear, varSelectedStartMonth, 1));
+                Set(varEndDate, DateAdd(Date(varSelectedYear, varSelectedEndMonth + 1, 1), -1, Days));
+                */
+            PaddingBottom: =6
+            PaddingLeft: =3
+            PaddingRight: =6
+            PaddingTop: =6
+            Width: =38
+            X: =galYearSelector.Width + galMonthSelector.Width + 8
+            ZIndex: =3
 
     galPlanFilter As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
