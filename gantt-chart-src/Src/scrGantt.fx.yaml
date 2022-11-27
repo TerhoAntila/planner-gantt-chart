@@ -30,7 +30,12 @@ scrGantt As screen:
         
         If (myTasks, 
             // If my tasks only, use different method for fetching tasks
-            Collect(planTasks, Planner.ListMyTasksV2().value),
+            Collect(planTasks, Planner.ListMyTasksV2().value);
+            ForAll(
+                Distinct(planTasks, planId),
+                Collect(planDetails, Planner.GetPlanDetails(Result));
+                Collect(selectedPlanIds, Result)
+            );
         
             // Otherwise get all tasks of selected plans, plan details and buckets
             ForAll(idsOfSelectedPlans,
