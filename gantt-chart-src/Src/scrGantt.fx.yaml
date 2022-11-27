@@ -19,7 +19,7 @@ scrGantt As screen:
         // Clear labels filter
         Reset(selectLabelsFilter);
         
-        // Initialize selecte year and month range
+        // Initialize selected year and month range
         Set(varSelectedYear, Year(Now()));
         Set(varSelectedStartMonth, Month(Now()) - 1);
         If(varSelectedStartMonth > 8, Set(varSelectedStartMonth, 8));
@@ -346,7 +346,7 @@ scrGantt As screen:
                                 // Include items based on top plan selection
                                 CountRows(Filter(selectedPlanIds, Value = planId)) > 0 &&
                                 // Only include tasks for the selected range -> either start or end date 
-                                (dueDateTime <= varEndDate && dueDateTime >= varStartDate || startDate <= varEndDate && startDate >= varStartDate) &&
+                                (dueDateTime >= varStartDate && startDate <= varEndDate) &&
                                 (!cbExcludeCompleted.Value || IsBlank(completedDateTime)) &&
                                 // Check for category filters
                                 (
@@ -411,7 +411,7 @@ scrGantt As screen:
                     Text: =ThisItem.title
                     Tooltip: =ThisItem.title
                     Visible: =!IsBlank(ThisItem.id)
-                    Width: =btnTask.X + btnTask.Width
+                    Width: =Min(btnTask.X + btnTask.Width, canvas.Width + lblBucketHeading.Width)
                     Wrap: =false
                     X: =2
                     Y: =3
@@ -430,11 +430,13 @@ scrGantt As screen:
                     PaddingTop: =0
                     Size: =8
                     Text: |-
-                        =Text(ThisItem.startDate, "d.m")
-                        /*Text(DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value - btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days), "d.m")*/
+                        =If (Year(ThisItem.startDate) < varSelectedYear, Text(ThisItem.startDate, "d.m.yy"), Text(ThisItem.startDate, "d.m"))
+                        /*
+                        Text(DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value - btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days), "d.m")
+                        */
                     VerticalAlign: =VerticalAlign.Top
                     Visible: =!IsBlank(ThisItem.startDateTime)
-                    Width: =33
+                    Width: =44
                     X: |-
                         = Max(
                              If(
