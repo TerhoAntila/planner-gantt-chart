@@ -1,6 +1,14 @@
 <details>
   <summary>Click here to view recent updates</summary>
 
+### 27.11.2022
+- Renamed Categories -> Labels
+- Support for 24 labels (categories)
+- Possibility to view user's all tasks over all available plans instead of selecting specific plan(s)
+- Bug fixing task start and end date handling
+- Bug fixing tasks spanning over the year change
+- Addition to month selector to easily jump over to the beginning of the next year
+
 ### 23.1.2022
 - You can now drag tasks back and forth on the timeline
 - You can easily adjust task's due date right within the app
@@ -33,6 +41,8 @@ You can download the Power App package as a zip file by clicking on the PlannerG
 ![image](https://user-images.githubusercontent.com/10154416/118359280-6be23300-b58b-11eb-8cd0-5403e610784e.png)
 
 Or you can use this direct link: https://github.com/TerhoAntila/planner-gantt-chart/raw/main/PlannerGanttChart.zip.
+
+*If you like this app, you might want to consider supporting to boost my development efforts even further 😃. [5€](https://buy.stripe.com/4gw6qH4KUeNx3dK9AA), [10€](https://buy.stripe.com/28o5mDb9igVFdSo4gh), [20€](https://buy.stripe.com/28o02jgtCgVF15CeUW) or [50€](https://buy.stripe.com/bIY8yP0uEeNx4hO003). Thank you!*
 
 # Installation
 
