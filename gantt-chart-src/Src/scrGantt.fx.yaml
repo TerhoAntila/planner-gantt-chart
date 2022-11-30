@@ -333,7 +333,8 @@ scrGantt As screen:
                                         If(appliedCategories.category21, First(Filter(planDetails, id = planId)).categoryDescriptions.category21, ""),
                                         If(appliedCategories.category22, First(Filter(planDetails, id = planId)).categoryDescriptions.category22, ""),
                                         If(appliedCategories.category23, First(Filter(planDetails, id = planId)).categoryDescriptions.category23, ""),
-                                        If(appliedCategories.category24, First(Filter(planDetails, id = planId)).categoryDescriptions.category24, "")
+                                        If(appliedCategories.category24, First(Filter(planDetails, id = planId)).categoryDescriptions.category24, ""),
+                                        If(appliedCategories.category25, First(Filter(planDetails, id = planId)).categoryDescriptions.category25, "")
                                     ],
                                     Len(Value) > 0
                                 ),
@@ -376,7 +377,8 @@ scrGantt As screen:
                                         appliedCategories.category21 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 21)) = 1 ||
                                         appliedCategories.category22 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 22)) = 1 ||
                                         appliedCategories.category23 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 23)) = 1 ||
-                                        appliedCategories.category24 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 24)) = 1 
+                                        appliedCategories.category24 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 24)) = 1 ||
+                                        appliedCategories.category25 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 25)) = 1 
                                     )
                                 ) &&
                                 // Check for bucket filter
@@ -1490,7 +1492,8 @@ scrGantt As screen:
                             { Index: 21, Text: Coalesce(First(planDetails).categoryDescriptions.category21, "Category 21") },
                             { Index: 22, Text: Coalesce(First(planDetails).categoryDescriptions.category22, "Category 22") },
                             { Index: 23, Text: Coalesce(First(planDetails).categoryDescriptions.category23, "Category 23") },
-                            { Index: 24, Text: Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24") }
+                            { Index: 24, Text: Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24") },
+                            { Index: 25, Text: Coalesce(First(planDetails).categoryDescriptions.category25, "Category 25") }
                         )
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
