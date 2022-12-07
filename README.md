@@ -3,7 +3,7 @@
 
 ### 27.11.2022
 - Renamed Categories -> Labels
-- Support for 24 labels (categories)
+- Support for 25 labels (categories)
 - Possibility to view user's all tasks over all available plans instead of selecting specific plan(s)
 - Bug fixing task start and end date handling
 - Bug fixing tasks spanning over the year change
