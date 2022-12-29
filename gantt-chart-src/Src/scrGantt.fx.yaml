@@ -794,19 +794,6 @@ scrGantt As screen:
                             Width: =Value(lblSingleDayWidth.Text)
                             ZIndex: =1
 
-                lblTaskCategories As label:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    Color: =Theme.Color.Dark
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =45
-                    OnSelect: =Select(Parent)
-                    Size: =6
-                    Text: =If (myTasks, "", Concat(ThisItem.categories, Value, ", "))
-                    Width: =82
-                    X: =lblLabelsTitle.X
-                    ZIndex: =11
-
                 iconOpenTask As icon.OpenInNewWindow:
                     BorderColor: =RGBA(32, 54, 71, 1)
                     Color: =Theme.Color.Dark
@@ -822,6 +809,19 @@ scrGantt As screen:
                     Visible: =!IsBlank(ThisItem.id)
                     Width: =15
                     X: =btnTask.X + btnTask.Width - iconOpenTask.Width
+                    ZIndex: =11
+
+                lblTaskCategories As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =Theme.Color.Dark
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =45
+                    OnSelect: =Select(Parent)
+                    Size: =6
+                    Text: =If (myTasks, "", Concat(ThisItem.categories, Value, ", "))
+                    Width: =82
+                    X: =lblLabelsTitle.X
                     ZIndex: =12
 
         lblBucketHeading As label:
