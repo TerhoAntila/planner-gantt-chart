@@ -658,6 +658,7 @@ scrGantt As screen:
                         RailFill: =RGBA(128, 130, 133, 1)
                         RailThickness: =0
                         ShowValue: =false
+                        Tooltip: =lblTaskName.Text
                         ValueFill: =Theme.Color.TaskBackground
                         Visible: =ThisItem.startDate > varStartDate && ThisItem.dueDateTime < varEndDate
                         Width: =canvas.Width
