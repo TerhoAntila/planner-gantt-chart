@@ -515,7 +515,22 @@ scrGantt As screen:
                             (ThisItem.dueDateTime - ThisItem.startDate)
                         ) * Value(lblSingleDayWidth.Text)
                     X: |-
-                        =(ThisItem.startDate - varStartDate) * Value(lblSingleDayWidth.Text) + canvas.X
+                        =With(
+                            {
+                                dayWidth: Value(lblSingleDayWidth.Text),
+                                leftOffset: canvas.X
+                            },
+                            With(
+                                {currentX: (ThisItem.startDate - varStartDate) * Value(lblSingleDayWidth.Text) + canvas.X},
+                                currentX - If (
+                                    sliderTaskPosition.Visible,
+                                    (currentX - (sliderTaskPosition.Value * dayWidth - Self.Width / 2 + leftOffset)),
+                                    0
+                                )
+                            )
+                        )
+                        //(ThisItem.startDate - varStartDate) * Value(lblSingleDayWidth.Text) + canvas.X
+                        // Apply rescheduling slider effect
                         /*With({
                                 dayWidth: Value(lblSingleDayWidth.Text),
                                 leftOffset: canvas.X
