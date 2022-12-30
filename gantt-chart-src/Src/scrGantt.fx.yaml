@@ -509,7 +509,11 @@ scrGantt As screen:
                     Size: =8
                     Text: =""
                     Visible: =!IsBlank(ThisItem.id)
-                    Width: =Max(1, (ThisItem.dueDateTime - ThisItem.startDate )) * Value(lblSingleDayWidth.Text)
+                    Width: |-
+                        =Max(
+                            1,
+                            (ThisItem.dueDateTime - Max(ThisItem.startDate, varStartDate))
+                        ) * Value(lblSingleDayWidth.Text)
                     X: |-
                         =With({
                                 dayWidth: Value(lblSingleDayWidth.Text),
