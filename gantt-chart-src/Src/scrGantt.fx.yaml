@@ -512,10 +512,11 @@ scrGantt As screen:
                     Width: |-
                         =Max(
                             1,
-                            (ThisItem.dueDateTime - Max(ThisItem.startDate, varStartDate))
+                            (ThisItem.dueDateTime - ThisItem.startDate)
                         ) * Value(lblSingleDayWidth.Text)
                     X: |-
-                        =With({
+                        =(ThisItem.startDate - varStartDate) * Value(lblSingleDayWidth.Text) + canvas.X
+                        /*With({
                                 dayWidth: Value(lblSingleDayWidth.Text),
                                 leftOffset: canvas.X
                             },
@@ -527,7 +528,7 @@ scrGantt As screen:
                                 currentX 
                                     - (currentX - (sliderTaskPosition.Value * dayWidth - Self.Width / 2 + leftOffset))
                             )
-                        )
+                        )*/
                     Y: =3
                     ZIndex: =5
 
