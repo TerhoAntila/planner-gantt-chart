@@ -4,6 +4,9 @@
 ### 1.1.2023
 - Start and end date fix for long tasks
 
+### 8.12.2022
+- Added instrumentation key to the app to understand distribution and usage of it
+
 ### 27.11.2022
 - Renamed Categories -> Labels
 - Support for 25 labels (categories)
