@@ -140,7 +140,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/30/2022 11:45:19",
+  "HeaderLastSavedDateTimeUTC": "01/01/2023 09:33:27",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3d92e059-7852-4ed6-9b13-1e089584eb85": "\"/providers/microsoft.powerapps/apis/shared_planner/connections/d236a9821725443ca475c264af4f4daf\"",
@@ -151,7 +151,7 @@
     "user-placeholder-image": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "user-placeholder-image": "https://docserverpwaprodweu.blob.core.windows.net/d594972f-eff4-4a50-be6f-091f88af400c-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=H3unzXRfmSlr%2BuDN2gFkLSmIEJpx1eRjs7IjpHfzeTU%3D&spr=https&se=2022-12-31T11%3A32%3A29Z&sp=r"
+    "user-placeholder-image": "https://docserverpwaprodneu.blob.core.windows.net/e98454b9-1a79-42c0-aec3-a908b2067d14-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=Duusd7Z0ODjF4RPzV1QouxXlC9unNHty3sOi76yodOM%3D&spr=https&se=2023-01-02T09%3A46%3A31Z&sp=r"
   },
   "OldLogoFileName": "grtrz15r.jpg",
   "OrderComponentMetadata": {
@@ -473,7 +473,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.5689523,
+    "AnalysisLoadTime": 1.5279197,
     "ControlCount": {
       "8d8311d0ff634049bd67be38dff31524": 2,
       "button": 7,
@@ -494,7 +494,7 @@
       "slider": 1,
       "text": 1
     },
-    "DeserializationLoadTime": 1.8594293,
+    "DeserializationLoadTime": 2.7810573,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

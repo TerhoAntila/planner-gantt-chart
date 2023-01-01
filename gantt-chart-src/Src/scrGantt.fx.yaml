@@ -529,21 +529,6 @@ scrGantt As screen:
                                 )
                             )
                         )
-                        //(ThisItem.startDate - varStartDate) * Value(lblSingleDayWidth.Text) + canvas.X
-                        // Apply rescheduling slider effect
-                        /*With({
-                                dayWidth: Value(lblSingleDayWidth.Text),
-                                leftOffset: canvas.X
-                            },
-                            With({
-                                    currentX: (ThisItem.startDate - varStartDate - 1) * dayWidth 
-                                        + dayWidth
-                                        + leftOffset
-                                },
-                                currentX 
-                                    - (currentX - (sliderTaskPosition.Value * dayWidth - Self.Width / 2 + leftOffset))
-                            )
-                        )*/
                     Y: =3
                     ZIndex: =5
 
