@@ -2198,7 +2198,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnTask",
-      "ParentIndex": 8,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14696,7 +14696,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblEndDate",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17782,7 +17782,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblStartDate",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19177,7 +19177,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblTaskName",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -41,7 +41,7 @@ scrPlans As screen:
             Width: =400
             ZIndex: =1
 
-        Button1 As button:
+        btnPlan As button:
             BorderColor: =Theme.Color.LighterDark
             Color: =Theme.Color.LighterDark
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -75,8 +75,8 @@ scrPlans As screen:
             Size: =13
             Text: =""
             Width: =67
-            X: =Button1.Width - Self.Width
-            Y: =Button1.Height - Self.Height - 5
+            X: =btnPlan.Width - Self.Width
+            Y: =btnPlan.Height - Self.Height - 5
             ZIndex: =3
 
         iconOpenPlan_1 As icon.OpenInNewWindow:
@@ -90,7 +90,7 @@ scrPlans As screen:
                 =Launch("https://tasks.office.com/Home/Planner/#/plantaskboard?planId=" & ThisItem.id)
             Tooltip: ="Open plan"
             Width: =58
-            X: =Button1.Width - Self.Width
+            X: =btnPlan.Width - Self.Width
             Y: =20
             ZIndex: =4
 
@@ -200,13 +200,13 @@ scrPlans As screen:
             ZIndex: =2
 
     lblTitleStartScreen As label:
-        Align: =Align.Center
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =White
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =Theme.Color.Dark
         FontWeight: =FontWeight.Semibold
         Height: =60
+        PaddingLeft: =galListPlans.X + btnPlan.X
         Size: =28
         Text: ="Select the plan you want to view"
         Width: =1366
@@ -253,8 +253,8 @@ scrPlans As screen:
 
     contRating As groupContainer.manualLayoutContainer:
         Height: =60
-        Width: =360
-        X: =1006
+        Width: =402
+        X: =964
         ZIndex: =9
 
         imgRating As image:
@@ -268,7 +268,7 @@ scrPlans As screen:
                     "ddmmyyyyHHmmss"
                 )
             Width: =208
-            X: =129
+            X: =182
             ZIndex: =1
 
         galRate As gallery.galleryHorizontal:
@@ -282,7 +282,7 @@ scrPlans As screen:
             TemplatePadding: =0
             TemplateSize: =Self.Width / 5
             Width: =220
-            X: =120
+            X: =175
             ZIndex: =2
 
             btnRate As button:
@@ -300,4 +300,15 @@ scrPlans As screen:
                 Width: =46.8
                 Y: =10
                 ZIndex: =1
+
+        lblRateMe As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =60
+            Size: =20
+            Text: =If (varUserRating > 0, "Thank you!", "Rate me 👉")
+            Width: =175
+            ZIndex: =3
 
