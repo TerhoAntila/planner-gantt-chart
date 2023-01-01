@@ -3700,7 +3700,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contAssignees",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3850,7 +3850,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contNewDueDate",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9540,7 +9540,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconOpenTask",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18785,7 +18785,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblTaskCategories",
-      "ParentIndex": 3,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
