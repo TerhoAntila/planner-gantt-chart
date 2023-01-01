@@ -253,7 +253,6 @@ scrPlans As screen:
 
     contRating As groupContainer.manualLayoutContainer:
         Height: =60
-        Visible: =false
         Width: =360
         X: =1006
         ZIndex: =9
@@ -264,8 +263,41 @@ scrPlans As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             Height: =60
             Image: |-
-                ="https://fn-gantt-chart-rating.azurewebsites.net/api/rating-img/" & User().Email & "/rating.png"
+                ="https://fn-gantt-chart-rating.azurewebsites.net/api/rating-img/" & varRatingGuid & "/" & varUserRating & "/rating.png?ts=" & Text(
+                    Now(),
+                    "ddmmyyyyHHmmss"
+                )
             Width: =208
             X: =129
             ZIndex: =1
+
+        galRate As gallery.galleryHorizontal:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Height: =60
+            Items: =Sequence(5, 1, 1)
+            OnSelect: |-
+                =Set(varUserRating, ThisItem.Value);
+                Set(varRatingGuid, GUID());
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =Self.Width / 5
+            Width: =220
+            X: =120
+            ZIndex: =2
+
+            btnRate As button:
+                Color: =RGBA(255, 255, 255, 0)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(100, 118, 132, 0)
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =Theme.Color.TaskBackground
+                OnSelect: =Select(Parent)
+                Size: =15
+                Text: =""
+                Width: =46.8
+                Y: =10
+                ZIndex: =1
 
