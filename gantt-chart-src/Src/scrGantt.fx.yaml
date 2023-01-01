@@ -333,7 +333,8 @@ scrGantt As screen:
                                         If(appliedCategories.category21, First(Filter(planDetails, id = planId)).categoryDescriptions.category21, ""),
                                         If(appliedCategories.category22, First(Filter(planDetails, id = planId)).categoryDescriptions.category22, ""),
                                         If(appliedCategories.category23, First(Filter(planDetails, id = planId)).categoryDescriptions.category23, ""),
-                                        If(appliedCategories.category24, First(Filter(planDetails, id = planId)).categoryDescriptions.category24, "")
+                                        If(appliedCategories.category24, First(Filter(planDetails, id = planId)).categoryDescriptions.category24, ""),
+                                        If(appliedCategories.category25, First(Filter(planDetails, id = planId)).categoryDescriptions.category25, "")
                                     ],
                                     Len(Value) > 0
                                 ),
@@ -376,7 +377,8 @@ scrGantt As screen:
                                         appliedCategories.category21 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 21)) = 1 ||
                                         appliedCategories.category22 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 22)) = 1 ||
                                         appliedCategories.category23 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 23)) = 1 ||
-                                        appliedCategories.category24 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 24)) = 1 
+                                        appliedCategories.category24 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 24)) = 1 ||
+                                        appliedCategories.category25 && CountRows(Filter(selectLabelsFilter.SelectedItems, Index = 25)) = 1 
                                     )
                                 ) &&
                                 // Check for bucket filter
@@ -507,19 +509,24 @@ scrGantt As screen:
                     Size: =8
                     Text: =""
                     Visible: =!IsBlank(ThisItem.id)
-                    Width: =Max(1, (ThisItem.dueDateTime - ThisItem.startDate )) * Value(lblSingleDayWidth.Text)
+                    Width: |-
+                        =Max(
+                            1,
+                            (ThisItem.dueDateTime - ThisItem.startDate)
+                        ) * Value(lblSingleDayWidth.Text)
                     X: |-
-                        =With({
+                        =With(
+                            {
                                 dayWidth: Value(lblSingleDayWidth.Text),
                                 leftOffset: canvas.X
                             },
-                            With({
-                                    currentX: (ThisItem.startDate - varStartDate - 1) * dayWidth 
-                                        + dayWidth
-                                        + leftOffset
-                                },
-                                currentX 
-                                    - (currentX - (sliderTaskPosition.Value * dayWidth - Self.Width / 2 + leftOffset))
+                            With(
+                                {currentX: (ThisItem.startDate - varStartDate) * Value(lblSingleDayWidth.Text) + canvas.X},
+                                currentX - If (
+                                    sliderTaskPosition.Visible,
+                                    (currentX - (sliderTaskPosition.Value * dayWidth - Self.Width / 2 + leftOffset)),
+                                    0
+                                )
                             )
                         )
                     Y: =3
@@ -656,6 +663,7 @@ scrGantt As screen:
                         RailFill: =RGBA(128, 130, 133, 1)
                         RailThickness: =0
                         ShowValue: =false
+                        Tooltip: =lblTaskName.Text
                         ValueFill: =Theme.Color.TaskBackground
                         Visible: =ThisItem.startDate > varStartDate && ThisItem.dueDateTime < varEndDate
                         Width: =canvas.Width
@@ -792,19 +800,6 @@ scrGantt As screen:
                             Width: =Value(lblSingleDayWidth.Text)
                             ZIndex: =1
 
-                lblTaskCategories As label:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    Color: =Theme.Color.Dark
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =45
-                    OnSelect: =Select(Parent)
-                    Size: =6
-                    Text: =If (myTasks, "", Concat(ThisItem.categories, Value, ", "))
-                    Width: =82
-                    X: =lblLabelsTitle.X
-                    ZIndex: =11
-
                 iconOpenTask As icon.OpenInNewWindow:
                     BorderColor: =RGBA(32, 54, 71, 1)
                     Color: =Theme.Color.Dark
@@ -820,6 +815,19 @@ scrGantt As screen:
                     Visible: =!IsBlank(ThisItem.id)
                     Width: =15
                     X: =btnTask.X + btnTask.Width - iconOpenTask.Width
+                    ZIndex: =11
+
+                lblTaskCategories As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =Theme.Color.Dark
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =45
+                    OnSelect: =Select(Parent)
+                    Size: =6
+                    Text: =If (myTasks, "", Concat(ThisItem.categories, Value, ", "))
+                    Width: =82
+                    X: =lblLabelsTitle.X
                     ZIndex: =12
 
         lblBucketHeading As label:
@@ -1490,7 +1498,8 @@ scrGantt As screen:
                             { Index: 21, Text: Coalesce(First(planDetails).categoryDescriptions.category21, "Category 21") },
                             { Index: 22, Text: Coalesce(First(planDetails).categoryDescriptions.category22, "Category 22") },
                             { Index: 23, Text: Coalesce(First(planDetails).categoryDescriptions.category23, "Category 23") },
-                            { Index: 24, Text: Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24") }
+                            { Index: 24, Text: Coalesce(First(planDetails).categoryDescriptions.category24, "Category 24") },
+                            { Index: 25, Text: Coalesce(First(planDetails).categoryDescriptions.category25, "Category 25") }
                         )
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)

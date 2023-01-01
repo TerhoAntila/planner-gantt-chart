@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/fn-gantt-chart-rating/PlannerGanttChartApp/fnGanttChartRating/Properties/PublishProfiles
+/fn-gantt-chart-rating/PlannerGanttChartApp/.vs
