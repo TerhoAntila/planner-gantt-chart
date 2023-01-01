@@ -1,6 +1,9 @@
 <details>
   <summary>Click here to view recent updates</summary>
 
+### 1.1.2023
+- Start and end date fix for long tasks
+
 ### 27.11.2022
 - Renamed Categories -> Labels
 - Support for 24 labels (categories)
