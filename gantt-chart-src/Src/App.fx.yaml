@@ -74,4 +74,5 @@ App As appinfo:
         Set(varMaxSimultaneousSelectedPlans, CountRows(colPlanColors));
         Set(varCurrentUser, Office365Users.MyProfile());
         Set(varUserRating, 0);
+        Set(varRatingGuid, GUID());
 

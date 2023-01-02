@@ -253,8 +253,8 @@ scrPlans As screen:
 
     contRating As groupContainer.manualLayoutContainer:
         Height: =60
-        Width: =402
-        X: =964
+        Width: =450
+        X: =916
         ZIndex: =9
 
         imgRating As image:
@@ -268,7 +268,7 @@ scrPlans As screen:
                     "ddmmyyyyHHmmss"
                 )
             Width: =208
-            X: =182
+            X: =Parent.Width - Self.Width - 10
             ZIndex: =1
 
         galRate As gallery.galleryHorizontal:
@@ -282,7 +282,7 @@ scrPlans As screen:
             TemplatePadding: =0
             TemplateSize: =Self.Width / 5
             Width: =220
-            X: =175
+            X: =Parent.Width - Self.Width - 5
             ZIndex: =2
 
             btnRate As button:
@@ -297,6 +297,7 @@ scrPlans As screen:
                 OnSelect: =Select(Parent)
                 Size: =15
                 Text: =""
+                Tooltip: =ThisItem.Value & "/5"
                 Width: =46.8
                 Y: =10
                 ZIndex: =1
@@ -306,9 +307,9 @@ scrPlans As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =60
+            Height: =55
             Size: =20
-            Text: =If (varUserRating > 0, "Thank you!", "Rate me 👉")
-            Width: =175
+            Text: =If (varUserRating > 0, "Thank you!", "Rate the app 👉")
+            Width: =220
             ZIndex: =3
 
