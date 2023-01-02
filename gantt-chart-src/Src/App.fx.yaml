@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |
+    OnStart: |-
         =ClearCollect(colThemes,
             {
                 Name: "blue",
@@ -73,4 +73,6 @@ App As appinfo:
         ]);
         Set(varMaxSimultaneousSelectedPlans, CountRows(colPlanColors));
         Set(varCurrentUser, Office365Users.MyProfile());
+        Set(varUserRating, 0);
+        Set(varRatingGuid, GUID());
 

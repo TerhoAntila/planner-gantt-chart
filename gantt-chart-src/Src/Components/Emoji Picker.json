@@ -34,7 +34,7 @@
             "Name": "galleryTemplate5",
             "Parent": "galEmojis",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 118,
+            "PublishOrderIndex": 123,
             "Rules": [
               {
                 "Category": "Design",
@@ -180,7 +180,7 @@
             "Name": "lblEmoji",
             "Parent": "galEmojis",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 119,
+            "PublishOrderIndex": 124,
             "Rules": [
               {
                 "Category": "Data",
@@ -545,7 +545,7 @@
         "Name": "galEmojis",
         "Parent": "Emoji Picker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 117,
+        "PublishOrderIndex": 122,
         "Rules": [
           {
             "Category": "Data",
@@ -827,7 +827,7 @@
         "Name": "lblSelectedEmoji",
         "Parent": "Emoji Picker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 120,
+        "PublishOrderIndex": 125,
         "Rules": [
           {
             "Category": "Data",
@@ -1182,7 +1182,7 @@
         "Name": "iconShowGrid",
         "Parent": "Emoji Picker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 121,
+        "PublishOrderIndex": 126,
         "Rules": [
           {
             "Category": "Data",
@@ -1350,7 +1350,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638081622920949499",
+    "LastModifiedTimestamp": "638082398917304066",
     "Name": "Emoji Picker",
     "Rules": [
       {
@@ -1447,7 +1447,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638081622920949499",
+  "LastModifiedTimestamp": "638082398917304066",
   "Name": "8d8311d0ff634049bd67be38dff31524",
   "OverridableProperties": {},
   "Version": "637700921040875379"
