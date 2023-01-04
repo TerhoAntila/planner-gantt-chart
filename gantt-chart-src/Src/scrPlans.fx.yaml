@@ -253,8 +253,8 @@ scrPlans As screen:
 
     contRating As groupContainer.manualLayoutContainer:
         Height: =60
-        Width: =450
-        X: =916
+        Width: =532
+        X: =834
         ZIndex: =9
 
         imgRating As image:
@@ -308,8 +308,27 @@ scrPlans As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =55
-            Size: =20
             Text: =If (varUserRating > 0, "Thank you!", "Rate the app 👉")
-            Width: =220
+            Width: =160
+            X: =Parent.Width - Self.Width - galRate.Width
             ZIndex: =3
+
+        btnInfo As button:
+            BorderColor: =Theme.Color.LighterDark
+            BorderThickness: =4
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =Theme.Color.Dark
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =Self.Fill
+            OnSelect: =Navigate(scrInfo)
+            Size: =15
+            Text: ="Info"
+            Tooltip: ="App info"
+            Width: =120
+            X: =5
+            Y: =Parent.Height / 2 - Self.Height / 2
+            ZIndex: =4
 
