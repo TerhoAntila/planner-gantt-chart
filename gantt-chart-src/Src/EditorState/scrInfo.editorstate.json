@@ -178,7 +178,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Show your <b><font color=blue>HTML</font></b> text here.\"",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "HtmlText",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
