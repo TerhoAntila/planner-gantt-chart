@@ -7,12 +7,13 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =Theme.Color.Dark
-        Height: =202
+        Height: =142
         Image: |-
             ="https://fn-gantt-chart-rating.azurewebsites.net/api/rating-img/" & varRatingGuid & "/0/rating.png?ts=" & Text(
                 Now(),
                 "ddmmyyyyHHmmss"
             )
+        ImagePosition: =ImagePosition.Center
         Width: =1366
         ZIndex: =1
 
@@ -43,12 +44,15 @@
             Height: =440
             HtmlText: |-
                 ="
+                <div style='font-size: 26px'>
                 <ul>
                     <li>Explain what the app is
                     <li>Link to blog post
-                    <li>Instructions to check for new versions
-                    <li>Encouragement for support
+                    <li>Instructions to check for new versions. Show current app version and the latest version from GitHub.
+                    <li>Encouragement for support/contribution
+                    <li>Link to bookings to get support
                 </ul>
+                </div>
                 "
             Width: =994
             Y: =202
