@@ -1350,7 +1350,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638084604291677535",
+    "LastModifiedTimestamp": "638085858659699081",
     "Name": "Emoji Picker",
     "Rules": [
       {
@@ -1447,7 +1447,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638084604291677535",
+  "LastModifiedTimestamp": "638085858659699081",
   "Name": "8d8311d0ff634049bd67be38dff31524",
   "OverridableProperties": {},
   "Version": "637700921040875379"
