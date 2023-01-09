@@ -96,6 +96,7 @@
     "imgProgressIcon": 147,
     "imgRating": 22,
     "imgRatingInfo": 44,
+    "imgTaskProgress": 150,
     "imgTerho": 43,
     "inputAddTaskTitle": 76,
     "Label2": 11,
@@ -156,7 +157,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/09/2023 10:11:43",
+  "HeaderLastSavedDateTimeUTC": "01/09/2023 10:21:37",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3d92e059-7852-4ed6-9b13-1e089584eb85": "\"/providers/microsoft.powerapps/apis/shared_planner/connections/d236a9821725443ca475c264af4f4daf\"",
@@ -316,6 +317,7 @@
     "imgProgressIcon": {},
     "imgRating": {},
     "imgRatingInfo": {},
+    "imgTaskProgress": {},
     "imgTerho": {},
     "inputAddTaskTitle": {},
     "Label2": {},
@@ -465,6 +467,7 @@
     "imgProgressIcon": 0,
     "imgRating": 5,
     "imgRatingInfo": 5,
+    "imgTaskProgress": 0,
     "imgTerho": 0,
     "inputAddTaskTitle": 52,
     "Label2": 128,
@@ -536,6 +539,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 1.9612245,
     "ControlCount": {
+      "6ff32b0e04f74b40913978cbde020549": 2,
       "8d8311d0ff634049bd67be38dff31524": 2,
       "button": 9,
       "cf4b69ecd80c4abb8580ffcc87adca74": 1,
