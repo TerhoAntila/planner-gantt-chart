@@ -2,7 +2,8 @@
   "ComponentIndexes": {
     "addTaskEmojiPicker": 2,
     "Emoji Picker": 3,
-    "Hint": 4
+    "Hint": 4,
+    "Task Progress Icon": 5
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -92,6 +93,7 @@
     "iconShowHideAssignees": 113,
     "iconUser": 31,
     "imgAssignee": 112,
+    "imgProgressIcon": 147,
     "imgRating": 22,
     "imgRatingInfo": 44,
     "imgTerho": 43,
@@ -148,12 +150,13 @@
     "selectBucketFilter": 136,
     "selectLabelsFilter": 139,
     "sliderTaskPosition": 107,
+    "Task Progress Icon": 146,
     "tasks": 99,
     "viewMultipleButton": 32
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/06/2023 08:01:46",
+  "HeaderLastSavedDateTimeUTC": "01/09/2023 10:11:43",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3d92e059-7852-4ed6-9b13-1e089584eb85": "\"/providers/microsoft.powerapps/apis/shared_planner/connections/d236a9821725443ca475c264af4f4daf\"",
@@ -161,19 +164,27 @@
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
+    "taks-inprogress": "0ae60a05-22c7-451c-9e29-a2c526b1ee6f.png",
+    "task-complete": "99778345-38ec-4a9e-b3b9-b648910fd466.png",
+    "task-not-started": "204b0778-2eb9-4d88-9a82-f8c40482d675.png",
     "terhoantila": "d038aa79-b5a4-4c61-8efa-a8105af3afec.png",
     "user-placeholder-image": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "terhoantila": "https://docserverpwaprodweu.blob.core.windows.net/eb1d0054-da06-4695-93df-35fb00a17047-1/resource/Assets0Images0d038aa79-b5a4-4c61-8efa-a8105af3afec.png?sv=2017-04-17&sr=b&sig=bMU5PYdXL72KSdXGGoXxtlgwn1o0Sl%2Ff46J11Ogr%2Bss%3D&spr=https&se=2023-01-07T08%3A12%3A06Z&sp=r",
-    "user-placeholder-image": "https://docserverpwaprodweu.blob.core.windows.net/eb1d0054-da06-4695-93df-35fb00a17047-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=fdbhlXxVAQpM%2FaYUbQQKf5uoqLaghVbDZCA4OedFkPU%3D&spr=https&se=2023-01-07T08%3A12%3A06Z&sp=r"
+    "taks-inprogress": "https://docserverpwaprodneu.blob.core.windows.net/fd2e6efc-a0bd-4254-a3d1-a88d7ab049ab-1/resource/2a7a88c8-ab46-40fa-af7f-80d71ed176d5.png?sv=2017-04-17&sr=b&sig=7rHwEBLHIrzwHdvMLJoxzvxcr%2FyJQlWeBC7nKfONJvw%3D&spr=https&se=2023-01-10T10%3A23%3A23Z&sp=r",
+    "task-complete": "https://docserverpwaprodneu.blob.core.windows.net/fd2e6efc-a0bd-4254-a3d1-a88d7ab049ab-1/resource/54b3d723-6190-40a6-b9da-276a7df54bbf.png?sv=2017-04-17&sr=b&sig=1kO8kEDZWne39ca%2FW8Z4sfgQv%2FM%2FhSau2kTewDR6sds%3D&spr=https&se=2023-01-10T10%3A23%3A24Z&sp=r",
+    "task-not-started": "https://docserverpwaprodneu.blob.core.windows.net/fd2e6efc-a0bd-4254-a3d1-a88d7ab049ab-1/resource/b3522779-0b89-47e5-8c5c-ad8f26dc244b.png?sv=2017-04-17&sr=b&sig=xRJzGI9wP3sTpK8PqQ268p2Q%2FyWmuxqf54tfYXlblkk%3D&spr=https&se=2023-01-10T10%3A23%3A24Z&sp=r",
+    "terhoantila": "https://docserverpwaprodneu.blob.core.windows.net/fd2e6efc-a0bd-4254-a3d1-a88d7ab049ab-1/resource/Assets0Images0d038aa79-b5a4-4c61-8efa-a8105af3afec.png?sv=2017-04-17&sr=b&sig=YeLEoazte90%2FXAHtPki6t9KV4q2Mgz0VEHNUfXeLhLQ%3D&spr=https&se=2023-01-10T10%3A15%3A52Z&sp=r",
+    "user-placeholder-image": "https://docserverpwaprodneu.blob.core.windows.net/fd2e6efc-a0bd-4254-a3d1-a88d7ab049ab-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=JZT9NNLfKHSPDsU0rDN7pUAPa0Bu95mPGo2GB8QwNPw%3D&spr=https&se=2023-01-10T10%3A15%3A52Z&sp=r"
   },
   "OldLogoFileName": "grtrz15r.jpg",
   "OrderComponentMetadata": {
+    "6ff32b0e04f74b40913978cbde020549": 2,
     "8d8311d0ff634049bd67be38dff31524": 0,
     "cf4b69ecd80c4abb8580ffcc87adca74": 1
   },
   "OrderComponentTemplate": {
+    "6ff32b0e04f74b40913978cbde020549": 2,
     "8d8311d0ff634049bd67be38dff31524": 0,
     "cf4b69ecd80c4abb8580ffcc87adca74": 1
   },
@@ -302,6 +313,7 @@
     "iconShowHideAssignees": {},
     "iconUser": {},
     "imgAssignee": {},
+    "imgProgressIcon": {},
     "imgRating": {},
     "imgRatingInfo": {},
     "imgTerho": {},
@@ -358,6 +370,7 @@
     "selectBucketFilter": {},
     "selectLabelsFilter": {},
     "sliderTaskPosition": {},
+    "Task Progress Icon": {},
     "tasks": {},
     "viewMultipleButton": {}
   },
@@ -449,6 +462,7 @@
     "iconShowHideAssignees": 89,
     "iconUser": 14,
     "imgAssignee": 88,
+    "imgProgressIcon": 0,
     "imgRating": 5,
     "imgRatingInfo": 5,
     "imgTerho": 0,
@@ -505,18 +519,22 @@
     "selectBucketFilter": 112,
     "selectLabelsFilter": 115,
     "sliderTaskPosition": 83,
+    "Task Progress Icon": 0,
     "tasks": 75,
     "viewMultipleButton": 15
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0,
+    "Image-taks-inprogress": 3,
+    "Image-task-complete": 4,
+    "Image-task-not-started": 5,
     "Image-terhoantila": 2,
     "Image-user-placeholder-image": 1
   },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.8780661,
+    "AnalysisLoadTime": 1.9612245,
     "ControlCount": {
       "8d8311d0ff634049bd67be38dff31524": 2,
       "button": 9,
@@ -538,7 +556,7 @@
       "slider": 1,
       "text": 1
     },
-    "DeserializationLoadTime": 2.2955293,
+    "DeserializationLoadTime": 3.4271219,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

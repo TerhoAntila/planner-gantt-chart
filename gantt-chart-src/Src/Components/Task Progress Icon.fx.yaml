@@ -1,0 +1,27 @@
+"'Task Progress Icon' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =50
+    Progress: =0
+    Width: =50
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    imgProgressIcon As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: ='Task Progress Icon'.Height
+        Image: |-
+            =If (
+                'Task Progress Icon'.Progress = 0,
+                'task-not-started',
+                If (
+                    'Task Progress Icon'.Progress < 100,
+                    'taks-inprogress',
+                    'task-complete'
+                )
+            )
+        Width: ='Task Progress Icon'.Width
+        ZIndex: =1
+
