@@ -2198,7 +2198,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnTask",
-      "ParentIndex": 12,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3557,7 +3557,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contAddTask",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3700,7 +3700,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contAssignees",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3850,7 +3850,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contNewDueDate",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3998,7 +3998,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contTaskRescheduling",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5489,7 +5489,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate10",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9540,7 +9540,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconOpenTask",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10950,7 +10950,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgTaskProgress",
-      "ParentIndex": 0,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18665,7 +18665,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblTaskBucketName",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19021,7 +19021,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblTaskCategories",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
