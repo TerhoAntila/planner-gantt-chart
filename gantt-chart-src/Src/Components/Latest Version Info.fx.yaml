@@ -28,8 +28,9 @@
         ZIndex: =1
 
     timerComms As timer:
+        AutoPause: =false
         AutoStart: =true
-        Duration: =200
+        Duration: =500
         Fill: =RGBA(100, 118, 132, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)

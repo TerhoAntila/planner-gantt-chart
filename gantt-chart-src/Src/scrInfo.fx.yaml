@@ -83,34 +83,3 @@
             Y: =imgRatingInfo.Height
             ZIndex: =2
 
-    "'Latest Version Info_1' As 'Latest Version Info'":
-        Height: =173
-        X: =648
-        Y: =594
-        ZIndex: =6
-
-    Label3 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: ='Latest Version Info_1'.VersionNumber
-        X: =268
-        Y: =686
-        ZIndex: =7
-
-    Button3 As button:
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(100, 118, 132, 1)
-        FontWeight: =FontWeight.Semibold
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Reset('Latest Version Info_1')
-        Size: =15
-        Text: ="Button"
-        X: =258
-        Y: =686
-        ZIndex: =8
-

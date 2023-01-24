@@ -96,7 +96,6 @@
     "EnableInstrumentation": false,
     "FileID": "48503832-dd1c-4c4b-b303-747be0b3a4f9",
     "Id": "48503832-dd1c-4c4b-b303-747be0b3a4f9",
-    "InstrumentationKey": "25787c91-cfe5-41a6-8a12-adea89e346dd",
     "LocalDatabaseReferences": "{}",
     "Name": "Planner Gantt Chart",
     "OriginatingVersion": "1.309"
