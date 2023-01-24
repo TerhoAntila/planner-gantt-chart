@@ -480,27 +480,6 @@ scrGantt As screen:
                     Y: =3
                     ZIndex: =4
 
-                imgTaskProgress As image:
-                    BorderColor: =RGBA(32, 54, 71, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Height: =10
-                    Image: |-
-                        =If (
-                            ThisItem.percentComplete = 0,
-                            'task-not-started',
-                            If (
-                                ThisItem.percentComplete < 100,
-                                'taks-inprogress',
-                                'task-complete'
-                            )
-                        )
-                    OnSelect: =Select(Parent)
-                    Width: =10
-                    X: =iconOpenTask.X - Self.Width - 5
-                    Y: =iconOpenTask.Y + 3
-                    ZIndex: =5
-
                 btnTask As button:
                     Align: =Align.Right
                     BorderColor: =First(Filter(planColors, planId = ThisItem.planId)).colorSchema.Value.chartColor
@@ -546,7 +525,7 @@ scrGantt As screen:
                             )
                         )
                     Y: =3
-                    ZIndex: =6
+                    ZIndex: =5
 
                 lblTaskBucketName As label:
                     Align: =Align.Right
@@ -565,14 +544,14 @@ scrGantt As screen:
                         )
                     Width: =79
                     Y: =1
-                    ZIndex: =7
+                    ZIndex: =6
 
                 contAddTask As groupContainer:
                     Height: =48
                     Visible: =IsBlank(ThisItem.id)
                     Width: =canvas.Width
                     X: =canvas.X
-                    ZIndex: =8
+                    ZIndex: =7
 
                     galAddButtons As gallery.galleryHorizontal:
                         BorderColor: =RGBA(32, 54, 71, 1)
@@ -624,7 +603,7 @@ scrGantt As screen:
                     Visible: =!IsBlank(ThisItem.id)
                     Width: =canvas.Width
                     X: =canvas.X
-                    ZIndex: =9
+                    ZIndex: =8
 
                     sliderTaskPosition As slider:
                         BorderColor: =RGBA(32, 54, 71, 1)
@@ -690,7 +669,7 @@ scrGantt As screen:
                     Height: =48
                     Visible: =!IsBlank(ThisItem.id)
                     X: =btnTask.X + btnTask.Width
-                    ZIndex: =10
+                    ZIndex: =9
 
                     iconShowHideAssignees As icon.ChevronRight:
                         BorderColor: =RGBA(32, 54, 71, 1)
@@ -746,7 +725,7 @@ scrGantt As screen:
                     Visible: =!IsBlank(ThisItem.id)
                     Width: =canvas.Width - contNewDueDate.X + canvas.X
                     X: =btnTask.X + btnTask.Width + iconShowHideAssignees.X + iconShowHideAssignees.Width
-                    ZIndex: =11
+                    ZIndex: =10
 
                     rectToggleRescheduling As rectangle:
                         BorderColor: =RGBA(32, 54, 71, 1)
@@ -831,7 +810,7 @@ scrGantt As screen:
                     Visible: =!IsBlank(ThisItem.id)
                     Width: =15
                     X: =btnTask.X + btnTask.Width - iconOpenTask.Width
-                    ZIndex: =12
+                    ZIndex: =11
 
                 lblTaskCategories As label:
                     BorderColor: =RGBA(32, 54, 71, 1)
@@ -844,6 +823,27 @@ scrGantt As screen:
                     Text: =If (myTasks, "", Concat(ThisItem.categories, Value, ", "))
                     Width: =82
                     X: =lblLabelsTitle.X
+                    ZIndex: =12
+
+                imgTaskProgress As image:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =10
+                    Image: |-
+                        =If (
+                            ThisItem.percentComplete = 0,
+                            'task-not-started',
+                            If (
+                                ThisItem.percentComplete < 100,
+                                'taks-inprogress',
+                                'task-complete'
+                            )
+                        )
+                    OnSelect: =Select(Parent)
+                    Width: =10
+                    X: =iconOpenTask.X - Self.Width - 5
+                    Y: =iconOpenTask.Y + 5
                     ZIndex: =13
 
         lblBucketHeading As label:
