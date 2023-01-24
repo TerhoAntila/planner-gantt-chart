@@ -1,0 +1,46 @@
+"'Latest Version Info' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    OnReset: |-
+        =Set(varCharIndex, 0);
+        Set(varTimerRunning, true);
+        Set(varVersionString, "");
+        Set(varCacheInvalidator, GUID());
+    VersionNumber: =If (Len(varVersionString) = 8, Value(varVersionString), 0)
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    htmlCommsImg As htmlViewer:
+        AutoHeight: =true
+        HtmlText: |-
+            ="<img src='https://fn-gantt-chart-rating.azurewebsites.net/api/GetLastCommitDate/" &
+                varCacheInvalidator &
+            "/" & 
+                varCharIndex &
+            "/img.jpg' />"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =1
+        ZIndex: =1
+
+    timerComms As timer:
+        AutoStart: =true
+        Duration: =200
+        Fill: =RGBA(100, 118, 132, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnTimerEnd: |
+            =If(varCharIndex >= 0 && varCharIndex <= 7,
+                Set(varVersionString, varVersionString & Char(htmlCommsImg.Height));
+                Set(varCharIndex, varCharIndex + 1);
+                Set(varCacheInvalidator, GUID()),
+                // Else stop timer
+                Set(varTimerRunning, false)
+            )
+        Repeat: =varTimerRunning
+        ZIndex: =2
+
