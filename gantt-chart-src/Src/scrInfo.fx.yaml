@@ -33,7 +33,7 @@
         ZIndex: =2
 
     contInfoMain As groupContainer.horizontalAutoLayoutContainer:
-        Height: =442
+        Height: =512
         LayoutGap: =20
         LayoutMode: =LayoutMode.Auto
         Width: =App.Width
@@ -49,25 +49,42 @@
 
             htmlInfo As htmlViewer:
                 AlignInContainer: =AlignInContainer.Stretch
+                FillPortions: =1
                 Height: =440
                 HtmlText: |-
                     ="
                     <div style='font-size: 20px; margin-bottom:20px'>
-                    I Started creating this app in the spring of 2021 and the first version was released in GitHub May 15th 2021.
-                    If you haven't yet, you should start following 
-                    <a href='https://terhoantila.com'>my blog</a>, where I will regularly publish posts
-                    about new features of the app as well as other posts regarding Microsoft Power Platform.
+                        I Started creating this app in the spring of 2021 and the first version was released in GitHub May 15th, 2021.
+                        If you haven't yet done so, you should start following 
+                        <a href='https://terhoantila.com'>my blog</a>, where I will regularly publish posts
+                        about new features of the app as well as other posts regarding Microsoft Power Platform.
                     </div>
-                    <div style='font-size: 26px'>
-                    <ul>
-                        <li>Explain what the app is
-                        <li>Link to blog post
-                        <li>Instructions to check for new versions. Show current app version and the latest version from GitHub.
-                        <li>Encouragement for support/contribution
-                        <li>Link to bookings to get support?
-                    </ul>
+                    <div style='font-size: 20px; margin-bottom:20px'>
+                        I'm using my own free time to make bug fixes and to impelement new features to this app.
+                        Therefore I would very much appreciate little contribution - call it a motivation boost 😃
+                    </div>
+                    <div style='font-size: 20px; margin-bottom:20px'>
+                        You can use these Stripe links 👉
+                        <a href='https://buy.stripe.com/4gw6qH4KUeNx3dK9AA'>5€</a>, 
+                        <a href='https://buy.stripe.com/28o5mDb9igVFdSo4gh'>10€</a>, 
+                        <a href='https://buy.stripe.com/28o02jgtCgVF15CeUW'>20€</a>, 
+                        <a href='https://buy.stripe.com/bIY8yP0uEeNx4hO003'>50€</a>
+                    </div>
+                    <div style='font-size: 30px; margin-bottom:20px'>
+                        Thank you for your support!
+                    </div>
+                    <div style='font-size: 20px; margin-top:20px'>
+                        PS. Check the version info in the bottom right corner of this page. 
+                        If your version is smaller than the latest version available, you
+                        might want to 
+                        <a href='https://github.com/TerhoAntila/planner-gantt-chart'>update</a>
+                        the app...
                     </div>
                     "
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =0
+                PaddingTop: =20
                 Width: =994
                 Y: =202
                 ZIndex: =1
@@ -96,7 +113,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
         Text: |-
-            ="Your app version: " & Text(varVersionNumber) & ", the latest version available: " & Text(varLastestVersionNumber)
+            ="Your app version: " & Text(varVersionNumber) & Char(13) & "The latest version available: " & Text(varLastestVersionNumber)
         Width: =800
         X: =App.Width - Self.Width
         Y: =App.Height - Self.Height
