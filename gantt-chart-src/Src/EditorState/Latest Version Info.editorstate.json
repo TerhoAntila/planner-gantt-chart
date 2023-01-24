@@ -84,7 +84,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "htmlCommsImg",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -351,7 +351,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblDebugComms",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -627,7 +627,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblDebugComms_1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -931,7 +931,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblStatus",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1265,7 +1265,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "timerComms",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

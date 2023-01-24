@@ -34,7 +34,7 @@
             "Name": "galleryTemplate5",
             "Parent": "galEmojis",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 139,
+            "PublishOrderIndex": 141,
             "Rules": [
               {
                 "Category": "Design",
@@ -180,7 +180,7 @@
             "Name": "lblEmoji",
             "Parent": "galEmojis",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 140,
+            "PublishOrderIndex": 142,
             "Rules": [
               {
                 "Category": "Data",
@@ -545,7 +545,7 @@
         "Name": "galEmojis",
         "Parent": "Emoji Picker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 138,
+        "PublishOrderIndex": 140,
         "Rules": [
           {
             "Category": "Data",
@@ -827,7 +827,7 @@
         "Name": "lblSelectedEmoji",
         "Parent": "Emoji Picker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 141,
+        "PublishOrderIndex": 143,
         "Rules": [
           {
             "Category": "Data",
@@ -1182,7 +1182,7 @@
         "Name": "iconShowGrid",
         "Parent": "Emoji Picker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 142,
+        "PublishOrderIndex": 144,
         "Rules": [
           {
             "Category": "Data",

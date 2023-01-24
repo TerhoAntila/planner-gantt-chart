@@ -4576,7 +4576,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblCurrentVersion",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5927,7 +5927,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblTitleStartScreen",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6952,7 +6952,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "rectCoverCommsImage",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7098,7 +7098,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "rectSideBar",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
