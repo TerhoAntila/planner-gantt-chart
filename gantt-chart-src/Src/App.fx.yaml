@@ -1,7 +1,8 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =ClearCollect(colThemes,
+        =Set(varVersionNumber, 20221224);
+        ClearCollect(colThemes,
             {
                 Name: "blue",
                 Color: {
