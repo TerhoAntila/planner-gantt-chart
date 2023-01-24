@@ -115,7 +115,7 @@
         Text: |-
             ="Your app version: " & Text(varVersionNumber) & Char(13) & "The latest version available: " & Text(varLastestVersionNumber)
         Width: =800
-        X: =App.Width - Self.Width
-        Y: =App.Height - Self.Height
+        X: =App.Width - Self.Width - 20
+        Y: =App.Height - Self.Height - 20
         ZIndex: =6
 
