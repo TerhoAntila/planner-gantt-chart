@@ -377,3 +377,9 @@ scrPlans As screen:
             Width: =Parent.Width
             ZIndex: =4
 
+    "'Latest Version Info_1' As 'Latest Version Info'":
+        Height: =270
+        VersionFetched: =100
+        Y: =234
+        ZIndex: =11
+

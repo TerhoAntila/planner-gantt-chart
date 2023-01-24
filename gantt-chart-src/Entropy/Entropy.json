@@ -2,7 +2,8 @@
   "ComponentIndexes": {
     "Emoji Picker": 3,
     "Hint": 4,
-    "Latest Version Info": 5
+    "Latest Version Info": 5,
+    "Latest Version Info_1": 5
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -105,6 +106,7 @@
     "inputAddTaskTitle": 47,
     "Label2": 11,
     "Latest Version Info": 14,
+    "Latest Version Info_1": 158,
     "lblAddNewTaskHeading": 37,
     "lblAddTaskBucket": 44,
     "lblAddTaskDueDate": 42,
@@ -162,7 +164,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/24/2023 11:19:52",
+  "HeaderLastSavedDateTimeUTC": "01/24/2023 11:28:30",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3d92e059-7852-4ed6-9b13-1e089584eb85": "\"/providers/microsoft.powerapps/apis/shared_planner/connections/d236a9821725443ca475c264af4f4daf\"",
@@ -335,6 +337,7 @@
     "inputAddTaskTitle": {},
     "Label2": {},
     "Latest Version Info": {},
+    "Latest Version Info_1": {},
     "lblAddNewTaskHeading": {},
     "lblAddTaskBucket": {},
     "lblAddTaskDueDate": {},
@@ -491,6 +494,7 @@
     "inputAddTaskTitle": 50,
     "Label2": 9,
     "Latest Version Info": 12,
+    "Latest Version Info_1": 12,
     "lblAddNewTaskHeading": 40,
     "lblAddTaskBucket": 47,
     "lblAddTaskDueDate": 45,
@@ -560,7 +564,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 1.8697476,
     "ControlCount": {
-      "7d3c30090cf744179b015773d523b366": 2,
+      "7d3c30090cf744179b015773d523b366": 3,
       "8d8311d0ff634049bd67be38dff31524": 2,
       "button": 10,
       "cf4b69ecd80c4abb8580ffcc87adca74": 1,

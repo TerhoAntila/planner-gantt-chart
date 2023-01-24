@@ -1,4 +1,9 @@
 "'Latest Version Info' As CanvasComponent":
+    VersionFetched(VersionNumber As Number):
+        VersionNumber:
+            Default: =100
+        ThisProperty:
+            Default: =100
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
     OnReset: |-
@@ -6,7 +11,6 @@
         Set(varTimerRunning, true);
         Set(varVersionString, "");
         Set(varCacheInvalidator, GUID());
-    VersionNumber: =If (Len(varVersionString) = 8, Value(varVersionString), 0)
     Width: =640
     X: =0
     Y: =0
@@ -40,8 +44,10 @@
                 Set(varCharIndex, varCharIndex + 1);
                 Set(varCacheInvalidator, GUID()),
                 // Else stop timer
-                Set(varTimerRunning, false)
+                Set(varTimerRunning, false);
+                'Latest Version Info'.VersionFetched(Value(varVersionString))
             )
         Repeat: =varTimerRunning
+        X: =8
         ZIndex: =2
 
