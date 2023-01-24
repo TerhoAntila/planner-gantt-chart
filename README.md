@@ -2,6 +2,7 @@
   <summary>Click here to view recent updates</summary>
 
 ### 24.1.2023
+- Task status indicator (full green, half yellow, hollow red)
 - Star rating of the app user can interact with
 - Current local app version and available GitHub version information
 - Information page added
