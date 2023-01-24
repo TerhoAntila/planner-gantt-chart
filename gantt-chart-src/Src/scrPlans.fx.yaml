@@ -379,7 +379,7 @@ scrPlans As screen:
 
     "'Latest Version Info_1' As 'Latest Version Info'":
         Height: =270
-        VersionFetched: =100
+        VersionFetched: =Notify(VersionNumber)
         Y: =234
         ZIndex: =11
 
