@@ -1,6 +1,7 @@
 "scrInfo As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
     Fill: =Theme.Color.TaskBackground
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: =
 
     imgRatingInfo As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -39,24 +40,31 @@
         Y: =imgRatingInfo.Height + 10
         ZIndex: =5
 
-        htmlInfo As htmlViewer:
-            AlignInContainer: =AlignInContainer.Stretch
-            Height: =440
-            HtmlText: |-
-                ="
-                <div style='font-size: 26px'>
-                <ul>
-                    <li>Explain what the app is
-                    <li>Link to blog post
-                    <li>Instructions to check for new versions. Show current app version and the latest version from GitHub.
-                    <li>Encouragement for support/contribution
-                    <li>Link to bookings to get support?
-                </ul>
-                </div>
-                "
-            Width: =994
-            Y: =202
+        contInfoLeft As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
             ZIndex: =1
+
+            htmlInfo As htmlViewer:
+                AlignInContainer: =AlignInContainer.Stretch
+                Height: =440
+                HtmlText: |-
+                    ="
+                    <div style='font-size: 26px'>
+                    <ul>
+                        <li>Explain what the app is
+                        <li>Link to blog post
+                        <li>Instructions to check for new versions. Show current app version and the latest version from GitHub.
+                        <li>Encouragement for support/contribution
+                        <li>Link to bookings to get support?
+                    </ul>
+                    </div>
+                    "
+                Width: =994
+                Y: =202
+                ZIndex: =1
 
         imgTerho As image:
             AlignInContainer: =AlignInContainer.Stretch
@@ -74,4 +82,17 @@
             X: =htmlInfo.Width
             Y: =imgRatingInfo.Height
             ZIndex: =2
+
+    Label1 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: |-
+            ="Your app version: " & Text(varVersionNumber) & ", the latest version available: " & Text(varLastestVersionNumber)
+        Width: =800
+        X: =App.Width - Self.Width
+        Y: =App.Height - Self.Height
+        ZIndex: =6
 

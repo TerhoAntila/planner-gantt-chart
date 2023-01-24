@@ -1,0 +1,80 @@
+"'Latest Version Info' As CanvasComponent":
+    VersionFetched(VersionNumber As Number):
+        VersionNumber:
+            Default: =100
+        ThisProperty:
+            Default: =0
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    OnReset: |-
+        =Set(varCharIndex, 0);
+        Set(varTimerRunning, true);
+        Set(varVersionString, "");
+        Set(varCacheInvalidator, GUID());
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    htmlCommsImg As htmlViewer:
+        AutoHeight: =true
+        HtmlText: |-
+            ="<img src='https://fn-gantt-chart-rating.azurewebsites.net/api/GetLastCommitDate/" &
+                varCacheInvalidator &
+            "/" & 
+                varCharIndex &
+            "/img.jpg' />"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =1
+        ZIndex: =1
+
+    timerComms As timer:
+        AutoPause: =false
+        AutoStart: =true
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        Color: =RGBA(255, 255, 255, 0)
+        Duration: =500
+        Fill: =RGBA(100, 118, 132, 0)
+        Height: =10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnTimerEnd: |
+            =If(varCharIndex >= 0 && varCharIndex <= 7,
+                Set(varVersionString, varVersionString & Char(htmlCommsImg.Height));
+                Set(varCharIndex, varCharIndex + 1);
+                Set(varCacheInvalidator, GUID()),
+                // Else stop timer
+                Set(varTimerRunning, false);
+                'Latest Version Info'.VersionFetched(Value(Coalesce(varVersionString, "0")))
+            )
+        Repeat: =varTimerRunning
+        Width: =10
+        X: =8
+        ZIndex: =2
+
+    lblDebugComms As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =38
+        Size: =13
+        Text: =htmlCommsImg.HtmlText
+        Width: =624
+        X: =13
+        ZIndex: =3
+
+    lblDebugComms_1 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =30
+        Text: =varVersionString
+        Width: =624
+        X: =8
+        ZIndex: =4
+

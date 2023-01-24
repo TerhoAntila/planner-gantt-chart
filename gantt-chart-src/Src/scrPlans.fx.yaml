@@ -5,7 +5,8 @@ scrPlans As screen:
             !IsBlank(Param("plan")),
             Select(btnHiddenToProcessPreselectedPlan),
             Select(iconRefresh)
-        )
+        );
+        Reset('Latest Version Info_1')
 
     galListPlans As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -376,4 +377,28 @@ scrPlans As screen:
             Text: =""
             Width: =Parent.Width
             ZIndex: =4
+
+    "'Latest Version Info_1' As 'Latest Version Info'":
+        Height: =60
+        VersionFetched: =If (!IsBlank(VersionNumber) && VersionNumber > 0, Set(varLastestVersionNumber, VersionNumber))
+        Width: =368
+        X: =752
+        ZIndex: =11
+
+    lblOldVersion As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =lblTitleStartScreen.Fill
+        Height: ='Latest Version Info_1'.Height
+        Size: =13
+        Text: |-
+            =If (varLastestVersionNumber > varVersionNumber,
+                "There is a new version of the app available, check info page...",
+                "v." & Text(varVersionNumber)
+            )
+        Width: ='Latest Version Info_1'.Width
+        X: =750
+        ZIndex: =12
 
