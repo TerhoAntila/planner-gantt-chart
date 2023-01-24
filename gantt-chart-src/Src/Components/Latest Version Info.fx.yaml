@@ -37,19 +37,43 @@
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
         Color: =RGBA(255, 255, 255, 0)
-        Duration: =500
+        Duration: =200
         Fill: =RGBA(100, 118, 132, 0)
         Height: =10
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnTimerEnd: |
-            =If(varCharIndex >= 0 && varCharIndex <= 7,
-                Set(varVersionString, varVersionString & Char(htmlCommsImg.Height));
-                Set(varCharIndex, varCharIndex + 1);
-                Set(varCacheInvalidator, GUID()),
+        OnTimerEnd: |-
+            =If(
+                varCharIndex >= 0 && varCharIndex <= 7,
+                // Validate the char between 0..9
+                If (
+                    htmlCommsImg.Height >= 48 && htmlCommsImg.Height <= 57,
+                    Set(
+                        varVersionString,
+                        varVersionString & Char(htmlCommsImg.Height)
+                    );
+                    Set(
+                        varCharIndex,
+                        varCharIndex + 1
+                    )
+                );
+                Set(
+                    varCacheInvalidator,
+                    GUID()
+                ),
                 // Else stop timer
-                Set(varTimerRunning, false);
-                'Latest Version Info'.VersionFetched(Value(Coalesce(varVersionString, "0")))
+                Set(
+                    varTimerRunning,
+                    false
+                );
+                'Latest Version Info'.VersionFetched(
+                    Value(
+                        Coalesce(
+                            varVersionString,
+                            "0"
+                        )
+                    )
+                )
             )
         Repeat: =varTimerRunning
         Width: =10
@@ -77,4 +101,19 @@
         Width: =624
         X: =8
         ZIndex: =4
+
+    lblStatus As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(230, 230, 230, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =10
+        Text: |-
+            =If (Len(varVersionString) <> 8, 
+                "Fetching the latest version info... " & Char(htmlCommsImg.Height),
+                "Latest available version is " & varVersionString)
+        Width: =300
+        X: ='Latest Version Info'.Width - Self.Width
+        Y: ='Latest Version Info'.Height - Self.Height
+        ZIndex: =5
 

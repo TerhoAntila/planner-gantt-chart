@@ -331,19 +331,15 @@ scrPlans As screen:
         X: =752
         ZIndex: =9
 
-    lblOldVersion As label:
-        Align: =Align.Center
+    lblCurrentVersion As label:
+        Align: =Align.Right
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =lblTitleStartScreen.Fill
-        Height: ='Latest Version Info_1'.Height
+        Height: =28
         Size: =13
-        Text: |-
-            =If (varLastestVersionNumber > varVersionNumber,
-                "There is a new version of the app available, check info page...",
-                "v." & Text(varVersionNumber)
-            )
+        Text: ="Current version of the app is " & Text(varVersionNumber)
         Width: ='Latest Version Info_1'.Width
         X: =750
         ZIndex: =10
