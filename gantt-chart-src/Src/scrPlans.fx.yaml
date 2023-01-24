@@ -14,7 +14,7 @@ scrPlans As screen:
         Height: =567
         Items: =SortByColumns(collAllUserPlans, "title", Ascending)
         TemplatePadding: =0
-        TemplateSize: =314
+        TemplateSize: =300
         Transition: =Transition.Push
         Width: =1207
         WrapCount: =2
@@ -50,14 +50,14 @@ scrPlans As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =Theme.Color.Light
             FontWeight: =FontWeight.Semibold
-            Height: =255
+            Height: =250
             HoverColor: =RGBA(255, 255, 255, 1)
             OnSelect: |-
                 =ClearCollect(selectedSinglePlanColl, ThisItem);
                 Navigate(scrGantt, ScreenTransition.Fade, { idsOfSelectedPlans: ShowColumns(selectedSinglePlanColl, "id", "title"), myTasks: false })
             Size: =22
             Text: =ThisItem.title
-            Width: =286
+            Width: =260
             X: =18
             Y: =2
             ZIndex: =2
@@ -169,7 +169,7 @@ scrPlans As screen:
         Width: =492
         X: =802
         Y: =672
-        ZIndex: =6
+        ZIndex: =5
 
         iconRefresh As icon.Reload:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -211,7 +211,7 @@ scrPlans As screen:
         Size: =28
         Text: ="Select the plan you want to view"
         Width: =1366
-        ZIndex: =7
+        ZIndex: =6
 
     myTasks As groupContainer:
         Height: =85
@@ -219,7 +219,7 @@ scrPlans As screen:
         Width: =600
         X: =108
         Y: =672
-        ZIndex: =8
+        ZIndex: =7
 
         btnMyTasks As button:
             BorderColor: =Theme.Color.LighterDark
@@ -256,7 +256,7 @@ scrPlans As screen:
         Height: =60
         Width: =532
         X: =834
-        ZIndex: =9
+        ZIndex: =8
 
         imgRating As image:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -324,12 +324,43 @@ scrPlans As screen:
             Y: =imgRating.Height
             ZIndex: =3
 
+    "'Latest Version Info_1' As 'Latest Version Info'":
+        Height: =60
+        VersionFetched: =If (!IsBlank(VersionNumber) && VersionNumber > 0, Set(varLastestVersionNumber, VersionNumber))
+        Width: =368
+        X: =752
+        ZIndex: =9
+
+    lblOldVersion As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =lblTitleStartScreen.Fill
+        Height: ='Latest Version Info_1'.Height
+        Size: =13
+        Text: |-
+            =If (varLastestVersionNumber > varVersionNumber,
+                "There is a new version of the app available, check info page...",
+                "v." & Text(varVersionNumber)
+            )
+        Width: ='Latest Version Info_1'.Width
+        X: =750
+        ZIndex: =10
+
+    rectSideBar As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =lblTitleStartScreen.Fill
+        Height: =App.Height
+        Width: =30
+        ZIndex: =11
+
     contInfo As groupContainer.manualLayoutContainer:
         Height: =150
         Width: =150
         X: =-30
         Y: =-30
-        ZIndex: =10
+        ZIndex: =12
 
         circleInfoBg2 As circle:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -377,28 +408,4 @@ scrPlans As screen:
             Text: =""
             Width: =Parent.Width
             ZIndex: =4
-
-    "'Latest Version Info_1' As 'Latest Version Info'":
-        Height: =60
-        VersionFetched: =If (!IsBlank(VersionNumber) && VersionNumber > 0, Set(varLastestVersionNumber, VersionNumber))
-        Width: =368
-        X: =752
-        ZIndex: =11
-
-    lblOldVersion As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =lblTitleStartScreen.Fill
-        Height: ='Latest Version Info_1'.Height
-        Size: =13
-        Text: |-
-            =If (varLastestVersionNumber > varVersionNumber,
-                "There is a new version of the app available, check info page...",
-                "v." & Text(varVersionNumber)
-            )
-        Width: ='Latest Version Info_1'.Width
-        X: =750
-        ZIndex: =12
 
