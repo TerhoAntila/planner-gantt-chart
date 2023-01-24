@@ -2198,7 +2198,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnTask",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3557,7 +3557,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contAddTask",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3700,7 +3700,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contAssignees",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3850,7 +3850,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contNewDueDate",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3998,7 +3998,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contTaskRescheduling",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9540,7 +9540,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconOpenTask",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14932,7 +14932,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblEndDate",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19413,7 +19413,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblTaskName",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
