@@ -742,7 +742,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "200",
+            "InvariantScript": "500",
             "Property": "Duration",
             "RuleProviderType": "Unknown"
           },
@@ -1636,7 +1636,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638101721623923267",
+    "LastModifiedTimestamp": "638101723652890391",
     "Name": "Latest Version Info",
     "Rules": [
       {
@@ -1743,7 +1743,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638101721623923267",
+  "LastModifiedTimestamp": "638101723652890391",
   "Name": "7d3c30090cf744179b015773d523b366",
   "OverridableProperties": {},
   "Version": "638101473591135018"

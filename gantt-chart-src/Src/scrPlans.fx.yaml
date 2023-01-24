@@ -405,3 +405,11 @@ scrPlans As screen:
             Width: =Parent.Width
             ZIndex: =4
 
+    rectCoverCommsImage As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =lblTitleStartScreen.Fill
+        Height: ='Latest Version Info_1'.Height
+        Width: =10
+        X: ='Latest Version Info_1'.X - 2
+        ZIndex: =13
+

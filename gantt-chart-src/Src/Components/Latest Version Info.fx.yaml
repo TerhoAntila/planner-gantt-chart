@@ -37,7 +37,7 @@
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
         Color: =RGBA(255, 255, 255, 0)
-        Duration: =200
+        Duration: =500
         Fill: =RGBA(100, 118, 132, 0)
         Height: =10
         HoverColor: =RGBA(255, 255, 255, 1)
