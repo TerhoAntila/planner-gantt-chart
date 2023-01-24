@@ -472,12 +472,7 @@ scrGantt As screen:
                     PaddingLeft: =0
                     PaddingTop: =0
                     Size: =8
-                    Text: |-
-                        =If (Year(ThisItem.dueDateTime) > varSelectedYear, Text(ThisItem.dueDateTime, "d.m.yy"), Text(ThisItem.dueDateTime, "d.m"))
-                        /*
-                        Text(
-                            DateAdd(First(galVerticalLanes.AllItems).date, sliderTaskPosition.Value  + btnTask.Width / Value(lblSingleDayWidth.Text) / 2, Days),
-                            "[$-en-GB]d.m")*/
+                    Text: =If (Year(ThisItem.dueDateTime) > varSelectedYear, Text(ThisItem.dueDateTime, "d.m.yy"), Text(ThisItem.dueDateTime, "d.m"))
                     Tooltip: =If(IsBlank(ThisItem.originalDueDate), "Due date for the task is missing, using current time!")
                     VerticalAlign: =VerticalAlign.Bottom
                     Width: =50
@@ -829,6 +824,27 @@ scrGantt As screen:
                     Width: =82
                     X: =lblLabelsTitle.X
                     ZIndex: =12
+
+                imgTaskProgress As image:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =10
+                    Image: |-
+                        =If (
+                            ThisItem.percentComplete = 0,
+                            'task-not-started',
+                            If (
+                                ThisItem.percentComplete < 100,
+                                'taks-inprogress',
+                                'task-complete'
+                            )
+                        )
+                    OnSelect: =Select(Parent)
+                    Width: =10
+                    X: =iconOpenTask.X - Self.Width - 5
+                    Y: =iconOpenTask.Y + 5
+                    ZIndex: =13
 
         lblBucketHeading As label:
             Align: =Align.Right

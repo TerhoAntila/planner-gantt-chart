@@ -113,6 +113,7 @@
   },
   "ScreenOrder": [
     "scrPlans",
-    "scrGantt"
+    "scrGantt",
+    "scrInfo"
   ]
 }
