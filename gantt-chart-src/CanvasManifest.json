@@ -15,7 +15,7 @@
       "appinstrumentationcorrelationtracing": false,
       "autocreateenvironmentvariables": false,
       "backfromhostaction": false,
-      "behaviorpropertyui": false,
+      "behaviorpropertyui": true,
       "blockmovingcontrol": true,
       "cdsdataformatting": false,
       "classiccontrols": false,
@@ -113,6 +113,7 @@
   },
   "ScreenOrder": [
     "scrPlans",
-    "scrGantt"
+    "scrGantt",
+    "scrInfo"
   ]
 }

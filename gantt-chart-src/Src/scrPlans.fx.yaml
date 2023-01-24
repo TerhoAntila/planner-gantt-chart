@@ -5,7 +5,8 @@ scrPlans As screen:
             !IsBlank(Param("plan")),
             Select(btnHiddenToProcessPreselectedPlan),
             Select(iconRefresh)
-        )
+        );
+        Reset('Latest Version Info_1')
 
     galListPlans As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -13,7 +14,7 @@ scrPlans As screen:
         Height: =567
         Items: =SortByColumns(collAllUserPlans, "title", Ascending)
         TemplatePadding: =0
-        TemplateSize: =314
+        TemplateSize: =300
         Transition: =Transition.Push
         Width: =1207
         WrapCount: =2
@@ -41,7 +42,7 @@ scrPlans As screen:
             Width: =400
             ZIndex: =1
 
-        Button1 As button:
+        btnPlan As button:
             BorderColor: =Theme.Color.LighterDark
             Color: =Theme.Color.LighterDark
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -49,14 +50,14 @@ scrPlans As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =Theme.Color.Light
             FontWeight: =FontWeight.Semibold
-            Height: =255
+            Height: =250
             HoverColor: =RGBA(255, 255, 255, 1)
             OnSelect: |-
                 =ClearCollect(selectedSinglePlanColl, ThisItem);
                 Navigate(scrGantt, ScreenTransition.Fade, { idsOfSelectedPlans: ShowColumns(selectedSinglePlanColl, "id", "title"), myTasks: false })
             Size: =22
             Text: =ThisItem.title
-            Width: =286
+            Width: =260
             X: =18
             Y: =2
             ZIndex: =2
@@ -75,8 +76,8 @@ scrPlans As screen:
             Size: =13
             Text: =""
             Width: =67
-            X: =Button1.Width - Self.Width
-            Y: =Button1.Height - Self.Height - 5
+            X: =btnPlan.Width - Self.Width
+            Y: =btnPlan.Height - Self.Height - 5
             ZIndex: =3
 
         iconOpenPlan_1 As icon.OpenInNewWindow:
@@ -90,7 +91,7 @@ scrPlans As screen:
                 =Launch("https://tasks.office.com/Home/Planner/#/plantaskboard?planId=" & ThisItem.id)
             Tooltip: ="Open plan"
             Width: =58
-            X: =Button1.Width - Self.Width
+            X: =btnPlan.Width - Self.Width
             Y: =20
             ZIndex: =4
 
@@ -168,7 +169,7 @@ scrPlans As screen:
         Width: =492
         X: =802
         Y: =672
-        ZIndex: =6
+        ZIndex: =5
 
         iconRefresh As icon.Reload:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -200,17 +201,17 @@ scrPlans As screen:
             ZIndex: =2
 
     lblTitleStartScreen As label:
-        Align: =Align.Center
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =White
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =Theme.Color.Dark
         FontWeight: =FontWeight.Semibold
         Height: =60
+        PaddingLeft: =galListPlans.X + btnPlan.X
         Size: =28
         Text: ="Select the plan you want to view"
         Width: =1366
-        ZIndex: =7
+        ZIndex: =6
 
     myTasks As groupContainer:
         Height: =85
@@ -218,7 +219,7 @@ scrPlans As screen:
         Width: =600
         X: =108
         Y: =672
-        ZIndex: =8
+        ZIndex: =7
 
         btnMyTasks As button:
             BorderColor: =Theme.Color.LighterDark
@@ -253,19 +254,162 @@ scrPlans As screen:
 
     contRating As groupContainer.manualLayoutContainer:
         Height: =60
-        Visible: =false
-        Width: =360
-        X: =1006
-        ZIndex: =9
+        Width: =532
+        X: =834
+        ZIndex: =8
 
         imgRating As image:
             BorderColor: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =60
+            Height: =40
             Image: |-
-                ="https://fn-gantt-chart-rating.azurewebsites.net/api/rating-img/" & User().Email & "/rating.png"
+                ="https://fn-gantt-chart-rating.azurewebsites.net/api/rating-img/" & varRatingGuid & "/" & varUserRating & "/rating.png?ts=" & Text(
+                    Now(),
+                    "ddmmyyyyHHmmss"
+                )
             Width: =208
-            X: =129
+            X: =Parent.Width - Self.Width - 10
             ZIndex: =1
+
+        galRate As gallery.galleryHorizontal:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Height: =imgRating.Height
+            Items: =Sequence(5, 1, 1)
+            OnSelect: |-
+                =Set(varUserRating, ThisItem.Value);
+                Set(varRatingGuid, GUID());
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =Self.Width / 5
+            Width: =220
+            X: =Parent.Width - Self.Width - 5
+            ZIndex: =2
+
+            btnRate As button:
+                Color: =RGBA(255, 255, 255, 0)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(100, 118, 132, 0)
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =Theme.Color.TaskBackground
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: =""
+                Tooltip: =ThisItem.Value & "/5"
+                Width: =46.8
+                ZIndex: =1
+
+        lblRateMe As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =20
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =10
+            PaddingTop: =0
+            Size: =12
+            Text: =Upper(If (varUserRating > 0, "Thank you!", "Rate the app"))
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =160
+            X: =Parent.Width - Self.Width
+            Y: =imgRating.Height
+            ZIndex: =3
+
+    "'Latest Version Info_1' As 'Latest Version Info'":
+        Height: =60
+        VersionFetched: =If (!IsBlank(VersionNumber) && VersionNumber > 0, Set(varLastestVersionNumber, VersionNumber))
+        Width: =368
+        X: =752
+        ZIndex: =9
+
+    lblCurrentVersion As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =lblTitleStartScreen.Fill
+        Height: =28
+        Size: =13
+        Text: ="Current version of the app is " & Text(varVersionNumber)
+        Width: ='Latest Version Info_1'.Width
+        X: =750
+        ZIndex: =10
+
+    rectSideBar As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =lblTitleStartScreen.Fill
+        Height: =App.Height
+        Width: =30
+        ZIndex: =11
+
+    contInfo As groupContainer.manualLayoutContainer:
+        Height: =150
+        Width: =150
+        X: =-30
+        Y: =-30
+        ZIndex: =12
+
+        circleInfoBg2 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =White
+            Height: =imgInfo.Height + 5
+            Width: =imgInfo.Width + 5
+            X: =Parent.Width / 2 - Self.Width / 2
+            Y: =Parent.Height / 2 - Self.Height / 2
+            ZIndex: =1
+
+        circleInfoBg1 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =lblTitleStartScreen.Fill
+            Height: =imgInfo.Height
+            Width: =imgInfo.Width
+            X: =Parent.Width / 2 - Self.Width / 2
+            Y: =Parent.Height / 2 - Self.Height / 2
+            ZIndex: =2
+
+        imgInfo As image:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Image: =info
+            OnSelect: =Navigate(scrInfo, Fade)
+            X: =Parent.Width / 2 - Self.Width / 2
+            Y: =Parent.Height / 2 - Self.Height / 2
+            ZIndex: =3
+
+        btnInfo As button:
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: =RGBA(255, 255, 255, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(100, 118, 132, 0)
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverColor: =RGBA(255, 255, 255, 0)
+            HoverFill: =Self.Fill
+            OnSelect: =Navigate(scrInfo, Fade)
+            PressedFill: =Self.Fill
+            Size: =15
+            Text: =""
+            Width: =Parent.Width
+            ZIndex: =4
+
+    rectCoverCommsImage As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =lblTitleStartScreen.Fill
+        Height: ='Latest Version Info_1'.Height
+        Width: =10
+        X: ='Latest Version Info_1'.X - 2
+        ZIndex: =13
 

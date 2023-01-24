@@ -139,6 +139,20 @@
     "OverridableProperties": {},
     "Version": "1.1.0"
   },
+  "htmlViewer": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/htmlViewer",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "htmlViewer",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
+  },
   "icon": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -236,5 +250,19 @@
     "Name": "text",
     "OverridableProperties": {},
     "Version": "2.3.2"
+  },
+  "timer": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/timer",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "timer",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
   }
 }

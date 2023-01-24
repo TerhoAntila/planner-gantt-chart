@@ -17,24 +17,48 @@ namespace fnGanttChartRating
     {
         [FunctionName("fnRatingImageSrc")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "rating-img/{userId}/rating.png")] HttpRequest req,
-            ILogger log, string userId)
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "rating-img/{guid}/{rating}/rating.png")] HttpRequest req,
+            ILogger log, string guid, int rating)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            log.LogInformation(userId);
+            log.LogInformation(guid);
+            log.LogInformation($"{rating}");
 
-            string imgUrl = "https://strganttchartratings.blob.core.windows.net/rating-public-images/stars-5.png";
-            using (var client = new HttpClient())
+            try
             {
-                var img = await client.GetStreamAsync(imgUrl);
-                using (var ms = new MemoryStream())
+                var tableHelper = new TableHelper(
+                    System.Environment.GetEnvironmentVariable("StorageUri"),
+                    System.Environment.GetEnvironmentVariable("StorageAccount"),
+                    System.Environment.GetEnvironmentVariable("StorageKey"),
+                    log
+                    );
+
+                if (rating > 0)
                 {
-                    img.CopyTo(ms);
-                    return new FileContentResult(ms.ToArray(), "image/png");
+                    tableHelper.Rate(rating);
+                }
+
+                var averRating = tableHelper.GetAverage();
+                var averRounded = (int)Math.Round(averRating, 0);
+
+                string imgUrl = $"https://strganttchartratings.blob.core.windows.net/rating-public-images/stars-{averRounded}.png";
+                log.LogInformation(imgUrl);
+                using (var client = new HttpClient())
+                {
+                    var img = await client.GetStreamAsync(imgUrl);
+                    using (var ms = new MemoryStream())
+                    {
+                        img.CopyTo(ms);
+                        return new FileContentResult(ms.ToArray(), "image/png");
+                    }
                 }
             }
-            
+            catch (Exception ex)
+            {
+                log.LogError(ex.Message);
+                throw;
+            }           
 
         }
     }
