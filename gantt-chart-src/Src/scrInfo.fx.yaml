@@ -83,3 +83,16 @@
             Y: =imgRatingInfo.Height
             ZIndex: =2
 
+    Label1 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: |-
+            ="Your app version: " & Text(varVersionNumber) & ", the latest version available: " & Text(varLastestVersionNumber)
+        Width: =800
+        X: =App.Width - Self.Width
+        Y: =App.Height - Self.Height
+        ZIndex: =6
+

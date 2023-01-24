@@ -397,7 +397,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnInfo",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1971,7 +1971,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "circleInfoBg1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2111,7 +2111,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "circleInfoBg2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2247,7 +2247,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contInfo",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2889,7 +2889,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galRate",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3979,7 +3979,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgInfo",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4207,7 +4207,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgRating",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4415,7 +4415,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Latest Version Info_1",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4523,19 +4523,12 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "60",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "X",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "60",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -4576,7 +4569,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblOldVersion",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5306,7 +5299,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblRateMe",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5927,7 +5920,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblTitleStartScreen",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
