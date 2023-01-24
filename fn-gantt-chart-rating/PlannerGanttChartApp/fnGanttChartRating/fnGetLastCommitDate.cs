@@ -28,7 +28,7 @@ namespace fnGanttChartRating
             {
                 log.LogInformation("char index:" + charIndex);
                 log.LogInformation("End of message -> E");
-                return GetImageResultForCharacter('E'); // As in End
+                return GetImageResultForCharacter('E', log); // As in End
             }
 
             string patToken = Environment.GetEnvironmentVariable("GitHubPatToken");
@@ -57,15 +57,16 @@ namespace fnGanttChartRating
                         var c = dateStr[charIndex];
                         log.LogInformation("Char:" + c);
 
-                        return GetImageResultForCharacter(c);
+                        return GetImageResultForCharacter(c, log);
                     }
                 }
             }
         }
 
-        private static FileContentResult GetImageResultForCharacter(char v)
+        private static FileContentResult GetImageResultForCharacter(char v, ILogger log)
         {
             var returnCode = GetCodeToMatchHeight(v);
+            log.LogInformation($"IMAGE HEIGHT: {returnCode}");
             var img = new System.Drawing.Bitmap(1, returnCode);
             using (var ms = new MemoryStream())
             {
