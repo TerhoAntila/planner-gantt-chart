@@ -113,7 +113,7 @@ scrGantt As screen:
         FontWeight: =FontWeight.Bold
         Height: =53
         Size: =30
-        Text: =Max(0, CountRows(galTasksFlexible.AllItems) - 1)
+        Text: =Max(0, CountRows(galTasksFlexible.AllItems) - If (Len(TextInput1.Text) > 0, 0, 1))
         Width: =103
         X: =1263
         ZIndex: =5
@@ -283,7 +283,8 @@ scrGantt As screen:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Height: =474
                 Items: |-
-                    =SortByColumns(
+                    =Filter(
+                    SortByColumns(
                         Filter(
                             AddColumns(
                                 RenameColumns(
@@ -388,15 +389,16 @@ scrGantt As screen:
                                 // Check if My tasks only filter is set
                                 (
                                     !cbMyTasksOnly.Value || CountRows(Filter(_assignments, userId = varCurrentUser.Id)) > 0
-                                ) &&
-                                // Filter by task name
-                                (
-                                    Len(TextInput1.Text) = 0 || Find(TextInput1.Text, title) >= 0
                                 )
                             )
                         ),
                         "dueDateTime",
                         Ascending
+                    ),
+                    // Filter by task name
+                    (
+                        Len(TextInput1.Text) = 0 || Find(TextInput1.Text, Lower(title)) > 0
+                    )
                     )
                 Layout: =Layout.Vertical
                 ShowScrollbar: =false
