@@ -388,6 +388,10 @@ scrGantt As screen:
                                 // Check if My tasks only filter is set
                                 (
                                     !cbMyTasksOnly.Value || CountRows(Filter(_assignments, userId = varCurrentUser.Id)) > 0
+                                ) &&
+                                // Filter by task name
+                                (
+                                    Len(TextInput1.Text) = 0 || Find(TextInput1.Text, title) >= 0
                                 )
                             )
                         ),
@@ -1024,7 +1028,7 @@ scrGantt As screen:
         ShowScrollbar: =false
         TemplateSize: =196
         Visible: =!myTasks
-        Width: =1261
+        Width: =800
         ZIndex: =10
 
         lblPlanFilterPlanName As label:
@@ -1725,4 +1729,31 @@ scrGantt As screen:
             X: =1296
             Y: =19
             ZIndex: =4
+
+    TextInput1 As text:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =White
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(118, 0, 0, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =Theme.Color.LighterDark
+        FocusedBorderThickness: =4
+        FontWeight: =FontWeight.Semibold
+        Height: =38
+        HintText: ="Filter by task name..."
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =17
+        Width: =App.Width - Self.X - lblTotalTasks.Width
+        X: =galPlanFilter.X + galPlanFilter.Width
+        Y: =1
+        ZIndex: =16
 
