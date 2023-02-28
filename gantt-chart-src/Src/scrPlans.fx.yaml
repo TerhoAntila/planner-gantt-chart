@@ -140,8 +140,8 @@ scrPlans As screen:
         Text: ="Only " & varMaxSimultaneousSelectedPlans & " simultaneously selected plans supported!"
         Visible: =CountRows(Filter(galListPlans.AllItems, cbSelectPlan.Value)) > varMaxSimultaneousSelectedPlans
         Width: =443
-        X: =460
-        Y: =683
+        X: =87
+        Y: =587
         ZIndex: =3
 
     btnHiddenToProcessPreselectedPlan As button:
@@ -215,7 +215,6 @@ scrPlans As screen:
 
     myTasks As groupContainer:
         Height: =85
-        Visible: =!viewMultipleButton.Visible
         Width: =600
         X: =108
         Y: =672

@@ -1747,8 +1747,6 @@ scrGantt As screen:
         Height: =38
         HintText: ="Filter by task name..."
         HoverBorderColor: =RGBA(32, 54, 71, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(205, 209, 213, 1)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
