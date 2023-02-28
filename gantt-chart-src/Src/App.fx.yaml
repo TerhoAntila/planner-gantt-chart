@@ -1,7 +1,7 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =Set(varVersionNumber, 20230124);
+        =Set(varVersionNumber, 20230227);
         Set(varLastestVersionNumber, 0);
         ClearCollect(colThemes,
             {
@@ -51,7 +51,7 @@ App As appinfo:
             }       
         );
         Set(Theme, LookUp(colThemes, Name = Coalesce(Param("ganttTheme"), "blue")));
-        ClearCollect(colPlanColors, [
+        ClearCollect(colPlanColors, ForAll([
             {
                 index: 1,
                 indicatorColor: RGBA(0, 0, 255, 1),
@@ -72,7 +72,7 @@ App As appinfo:
                 indicatorColor: RGBA(75, 0, 130, 1),
                 chartColor: RGBA(75, 0, 130, .6)
             }
-        ]);
+        ], {Value: ThisRecord}));
         Set(varMaxSimultaneousSelectedPlans, CountRows(colPlanColors));
         Set(varCurrentUser, Office365Users.MyProfile());
         Set(varUserRating, 0);

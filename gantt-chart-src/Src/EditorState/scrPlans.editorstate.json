@@ -6770,14 +6770,7 @@
         "LayoutOverflowX",
         "LayoutOverflowY",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "Visible",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Visible",
         "ChildTabPriority",
         "EnableChildFocus"
       ],
